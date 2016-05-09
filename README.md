@@ -1,1 +1,1 @@
-# v-zkumn-_-kol
+# vyzkumny ukol
