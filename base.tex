@@ -3,7 +3,7 @@
 \begin{document}
 
 \section{Preliminaries}%================================================================================================
-This section provides initial definitions and brief introduction to one-dimensional and two-dimensional quasicrystals. 
+This section provides the initial definitions and brief introduction to one-dimensional and two-dimensional quasicrystals. 
 \subsection{Initial definitions}
 \begin{definition}
 \label{def:beta}
@@ -15,7 +15,7 @@ $$x^2=4x-1 \qquad \beta = 2 + \sqrt{3} \doteq 3.732 \qquad \beta' = 2 - \sqrt{3}
 The number $\beta$ as defined in Definition \ref{def:beta} will represent the same value in the entire text.
 \end{remark}
 
-Being roots of the same quadratic equation, $\beta$ and $\beta'$ have some interesting properties that are often used in work with quasicrystals. 
+Being roots of the same quadratic equation, $\beta$ and $\beta'$ have some interesting properties that are often used while working with quasicrystals. 
 
 \begin{theorem}
 \label{the:betaProperties}
@@ -41,18 +41,18 @@ Similarly, ring $\mathbb{Z}[\beta']$ can be defined. According to the Theorem \r
 
 \subsection{One-dimensional quasicrystals}
 
-To define a quasicrystal one more definition is needed. Function connecting a space of the quasicrystal with a space of the acceptance set called window.
+To define a quasicrystal one more definition is needed. Function connecting a space of the quasicrystal with a space of the acceptance set called acceptance window.
 
 \begin{definition}
 Function $':\ring\to\mathbb{Z}[\beta']$ is defined as $(a+b\beta)' = a+b\beta'$.
 \end{definition}
 \begin{remark}
-Notation is consistent with Definition \ref{def:beta}: $(\beta)'=\beta'$.
+Notation is consistent with the Definition \ref{def:beta}: $(\beta)'=\beta'$.
 \end{remark}
 
 \begin{definition}
 \label{def_oneDimension}
-Let $\Omega \subset \mathbb{R}$ be a bounded set with non-empty interior. Then \textbf{one-dimensional quasicrystal} with the window $\Omega$ is denoted by $\quasi{\Omega}$ and defined as:
+Let $\Omega \subset \RN$ be a bounded set with non-empty interior. Then \textbf{one-dimensional quasicrystal} with the window $\Omega$ is denoted by $\quasi{\Omega}$ and defined as:
 $$\quasi{\Omega} = \{ x\in \ring \,|\, x'\in \Omega\}$$
 \end{definition}
 
@@ -156,7 +156,7 @@ $\quasi{\Omega}$ where $\Omega \subset \mathbb{R}$ always denotes one-dimensiona
 \label{fig:onedimensional}
 \end{figure}
 
-Some properties of one-dimensional quasicrystals are crucial for the algorithms used later.
+Some properties of one-dimensional quasicrystals are crucial for the algorithms used for the analysis.
 
 \begin{theorem} 
 \label{the:quasiProperties}
@@ -199,7 +199,7 @@ Let $\Omega \subset \RN$ then $\forall k\in \mathbb{Z}: \quasi{\frac{1}{\beta^k}
 
 \begin{corollary}
 \label{cor:baseInterval}
-From remark \ref{rem:oneInterval} and theorem \ref{the:scale} follows that only windows $\Omega = [c,d)$ where $d-c\in\left( \frac{1}{\beta}, 1 \right]$ need to be analyzed. Such windows will be called \textbf{base windows}. Quasicrystals for all other windows can be acquired through the analysis of quasicrystals with base windows by scaling and operations from remark \ref{rem:oneInterval}.
+From remark \ref{rem:oneInterval} and theorem \ref{the:scale} follows that only windows $\Omega = [c,d)$ where $d-c\in\left( \frac{1}{\beta}, 1 \right]$ need to be analyzed. Such windows are called \textbf{base windows} or \textbf{windows in the base form}. Quasicrystals for all other windows can be acquired from the quasicrystals with the base windows by scaling and operations from remark \ref{rem:oneInterval}.
 \end{corollary}
 
 \subsubsection{One-dimensional quasicrystal structure}%====================================================================================================================
@@ -207,12 +207,12 @@ From remark \ref{rem:oneInterval} and theorem \ref{the:scale} follows that only 
 Figure \ref{fig:onedimensional} suggests that the one-dimensional quasicrystal is a sequence of points. This subsection presents an analysis of spacing and distribution of these points.
 
 \begin{definition}
-Strictly increasing sequence $(y_n^\Omega)_{n\in \mathbb{Z}}$ defined as $\left\{y_n^\Omega\,|\, n\in\mathbb{Z} \right\} = \quasi{\Omega}$ where $\Omega \subset \RN$ is called \textbf{sequence of quasicrystal $\quasi{\Omega}$}.
+Strictly increasing sequence $(y_n^\Omega)_{n\in \mathbb{Z}}$ defined as $\left\{y_n^\Omega\,|\, n\in\mathbb{Z} \right\} = \quasi{\Omega}$ where $\Omega \subset \RN$ is called the \textbf{sequence of quasicrystal $\quasi{\Omega}$}.
 \end{definition}
 
 \begin{theorem}
 \label{the:spaces:sum}
-Let $\Omega = [c,d)$ where $d-c \in \left[ \frac{1}{\beta}, 1 \right]$ then all possible distances between two immediately following points of sequence of quasicrystal $\quasi{[c,d)}$ $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in table \ref{table:spaces}.
+Let $\Omega = [c,d)$ is a base window, then all possible distances between two immediately following points of the sequence of  the quasicrystal $\quasi{\Omega}$ $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in the table \ref{table:spaces}.
 \begin{table}[h]
 \begin{center}
 \begin{tabular}{ccccccc}
@@ -226,7 +226,7 @@ Let $\Omega = [c,d)$ where $d-c \in \left[ \frac{1}{\beta}, 1 \right]$ then all 
 					&				&				&				&				&	$\beta-1$	&	$\beta-1$	\\
 	\bottomrule
 \end{tabular}
-\caption{All possible distances between two immediately following points of sequence of quasicrystal with window of given size.}
+\caption{All possible distances between two immediately following points of the sequence of the quasicrystal with a window of the given size.}
 \label{table:spaces}
 \end{center}
 \end{table}
@@ -235,7 +235,7 @@ Let $\Omega = [c,d)$ where $d-c \in \left[ \frac{1}{\beta}, 1 \right]$ then all 
 
 \begin{definition}
 \label{def:distancesNotation}
-Distances $y_{n+1}^\Omega-y_n^\Omega$ will be denoted: $A = 4\beta-1$, $B = 3\beta-1$, $C = 2\beta-1$, $D = \beta$ and $E = \beta-1$.
+The distances $y_{n+1}^\Omega-y_n^\Omega$ are denoted: $A = 4\beta-1$, $B = 3\beta-1$, $C = 2\beta-1$, $D = \beta$ and $E = \beta-1$.
 \end{definition}
 
 \begin{definition}
@@ -265,11 +265,11 @@ d-c \in \left( \frac{\beta-1}{\beta}, 1 \right]:& \quad
 		\end{array} \right.
 \end{align*}
 %]
-is called \textbf{stepping function} of quasicrystal $\quasi{\Omega}$. 
+is called the \textbf{stepping function} of the quasicrystal $\quasi{\Omega}$. 
 \end{definition}
 
 \begin{remark}
-Stepping function takes $(\cdot)'$ image of a point of quasicrystal and returns $(\cdot)'$ image of immediately following point.\\
+Stepping function takes $(\cdot)'$ image of a point of the quasicrystal and returns $(\cdot)'$ image of immediately following point.\\
 \end{remark}
 
 \begin{figure}
@@ -429,6 +429,7 @@ Please note that $\mathcal{D}_n$ from theorem \ref{the:sameSpaces} divides base 
 Subsection provides definitions of delone set, covering radius and voronoi tessellation.
 
 \begin{definition}
+\label{def:delone}
 Let $P\subset \mathbb{R}^n$ and $\exists R>0, \exists r>0$:
 $$\forall x,y\in P,\, x\neq y: r\leq \|x-y\|$$
 $$\forall z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R$$
@@ -438,7 +439,6 @@ $$R_c = \inf\{R>0\,|\, z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R\}$$
 \end{definition}
 
 \begin{definition}
-
 Let $P\subset \mathbb{R}^n$, $P$ is a discrete set and $x\in P$. Then
 $$V(x) = \left\{ y \in \mathbb{R}^n \,|\, \forall z \in P, z\neq x:\, \|y-x\|<\|y-z\| \right\}$$
 is called \textbf{voronoi tile} (polygon) of $x$ on $P$.
