@@ -1,0 +1,508 @@
+\documentclass[text.tex]{subfiles}
+
+\begin{document}
+
+\section{Preliminaries}%================================================================================================
+This section provides initial definitions and brief introduction to one-dimensional and two-dimensional quasicrystals. 
+\subsection{Initial definitions}
+\begin{definition}
+\label{def:beta}
+Roots of the following quadratic equation are denoted as $\beta$ and $\beta'$.
+$$x^2=4x-1 \qquad \beta = 2 + \sqrt{3} \doteq 3.732 \qquad \beta' = 2 - \sqrt{3} \doteq 0.268$$
+\end{definition}
+
+\begin{remark}
+The number $\beta$ as defined in Definition \ref{def:beta} will represent the same value in the entire text.
+\end{remark}
+
+Being roots of the same quadratic equation, $\beta$ and $\beta'$ have some interesting properties that are often used in work with quasicrystals. 
+
+\begin{theorem}
+\label{the:betaProperties}
+Properties of the roots $\beta$ and $\beta'$.
+\begin{align*}
+\beta\beta' &= 1 &   
+\beta^{k+2} &= 4\cdot\beta^{k+1} - \beta^k & 
+\frac{1}{\beta} &= \beta' = 4 - \beta \\
+\beta + \beta' &= 4 &
+{\beta'}^{k+2} &= 4\cdot{\beta'}^{k+1} - {\beta'}^k &
+\frac{1}{\beta'} &= \beta = 4 - \beta'
+\end{align*}
+\end{theorem}
+
+\begin{definition} 
+Symbol $\ring$ denotes the smallest ring containing integers $\mathbb{Z}$ and the irrationality $\beta$. Since $\beta$ is quadratic the ring has the following simple form.
+$$\ring = \{ a + b\beta |a,b\in \mathbb{Z} \}$$
+\end{definition}
+
+\begin{remark}
+Similarly, ring $\mathbb{Z}[\beta']$ can be defined. According to the Theorem \ref{the:betaProperties} the two rings are equivalent: $\ring = \mathbb{Z}\left[\beta'\right]$.
+\end{remark}
+
+\subsection{One-dimensional quasicrystals}
+
+To define a quasicrystal one more definition is needed. Function connecting a space of the quasicrystal with a space of the acceptance set called window.
+
+\begin{definition}
+Function $':\ring\to\mathbb{Z}[\beta']$ is defined as $(a+b\beta)' = a+b\beta'$.
+\end{definition}
+\begin{remark}
+Notation is consistent with Definition \ref{def:beta}: $(\beta)'=\beta'$.
+\end{remark}
+
+\begin{definition}
+\label{def_oneDimension}
+Let $\Omega \subset \mathbb{R}$ be a bounded set with non-empty interior. Then \textbf{one-dimensional quasicrystal} with the window $\Omega$ is denoted by $\quasi{\Omega}$ and defined as:
+$$\quasi{\Omega} = \{ x\in \ring \,|\, x'\in \Omega\}$$
+\end{definition}
+
+\begin{remark}
+$\quasi{\Omega}$ where $\Omega \subset \mathbb{R}$ always denotes one-dimensional quasicrystal.
+\end{remark}
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=0.8]
+
+\coordinate (O) at (0,0);
+\coordinate (X) at (10,0);
+\coordinate (Y) at (0,6);
+\coordinate (marX) at (0.4, 0);
+\coordinate (marY) at (0, 0.4);
+\coordinate (marXm) at ($-1*(marX)$);
+\coordinate (marYm) at ($-1*(marY)$);
+
+\coordinate (x1) at (1,1);
+\coordinate (x2) at (3.732,0.2679);
+
+\coordinate (winy1) at (0,1.8);
+\coordinate (winy2) at (0,5.1);
+
+\coordinate (R) at (0.1,0.1);
+
+
+\clip($(Y)+(marY)+(marXm)$) rectangle ($(X)+(marX)+(marYm)$);
+
+% window
+\path [fill,opacity=0.2,thin] ($(winy1)+(marXm)$) -- ($(winy1)+(marX)+(X)$) -- ($(winy2)+(marX)+(X)$) -- ($(winy2)+(marXm)$) -- cycle;
+
+% grid
+\foreach \x in {-5,...,10}
+{
+	
+	\draw [-,thin] ($-10*(x1)+\x*(x2)$) -- ($10*(x1)+\x*(x2)$);
+	\draw [-,thin] ($-10*(x2)+\x*(x1)$) -- ($10*(x2)+\x*(x1)$);
+	
+}
+\foreach \x in {-5,...,10}
+{
+	\foreach \i in {0,...,20}
+	{
+		\filldraw ($-10*(x1)+\x*(x2) + \i*(x1)$) circle (0.04);
+	}
+}
+
+% axis
+\draw [-,ultra thick] ($(X)+(marX)$) -- ($(O) + (marXm)$);
+\draw [-,ultra thick] ($(Y)+(marY)$) -- ($(O) + (marYm)$);
+
+% nodes
+\draw [-,thick,dashed] ($(O) + -1*(3.732,0) + 4*(1,0)$)  -- ($(O) + -1*(x2) + 4*(x1)$);
+%\draw [-,thick,dashed] ($(O) + -1*(0,0.2679) + 4*(0,1)$) -- ($(O) + -1*(x2) + 4*(x1)$);
+\path [fill] ($(O) + -1*(3.732,0) + 4*(1,0) + -1*(R)$) rectangle ($(O) + -1*(3.732,0) + 4*(1,0) + (R)$);
+\draw [-,thick,dashed] ($(O) + -1*(3.732,0) + 5*(1,0)$)  -- ($(O) + -1*(x2) + 5*(x1)$);
+%\draw [-,thick,dashed] ($(O) + -1*(0,0.2679) + 5*(0,1)$) -- ($(O) + -1*(x2) + 5*(x1)$);
+\path [fill] ($(O) + -1*(3.732,0) + 5*(1,0) + -1*(R)$) rectangle ($(O) + -1*(3.732,0) + 5*(1,0) + (R)$);
+
+\draw [-,thick,dashed] ($(O) + 0*(3.732,0) + 2*(1,0)$)  -- ($(O) + 0*(x2) + 2*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 0*(0,0.2679) + 2*(0,1)$) -- ($(O) + 0*(x2) + 2*(x1)$);
+\path [fill] ($(O) + 0*(3.732,0) + 2*(1,0) + -1*(R)$) rectangle ($(O) + 0*(3.732,0) + 2*(1,0) + (R)$);
+\draw [-,thick,dashed] ($(O) + 0*(3.732,0) + 3*(1,0)$)  -- ($(O) + 0*(x2) + 3*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 0*(0,0.2679) + 3*(0,1)$) -- ($(O) + 0*(x2) + 3*(x1)$);
+\path [fill] ($(O) + 0*(3.732,0) + 3*(1,0) + -1*(R)$) rectangle ($(O) + 0*(3.732,0) + 3*(1,0) + (R)$);
+\draw [-,thick,dashed] ($(O) + 0*(3.732,0) + 4*(1,0)$)  -- ($(O) + 0*(x2) + 4*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 0*(0,0.2679) + 4*(0,1)$) -- ($(O) + 0*(x2) + 4*(x1)$);
+\path [fill] ($(O) + 0*(3.732,0) + 4*(1,0) + -1*(R)$) rectangle ($(O) + 0*(3.732,0) + 4*(1,0) + (R)$);
+\draw [-,thick,dashed] ($(O) + 0*(3.732,0) + 5*(1,0)$)  -- ($(O) + 0*(x2) + 5*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 0*(0,0.2679) + 5*(0,1)$) -- ($(O) + 0*(x2) + 5*(x1)$);
+\path [fill] ($(O) + 0*(3.732,0) + 5*(1,0) + -1*(R)$) rectangle ($(O) + 0*(3.732,0) + 5*(1,0) + (R)$);
+
+\draw [-,thick,dashed] ($(O) + 1*(3.732,0) + 2*(1,0)$)  -- ($(O) + 1*(x2) + 2*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 1*(0,0.2679) + 2*(0,1)$) -- ($(O) + 1*(x2) + 2*(x1)$);
+\path [fill] ($(O) + 1*(3.732,0) + 2*(1,0) + -1*(R)$) rectangle ($(O) + 1*(3.732,0) + 2*(1,0) + (R)$);
+\draw [-,thick,dashed] ($(O) + 1*(3.732,0) + 3*(1,0)$)  -- ($(O) + 1*(x2) + 3*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 1*(0,0.2679) + 3*(0,1)$) -- ($(O) + 1*(x2) + 3*(x1)$);
+\path [fill] ($(O) + 1*(3.732,0) + 3*(1,0) + -1*(R)$) rectangle ($(O) + 1*(3.732,0) + 3*(1,0) + (R)$);
+\draw [-,thick,dashed] ($(O) + 1*(3.732,0) + 4*(1,0)$)  -- ($(O) + 1*(x2) + 4*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 1*(0,0.2679) + 4*(0,1)$) -- ($(O) + 1*(x2) + 4*(x1)$);
+\path [fill] ($(O) + 1*(3.732,0) + 4*(1,0) + -1*(R)$) rectangle ($(O) + 1*(3.732,0) + 4*(1,0) + (R)$);
+
+\draw [-,thick,dashed] ($(O) + 2*(3.732,0) + 2*(1,0)$)  -- ($(O) + 2*(x2) + 2*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 2*(0,0.2679) + 2*(0,1)$) -- ($(O) + 2*(x2) + 2*(x1)$);
+\path [fill] ($(O) + 2*(3.732,0) + 2*(1,0) + -1*(R)$) rectangle ($(O) + 2*(3.732,0) + 2*(1,0) + (R)$);
+\draw [-,thick,dashed] ($(O) + 2*(3.732,0) + 3*(1,0)$)  -- ($(O) + 2*(x2) + 3*(x1)$);
+%\draw [-,thick,dashed] ($(O) + 2*(0,0.2679) + 3*(0,1)$) -- ($(O) + 2*(x2) + 3*(x1)$);
+\path [fill] ($(O) + 2*(3.732,0) + 3*(1,0) + -1*(R)$) rectangle ($(O) + 2*(3.732,0) + 3*(1,0) + (R)$);
+
+\node [above] at (X) {$x$};
+\node [right] at (Y) {$y$};
+
+\node [below right] at (winy1) {$c$};
+\draw [-,thick] ($(winy1) + -1*(0.1,0)$) -- ($(winy1) + (0.1,0)$);
+\node [above right] at (winy2) {$d$};
+\draw [-,thick] ($(winy2) + -1*(0.1,0)$) -- ($(winy2) + (0.1,0)$);
+\end{tikzpicture}
+\caption{Illustration of one-dimensional quasicrystal. Grid intersections are defined as a set $\{(\lambda,\lambda')|\lambda\in\ring\}$. There is a window $\Omega = [c,d)$ on the $y$ axis and finally the squares on the $x$ axis are points of the quasicrystal $\quasi{\Omega}$. }
+\label{fig:onedimensional}
+\end{figure}
+
+Some properties of one-dimensional quasicrystals are crucial for the algorithms used later.
+
+\begin{theorem} 
+\label{the:quasiProperties}
+Let $\Omega, \tilde{\Omega} \subset \RN$ and $\lambda\in\ring$.
+\begin{align*}
+\Omega \subset \tilde{\Omega} &\Rightarrow \quasi{\Omega} \subset \quasi{\tilde{\Omega}} & \quasi{\Omega} \cap \quasi{\tilde{\Omega}} &= \quasi{\Omega \cap \tilde{\Omega}} \\
+\quasi{\Omega + \lambda'} &= \quasi{\Omega} + \lambda & \quasi{\Omega} \cup \quasi{\tilde{\Omega}} &= \quasi{\Omega \cup \tilde{\Omega}} \\
+\quasi{\beta\Omega} &= \frac{1}{\beta}\quasi{\Omega} \\
+\end{align*}
+\end{theorem}
+
+\begin{remark}
+\label{rem:oneInterval}
+Further only left-closed right-open intervals will be analyzed as windows. That is justified by theorem \ref{the:quasiProperties} and following analysis.
+%
+\begin{multicols}{2}
+\noindent\begin{align*}
+\quasi{(c,d)} &= \left\{ 
+	\begin{array}{l l}
+	\quasi{[c,d)} & c \notin \ring\\
+	\quasi{[c,d)}\setminus\{c'\} & c \in \ring
+	\end{array} \right.\\
+\quasi{(c,d]} &= \quasi{(c,d)}\cap\quasi{[c,d]}
+\end{align*}
+\begin{align*}
+\quasi{[c,d]} &= \left\{ 
+	\begin{array}{l l}
+	\quasi{[c,d)} & d \notin \ring\\
+	\quasi{[c,d)}\cup\{d'\} & d \in \ring
+	\end{array} \right.
+\end{align*}
+\end{multicols}
+%
+\end{remark}
+
+\begin{theorem}
+\label{the:scale}
+Let $\Omega \subset \RN$ then $\forall k\in \mathbb{Z}: \quasi{\frac{1}{\beta^k}\Omega} = \beta^k\quasi{\Omega}$.
+\end{theorem}
+
+\begin{corollary}
+\label{cor:baseInterval}
+From remark \ref{rem:oneInterval} and theorem \ref{the:scale} follows that only windows $\Omega = [c,d)$ where $d-c\in\left( \frac{1}{\beta}, 1 \right]$ need to be analyzed. Such windows will be called \textbf{base windows}. Quasicrystals for all other windows can be acquired through the analysis of quasicrystals with base windows by scaling and operations from remark \ref{rem:oneInterval}.
+\end{corollary}
+
+\subsubsection{One-dimensional quasicrystal structure}%====================================================================================================================
+
+Figure \ref{fig:onedimensional} suggests that the one-dimensional quasicrystal is a sequence of points. This subsection presents an analysis of spacing and distribution of these points.
+
+\begin{definition}
+Strictly increasing sequence $(y_n^\Omega)_{n\in \mathbb{Z}}$ defined as $\left\{y_n^\Omega\,|\, n\in\mathbb{Z} \right\} = \quasi{\Omega}$ where $\Omega \subset \RN$ is called \textbf{sequence of quasicrystal $\quasi{\Omega}$}.
+\end{definition}
+
+\begin{theorem}
+\label{the:spaces:sum}
+Let $\Omega = [c,d)$ where $d-c \in \left[ \frac{1}{\beta}, 1 \right]$ then all possible distances between two immediately following points of sequence of quasicrystal $\quasi{[c,d)}$ $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in table \ref{table:spaces}.
+\begin{table}[h]
+\begin{center}
+\begin{tabular}{ccccccc}
+	\toprule
+		$\frac{1}{\beta}$	&	$\left( \frac{1}{\beta}, \frac{\beta - 2}{\beta} \right)$	&	$\frac{\beta-2}{\beta}$	&	$\left( \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta} \right)$	&	$\frac{\beta-1}{\beta}$	&	$\left( \frac{\beta-1}{\beta}, 1 \right)$	&	$1$\\
+	\midrule
+		$4\beta-1$ 	&	$4\beta-1$	&				&				&				&				&			 	\\ 
+		$3\beta-1$	&	$3\beta-1$	&	$3\beta-1$	&	$3\beta-1$	&				&				&			 	\\
+					&				&				&	$2\beta-1$	&	$2\beta-1$	&	$2\beta-1$	&				\\
+					&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		\\
+					&				&				&				&				&	$\beta-1$	&	$\beta-1$	\\
+	\bottomrule
+\end{tabular}
+\caption{All possible distances between two immediately following points of sequence of quasicrystal with window of given size.}
+\label{table:spaces}
+\end{center}
+\end{table}
+%
+\end{theorem}
+
+\begin{definition}
+\label{def:distancesNotation}
+Distances $y_{n+1}^\Omega-y_n^\Omega$ will be denoted: $A = 4\beta-1$, $B = 3\beta-1$, $C = 2\beta-1$, $D = \beta$ and $E = \beta-1$.
+\end{definition}
+
+\begin{definition}
+\label{def:steppingFunction}
+Function $f^\Omega: \Omega \to \Omega$ for $\Omega = [c,d)$ defined as
+
+\begin{align*}
+d-c \in \left( \frac{1}{\beta}, \frac{\beta - 2}{\beta} \right]:& \quad
+		f^\Omega(x) = \left\{ \begin{array}{l l}
+			x + (\beta)' 	& x\in [c,d-\frac{1}{\beta})\\[1.5mm]
+			x + (4\beta-1)' & x\in [d-\frac{1}{\beta},c+\frac{\beta - 3}{\beta})\\[1.5mm]
+			x + (3\beta-1)' & x\in [c+\frac{\beta - 3}{\beta},d)
+		\end{array} \right.
+\\
+d-c \in \left( \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta} \right]:& \quad
+		f^\Omega(x) = \left\{ \begin{array}{l l}
+			x + (\beta)' 	& x\in [c,d-\frac{1}{\beta})\\[1.5mm]
+			x + (3\beta-1)' & x\in [d-\frac{1}{\beta},c+\frac{\beta - 2}{\beta})\\[1.5mm]
+			x + (2\beta-1)' & x\in [c+\frac{\beta - 2}{\beta},d)
+		\end{array} \right.
+\\
+d-c \in \left( \frac{\beta-1}{\beta}, 1 \right]:& \quad
+		f^\Omega(x) = \left\{ \begin{array}{l l}
+			x + (\beta)' 	& x\in [c,d-\frac{1}{\beta})\\[1.5mm]
+			x + (2\beta-1)' & x\in [d-\frac{1}{\beta},c+\frac{\beta - 1}{\beta})\\[1.5mm]
+			x + (\beta-1)' & x\in [c+\frac{\beta - 1}{\beta},d)
+		\end{array} \right.
+\end{align*}
+%]
+is called \textbf{stepping function} of quasicrystal $\quasi{\Omega}$. 
+\end{definition}
+
+\begin{remark}
+Stepping function takes $(\cdot)'$ image of a point of quasicrystal and returns $(\cdot)'$ image of immediately following point.\\
+\end{remark}
+
+\begin{figure}
+\centering
+\fcapside
+{\caption{Graph of stepping function for quasicrystal $\quasi{\Omega}$ where $\Omega = [c,d),\, c=0,\, d=12-3\beta$. $C= 2\beta-1$, $D= \beta$ and $E= \beta-1$ (as in Definition \ref{def:distancesNotation}).}}
+{%
+\begin{tikzpicture}[scale=0.6]
+\draw [<->] (0,5.3) -- (0,0) -- (5.3,0);
+
+\draw [thick,*-o,shorten <=-3pt,shorten >=-3pt] (0,1.674682453) 				-- (3.325317548,5);
+\draw [thick,*-o,shorten <=-3pt,shorten >=-3pt] (3.325317548,0.4246824527)	-- (4.575317547,1.674682453);
+\draw [thick,*-o,shorten <=-3pt,shorten >=-3pt] (4.575317547,0) 				-- (5,0.4246824527);
+
+\draw [dotted] (0,0.4246824527) -- (5.3,0.4246824527);
+\draw [dotted] (0,1.674682453)  -- (5.3,1.674682453);
+\draw [dotted] (0,5) -- (5.3,5);
+
+\draw [dotted] (3.325317548,0) -- (3.325317548,5.3);
+\draw [dotted] (4.575317547,0) -- (4.575317547,5.3);
+\draw [dotted] (5,0) -- (5,5.3);
+
+\node [above left] at (3.325317548/2,3.3373412265) {$D$};
+\node [above left] at (3.9503175475,1.04968245285) {$C$};
+\node [above left] at (4.7876587735,0.4246824527/2) {$E$};
+
+\node [below left] at (0,0) {$0$};
+\node [below] at (5,0) {$d$};
+\node [left] at (0,5) {$d$};
+\end{tikzpicture}
+}
+\end{figure}
+
+Stepping function is valuable tool in theoretical quasicrystal analysis and has direct practical use in quasicrystal generation. Therefore the following theorem lists several key properties of this function.
+
+\begin{theorem}
+\label{def:stepingFunc}
+Let $\Omega \subset \RN$:
+\begin{itemize}
+\item $f^\Omega(\,(y_n^\Omega)'\,) = (y_{n+1}^\Omega)' \quad \forall n\in\mathbb{N}$
+\item $\left({f^\Omega}\right)^{-1}(\,(y_{n+1}^\Omega)'\,) = (y_{n}^\Omega)' \quad \forall n\in\mathbb{N}$
+\item $f^\Omega$ is piece-wise translation 
+\item Discontinuities  of $f^\Omega$ divide the window $\Omega$ to intervals. After preimages of points of one interval there is the same distance to the next point of the quasicrystal.
+\end{itemize}
+\end{theorem}
+
+\begin{definition}
+Discontinuities of stepping function of quasicrystal $\quasi{\Omega}$ are denoted as $a^\Omega$ and $b^\Omega$. Let $\Omega = [c,d)$
+\begin{align*}
+d-c \in \left( \frac{1}{\beta}, \frac{\beta - 2}{\beta} \right]:& \qquad
+		\begin{array}{l}
+			a^\Omega = d-\frac{1}{\beta}\\[1mm]
+			b^\Omega = c+\frac{\beta - 3}{\beta}
+		\end{array}
+\\
+d-c \in \left( \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta} \right]:& \qquad
+		\begin{array}{l}
+			a^\Omega = d-\frac{1}{\beta}\\[1mm]
+			b^\Omega = c+\frac{\beta - 2}{\beta}
+		\end{array}
+\\
+d-c \in \left( \frac{\beta-1}{\beta}, 1 \right]:& \qquad
+		\begin{array}{l}
+			a^\Omega = d-\frac{1}{\beta}\\[1mm]
+			b^\Omega = c+\frac{\beta - 1}{\beta}
+		\end{array}
+\end{align*}
+\end{definition}
+
+\begin{remark}
+Notation from previous definition will be often used to divide window $\Omega =  [c,d)$ where $d-c\in \left( \frac{1}{\beta}, 1\right]$ to three disjunct intervals. 
+$$\Omega = \left[c,a^\Omega\right)\cup\left[a^\Omega,b^\Omega\right)\cup\left[b^\Omega,d\right)$$
+For singular cases where $d-c\in \left\{ \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta}, 1 \right\}$, $a^\Omega = b^\Omega$ and the window is then divided only in to two intervals $\left[c,a^\Omega\right)\cup\left[a^\Omega,d\right)$.
+\end{remark}
+
+\begin{definition}
+Let $\Omega = [c,d)$. The word $\left(t_n^\Omega\right)_{n\in\mathbb{Z}}$ over the alphabet $\{A,B,C,D,E\}$ is called \textbf{word} of quasicrystal $\quasi{\Omega}$.
+\begin{align*}
+d-c \in \left( \frac{1}{\beta}, \frac{\beta - 2}{\beta} \right]:& \qquad
+		t_n^\Omega = \left\{ \begin{array}{l l}
+			D & y_{n+1}^\Omega - y_n^\Omega = \beta	\\[1.5mm]
+			A~& y_{n+1}^\Omega - y_n^\Omega = 4\beta-1\\[1.5mm]
+			B & y_{n+1}^\Omega - y_n^\Omega = 3\beta-1
+		\end{array} \right.
+\\
+d-c \in \left( \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta} \right]:& \qquad
+		t_n^\Omega = \left\{ \begin{array}{l l}
+			D & y_{n+1}^\Omega - y_n^\Omega = \beta	\\[1.5mm]
+			B & y_{n+1}^\Omega - y_n^\Omega = 3\beta-1\\[1.5mm]
+			C & y_{n+1}^\Omega - y_n^\Omega = 2\beta-1
+		\end{array} \right.
+\\
+d-c \in \left( \frac{\beta-1}{\beta}, 1 \right]:& \qquad
+		t_n^\Omega = \left\{ \begin{array}{l l}
+			D & y_{n+1}^\Omega - y_n^\Omega = \beta	\\[1.5mm]
+			C & y_{n+1}^\Omega - y_n^\Omega = 2\beta-1\\[1.5mm]
+			E & y_{n+1}^\Omega - y_n^\Omega = \beta-1
+		\end{array} \right.
+\end{align*}
+\end{definition}
+
+\begin{remark}
+Word of a quasicrystal describes the distribution of points of the quasicrystal.
+\end{remark}
+
+\begin{definition}
+Function $\mathcal{C}_\ell: \mathbb{N} \to \mathbb{N}$, that assigns to $n\in\mathbb{N}$ number of different sub-words of length $n$ in the word of quasicrystal $\left(t_n^\Omega\right)_{n\in\mathbb{Z}}$ where $|\Omega| = \ell$ is called \textbf{complexity} of quasicrystal.
+\end{definition}
+
+\begin{definition}
+Set $\mathcal{L}_\ell(n)$ containing all different sub-words of length $n$ in the word of quasicrystal $\left(t_n^\Omega\right)_{n\in\mathbb{Z}}$ where $|\Omega| = \ell$ is called \textbf{language} of quasicrystal.
+\end{definition}
+
+\begin{remark}
+Please note that complexity and language of quasicrystal are defined dependent only on the length of the window. Correctness of such Definition is verified in the following theorem.
+\end{remark}
+
+\begin{theorem}
+\label{the:spaces:iteration}
+${(f^\Omega)}^n$ denotes the $n$-th iteration of stepping function of quasicrystal $\quasi{\Omega}$. Set $D_n = \{z_1 < z_2 < \dotsb < z_{m-1}\}$ contains all discontinuities of ${(f^\Omega)}^n$, $z_0 = c$ and $z_m = d$.\\
+Then $(\forall i \in \widehat{m}\cup\{0\})(\forall {\left(y_l^\Omega\right)}' ,{\left(y_k^\Omega\right)}' \in (z_i, z_{i+1}))$ are words $t_l^\Omega t_{l+1}^\Omega \dotso t_{l+n-1}^\Omega$ and $t_k^\Omega t_{k+1}^\Omega \dotso t_{k+n-1}^\Omega$ the same.
+\end{theorem}
+
+\begin{remark}
+In other words theorem \ref{the:spaces:iteration} states that discontinuities of $n$-th iteration of stepping function divide window into intervals of images of points of quasicrystal after which the same sequence of distances of length $n$ follow.
+\end{remark}
+
+\begin{theorem}
+\label{the:complexity}
+Let $\Omega = [c,c+\ell)$.\\
+If $\ell \notin \ring$ then $\mathcal{C}_{\ell}(n) = 2n+1,\, \forall n\in\mathbb{N}$. \\
+If $\ell \in \ring$ then $\exists^1 k \in \mathbb{N}$ such that $\left({(f^\Omega)}^{k}(a^\Omega) = b^\Omega\right)$ or $\left({(f^\Omega)}^{k+1}(b^\Omega) = a^\Omega\right)$ and 
+$$\mathcal{C}_{\ell}(n) = \left\{
+	\begin{array}{l l}
+		2n+1	&	\forall n\leq k \\
+		n+k+1	&	\forall n > k
+	\end{array}
+	\right.
+$$
+\end{theorem}
+
+\begin{theorem}
+\label{the:sameSpaces}
+Let $\Omega = [c,c+\ell)$.
+$$\mathcal{D}_n = \left\{ \ell\,\left|\, \ell\in \left(\frac{1}{\beta},1\right] \,\wedge\, \mathcal{C}_\ell(n) < 2n+1 \right.\right\}$$
+Then elements of $\mathcal{D}_n$ divide interval $I \vcentcolon= \left(\frac{1}{\beta},1\right]$ into finite amount of disjoint sub-intervals $(I_m)_{m\in\hat{N}}$ such that $\mathcal{L}_{\ell_1}(n) = \mathcal{L}_{\ell_2}(n)$ $\forall \ell_1, \ell_2 \in I_m,\, \forall m\in\hat{N}$.
+\end{theorem}
+
+\begin{remark}
+Please note that $\mathcal{D}_n$ from theorem \ref{the:sameSpaces} divides base windows into sets of same language whereas $D_n$ from theorem \ref{the:spaces:iteration} divides specific window into intervals by the sequences of points that follow.
+\end{remark}
+
+% ==============================================================================================================================================
+
+\subsection*{Delone set and voronoi tessellation}
+
+Subsection provides definitions of delone set, covering radius and voronoi tessellation.
+
+\begin{definition}
+Let $P\subset \mathbb{R}^n$ and $\exists R>0, \exists r>0$:
+$$\forall x,y\in P,\, x\neq y: r\leq \|x-y\|$$
+$$\forall z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R$$
+Then $P$ is called \textbf{delone} set.\\
+For each delone set $P$ \textbf{covering radius} is defined as:
+$$R_c = \inf\{R>0\,|\, z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R\}$$
+\end{definition}
+
+\begin{definition}
+
+Let $P\subset \mathbb{R}^n$, $P$ is a discrete set and $x\in P$. Then
+$$V(x) = \left\{ y \in \mathbb{R}^n \,|\, \forall z \in P, z\neq x:\, \|y-x\|<\|y-z\| \right\}$$
+is called \textbf{voronoi tile} (polygon) of $x$ on $P$.
+\end{definition}
+
+\begin{theorem}
+\label{the:radiusLimit}
+Let $P\subset \mathbb{R}^n$ is a delone set and $R_c$ it's covering radius. For any $x\in P$:
+$$N_x = \{z\in P\,|\, z\neq x \wedge \|z-x\|\leq 2R_c\}$$
+Then voronoi tile of $x$ on $P$ is
+$$V(x) = \bigcap_{z\in \boldsymbol{N}} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<\|y-z\| \right\}$$
+\end{theorem}
+
+\subsection{Two-dimensional quasicrystals}%=======================================================================================================================
+\label{sec:twoDimension}
+In the following section two-dimensional quasicrystal is defined and analyzed. Thanks to the Theorem \ref{the:twoToOne} analysis of one-dimensional quasicrystals can be in some way applied to two-dimensional quasicrystals as well. 
+\begin{definition}
+Vectors $\alpha_1$, $\alpha_2$, $\alpha_3$ and the set $M$ denote the following.
+$$\alpha_1 = \left( 1,0 \right) \quad \alpha_2 = \left( \frac{2-\beta}{2}, \frac{1}{2} \right) \quad \alpha_3 = \left( \frac{\beta-2}{2}, \frac{1}{2} \right)$$
+$$M = \ring\alpha_1 + \ring\alpha_2$$
+\end{definition}
+
+\begin{remark}
+The vectors and the set from previous definition are key to two-dimensional quasicrystal definition. The set $M$ is used as two-dimensional equivalent to $\ring$ from on-dimensional quasicrystal. Function from the following definition is used as two-dimensional equivalent to $'$.
+\end{remark}
+
+\begin{definition}
+\label{def:starFunction}
+Function $\ast: M \to M$ is called \textbf{star} function:
+$$v^\ast = (a\alpha_1 + b\alpha_2)^\ast = a'\alpha_1 + b'\alpha_3 \;\forall a,b\in\ring$$
+\end{definition}
+
+\begin{remark}
+Simple consequence of the Theorem \ref{def:starFunction} is $\alpha_1^\ast = \alpha_1$ and $\alpha_2^\ast = \alpha_3$.
+\end{remark}
+
+\begin{definition}
+Let $\Omega \subset \mathbb{R}^2$ be bounded set with nonempty interior. Then \textbf{two-dimensional quasicrystal} with the window $\Omega$ is defined as:
+$$\quasi{\Omega} = \left\{ x \in M\,|\,x^\ast \in \Omega \right\}$$
+\end{definition}
+
+\begin{remark}
+$\quasi{\Omega}$ where $\Omega \subset \mathbb{R}^2$ always denotes two-dimensional quasicrystal.
+\end{remark}
+
+To analyze two-dimensional quasicrystals again only windows of certain shape will be considered. That is sufficient again because of the Theorem \ref{the:quasiProperties}. Chosen window shape is parallelogram. 
+
+\begin{theorem}
+\label{the:twoToOne}
+Let $I_1 = [c_1,d_1)$ and $I_2 = [c_2,d_2)$, then for parallelogram $\Omega = I_1\alpha_1^\ast + I_2\alpha_2^\ast$ and quasicrystal $\quasi{\Omega}$ follows: 
+$$\quasi{\Omega} = \quasi{I_1}\alpha_1 + \quasi{I_2}\alpha_2$$
+\end{theorem}
+
+\begin{remark}
+Note in previous theorem that while $\Omega \subset \RN^2$ and so $\quasi{\Omega}$ is two-dimensional quasicrystal, $I_1, I_2 \subset \RN$ and so $\quasi{I_1}$ and $\quasi{I_2}$ are one-dimensional quasicrystals.
+\end{remark}
+
+From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne} follows that two-dimensional quasicrystals are delone sets.  
+
+To analyze distribution of the points of two-dimensional quasicrystal voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with parallelogram window. 
+
+\begin{itemize}
+\item first item in a list
+\item second item with yellow color
+\end{itemize}
+
+\end{document}

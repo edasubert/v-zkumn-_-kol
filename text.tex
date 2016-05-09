@@ -1,0 +1,278 @@
+\documentclass[a4paper,11pt,twoside]{article}
+
+\usepackage[utf8]{inputenc}
+\usepackage[IL2]{fontenc}
+
+\usepackage[english]{babel}
+
+\PassOptionsToPackage{table}{xcolor}
+
+\usepackage{amsmath}
+\usepackage{amsthm}
+\usepackage{mathtools}
+\usepackage{amsfonts}
+%\usepackage{fullpage}
+%\usepackage{showframe}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{dcolumn}
+\usepackage{tikz}
+\usetikzlibrary{shapes.geometric, arrows, calc, intersections}
+\usepackage{subfiles}
+\usepackage[ruled,czech]{algorithm2e}
+\usepackage[figuresright]{rotating}
+\usepackage[table]{xcolor}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{geometry}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{multicol}
+
+
+\usepackage[capbesideposition=inside,facing=yes,capbesidesep=quad]{floatrow}
+\usepackage[maxfloats=25]{morefloats}
+
+\usepackage{hyperref}
+
+
+
+% Theorem Styles
+\newtheorem{theorem}{Theorem}[section]
+\newtheorem{lemma}[theorem]{Lemma}
+\newtheorem{proposition}[theorem]{Proposition}
+\newtheorem{corollary}[theorem]{Corollary}
+% Definition Styles
+\theoremstyle{definition}
+\newtheorem{definition}[theorem]{Definition}
+\newtheorem{example}[theorem]{Example}
+\theoremstyle{remark}
+\newtheorem{remark}{Remark}
+\newtheorem*{remarkn}{Remark}
+
+\newcommand{\ring}{\mathbb{Z}\left[\beta\right]}
+\newcommand{\quasi}[1]{\Sigma\left(#1\right)}
+\newcommand{\RN}{\mathbb{R}}
+\newcommand{\ZN}{\mathbb{Z}}
+\newcommand{\NN}{\mathbb{N}}
+\newcolumntype{d}[1]{ D{:}{:}{-1} }
+
+\begin{document}
+
+\thispagestyle{empty}
+
+\begin{center}
+
+{\Large ČESKÉ VYSOKÉ UČENÍ TECHNICKÉ V~PRAZE} \\[3.5mm]
+{\Large Fakulta jaderná a fyzikálně inženýrská}
+
+\vspace{\stretch{1}}
+
+{\Huge\textbf{VÝZKUMNÝ ÚKOL}}
+
+\vspace{\stretch{1}}
+
+{\Large \hspace*{1cm} 2016 \hfill Eduard Šubert \hspace*{1cm}}
+
+\end{center}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% TITULNÍ STRANA PRÁCE
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+
+\thispagestyle{empty}
+
+\begin{center}
+
+{\Large ČESKÉ VYSOKÉ UČENÍ TECHNICKÉ V~PRAZE} \\[3.5mm]
+{\Large Fakulta jaderná a fyzikálně inženýrská} \\[3.5mm]
+{\Large Katedra matematiky}
+
+\vspace{\stretch{0.75}}
+
+{\Large BAKALÁŘSKÁ PRÁCE}
+
+\vspace{\stretch{0.5}}
+
+{\LARGE
+\textbf{Voronoiova dláždění a Cut-and-Project množiny}
+\par}
+
+\vspace{1cm}
+
+{\LARGE
+\textbf{Voronoi Tiling and Cut-and-Project Sets}
+\par}
+
+\vspace{\stretch{1.25}}
+
+\end{center}
+
+\begin{tabular}{ll} 
+{\Large Vypracoval:} & {\Large Eduard Šubert} \\[1mm]
+{\Large \v{S}kolitel:} & {\Large Ing. Petr Ambrož, Ph.D.} \\[2mm]
+{\Large Akademický rok:}     & {\Large 2013/2014}
+\end{tabular}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ZADÁNÍ PRÁCE
+
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+
+\thispagestyle{empty}
+
+\noindent
+{\Large
+Na toto místo přijde svázat \textbf{zadání diplomové práce}!\\
+V~jednom z~výtisků musí být \textbf{originál} zadání, v~ostatních kopie.\par}
+\newpage
+prázdná strana pro zadání
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% ČESTNÉ PROHLÁŠENÍ
+
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+
+\thispagestyle{empty}
+
+\vspace*{\stretch{1}}
+
+\noindent{\bf Čestné prohlášení}
+
+\vspace{0.5cm}
+
+Prohlašuji na tomto místě, že jsem předloženou práci vypracoval samostatně 
+a že jsem uvedl veškerou použitou literaturu.
+
+\vspace{1.5cm}
+
+\noindent
+\begin{minipage}[b]{5cm}
+V~Praze dne \today
+\end{minipage}
+\hfill
+\begin{minipage}[t]{5cm}
+\begin{center}
+\dotfill\\
+Eduard Šubert
+\end{center}
+\end{minipage}
+
+\vspace*{2cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% PODĚKOVÁNÍ
+
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+
+\thispagestyle{empty}
+
+\vspace*{\stretch{1}}
+
+Děkuji Ing. Petrovi Ambrožovi, Ph.D. za příkladné vedení mé bakalářské práce a za podnětné návrhy. Také děkuji doc. Ing. Zuzaně Masákové, Ph.D. ze rady v teoretické části práce.
+
+\vspace*{2cm}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% CZ/EN ABSTRAKTY A KLÍČOVÁ SLOVA
+
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+
+\thispagestyle{empty}
+
+{
+\setlength{\parindent}{0pt}
+
+\textit{Název práce:}
+\textbf{Voronoiova dláždění a Cut-and-Project množiny} \\
+
+\textit{Autor:} Eduard Šubert \\
+
+\textit{Obor:} Inženýrská informatika \\
+
+\textit{Zaměření:} Softwarové inženýrství a matematická informatika \\
+
+\textit{Druh práce:} Bakalářská práce \\
+
+\textit{Vedoucí práce:}  Ing. Petr Ambrož Ph.D., Katedra matematiky, FJFI ČVUT v~Praze \\
+
+\textit{Abstrakt:} 
+Práce se zabývá kvazikrystaly definovanými iracionalitou $2+\sqrt{3}$. Jsou rozebrány jednorozměrné kvazikrystaly především s okny ve tvaru $(c,d]$, ale uvádíme metody, jak výsledky zobecnit na libovolné okno. Dále poznatky aplikujeme na dvourozměrné kvazikrystaly a analyzujeme jejich strukturu pomocí Voronoiova okolí. Na závěr uvádíme všechny možné tvary Voronoiových okolí, které se vyskytují na studovaných kvazikrystalech. \\
+
+\vspace{1.5cm}
+
+\textit{Title:}
+\textbf{Voronoi Tiling and Cut-and-Project Sets} \\
+
+\textit{Author:} Eduard Šubert\\
+
+\textit{Abstract:} 
+Main focus of the thesis are quasicrystals defined by irrationality $2+\sqrt{3}$. One dimensional case is analysed primarily for windows as intervals $(c,d]$, however methods for generalization are presented. Next foundings are applied to Two dimensional case and the structure is investigated with the aid of Voronoi  tessellation. In conclusion all different shapes of observed Voronoi tiles are listed.\\
+
+}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%% Konec uvodnich stran
+
+\clearpage
+\thispagestyle{empty}
+\cleardoublepage
+\thispagestyle{empty}
+
+\tableofcontents
+
+\clearpage
+%\thispagestyle{empty}
+%\cleardoublepage
+
+\section*{Úvod}
+V polovině minulého století byly objeveny slitiny s~difrakčními obrazy, které neměly krystalografickou symetrii \cite{metallic}. Rychle byl zahájen experimentální i teoretický výzkum takových struktur. Díky zdánlivé podobnosti s~krystaly vznikl název kvazikrystal.
+
+Dnes bylo již o~kvazikrystalech, jako o~matematické struktuře, odvozeno a dokázáno mnoho tvrzení. Většina prací se zabývá kvazikrystaly definovanými pomocí iracionální konstanty $\tau = \frac{1+\sqrt{5}}{2}$ známější jako zlatý řez. V~této práci budeme studovat kvazikrystaly definované pomocí iracionality $2+\sqrt{3}$.
+
+V~sekci \ref{sec:oneDimension} definujeme jednorozměrné kvazikrystaly a analyzujeme jejich strukturu. Sekce \ref{sec:oneDimensionAlg} shrnuje algoritmy požité při analýze jednorozměrných kvazikrystalů. V~sekci \ref{sec:twoDimension} definujeme dvourozměrné kvazikrystaly a ukážeme jejich souvislost s~jednorozměrnými. Sekce \ref{sec:graphics} shrnuje nabyté poznatky grafickou formou.
+
+%\newpage
+%\subfile{base}
+%%
+%\newpage
+%\subfile{newOneDimension}
+%%
+%\newpage
+%\subfile{newOneDimensionAlgorithm}
+%%
+%\newpage
+%\subfile{twoDimension}
+
+%\newpage
+%\subfile{graphics}
+
+\newpage
+\restoregeometry
+\section*{Závěr}
+Výsledkem této práce je především analýza různých Voronoiových okolí, které se vyskytují na kvazikrystalech definovaných pomocí iracionality $\beta = 2+\sqrt{3}$. Tuto analýzu jsme zatím provedli pouze pro speciální případ kosočtvercového okna. Nicméně nabyté znalosti jsou velmi užitečné i pro analýzu kvazitrystalů s obecnými okny. 
+
+V průběhu celé práce vznikla řada krátkých programů, které generovaly úseky slov kvazikrystalu, hledaly singulární body a nakonec i generovaly uvedené obrázky. Všechny zdrojové kódy jsou k nalezení na adrese:\\
+\url{http://github.com/edasubert/quasicrystal}\\
+Zde uvádím seznam programů s krátkým popisem:
+\begin{description}
+\item[betaSet{.}cpp] Popis třídy \texttt{betaSet}, která poskytuje číselný typ $\ring$.
+\item[geometricObject{.}h] Třídy pro geometrické útvary jako bod, množina bodů nebo Voronoiovo okolí.
+\item[generate{.}cpp] Funkce pro práci s jednorozměrnými kvazikrystaly
+\item[diagramMachine2{.}cpp] Generátor dvourozměrných kvazikrystalů.
+\item[finite{.}cpp] Generátor množných podslov dané délky (množiny $\mathcal{L}_\ell(n)$).
+\item[generateTile{.}cpp] Generátor všech různých Voronoiových okolí.
+\end{description}
+
+%\newpage
+%\subfile{bibliografie}
+\end{document}

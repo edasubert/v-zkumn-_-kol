@@ -1,0 +1,66 @@
+\documentclass[text.tex]{subfiles}
+
+\begin{document}
+
+\section{Division of window}%========================================================================================
+In this section we describe the algorithm to divide one-dimensional window to parts by the same corresponding words. That is vital for two-dimensional quasicrystal analysis.
+
+
+\begin{figure}[h]
+\centering
+\caption{Graph of stepping function for quasicrystal $\quasi{\Omega}$ where $\Omega = [c,d),\, c=0,\, d=12-3\beta$. $C= 2\beta-1$, $D= \beta$ and $E= \beta-1$.}
+\label{img:steppingFunction}
+\begin{tikzpicture}[scale=1.2]
+\draw [<->] (0,5.3) -- (0,0) -- (5.3,0);
+
+\draw [thick,*-o,shorten <=-3pt,shorten >=-3pt] (0,1.674682453) 				-- (3.325317548,5);
+\draw [thick,*-o,shorten <=-3pt,shorten >=-3pt] (3.325317548,0.4246824527)	-- (4.575317547,1.674682453);
+\draw [thick,*-o,shorten <=-3pt,shorten >=-3pt] (4.575317547,0) 				-- (5,0.4246824527);
+
+\draw [dotted] (0,0.4246824527) -- (5.3,0.4246824527);
+\draw [dotted] (0,1.674682453)  -- (5.3,1.674682453);
+\draw [dotted] (0,5) -- (5.3,5);
+
+\draw [dotted] (3.325317548,0) -- (3.325317548,5.3);
+\draw [dotted] (4.575317547,0) -- (4.575317547,5.3);
+\draw [dotted] (5,0) -- (5,5.3);
+
+\node [above left] at (3.325317548/2,3.3373412265) {$D$};
+\node [above left] at (3.9503175475,1.04968245285) {$C$};
+\node [above left] at (4.7876587735,0.4246824527/2) {$E$};
+
+\node [below left] at (0,0) {$0$};
+\node [below] at (5,0) {$d$};
+\node [left] at (0,5) {$d$};
+\end{tikzpicture}
+\end{figure}
+
+The algorithm uses the stepping function of a quasicrystal. As is apparent from Figure \ref{img:steppingFunction} and Theorem \ref{the:ffff} DOPLNIT, stepping function is piece wise linear and after points of quasicrystal corresponding to one linear segment follows the same distance to the next point of the quasicrystal. Alternatively all the points of the sequence of the quasicrystal $y_n$ whose images $y_n'$ are in a single segment of linearity, have the same corresponding letter in the word of the quasicrystal. That is precisely what the algorithm uses. 
+
+First only non-singular windows are considered.
+
+\paragraph{Algorithm definition}
+Algorithm receives as an input an interval $\Omega = [c,d)$ representing the window of the quasicrystal and $n\in\NN$ representing the desired length of the words.
+
+As an output algorithm provides the division of $\Omega$ into disjunt intervals $[\omega_0,\omega_1)$, $[\omega_1,\omega_2), \dots, [\omega_{m-1},\omega_m)$ such that $\omega_0 = c$ and $\omega_m = d$.
+$$\left(\forall y_j^\Omega,y_k^\Omega\in\left(y_n^\Omega\right)_{n\in\ZN} \right)\left(\forall i\in\widehat{m-1}\right): \left(\left({y_j^\Omega}\right)',\left({y_k^\Omega}\right)' \in [\omega_i,\omega_{i+1})\right) \Rightarrow \left(\left(t_n^\Omega\right)_j^{j+n} = \left(t_n^\Omega\right)_k^{k+n}\right)$$
+
+The division is acquired by recursion. 
+
+For $n=1$ is the division already known.
+$$m=3, \omega_1 = a^\Omega, \omega_2 = b^\Omega$$
+
+For $n>1$ is the division found from the division for $n-1$.
+Intervals 
+$[\omega_0^{n-1},\omega_1^{n-1})$, $[\omega_1^{n-1},\omega_2^{n-1}), \dots, [\omega_{m-1}^{k-1},\omega_{k}^{n-1})$ denote the division for $n-1$.
+
+For each interval $[\omega_i^{n-1},\omega_{i+1}^{n-1})$ the stepping function image is evaluated. 
+$$f^\Omega\left([\omega_i^{n-1},\omega_{i+1}^{n-1})\right) = [f^\Omega(\omega_i^{n-1}),f^\Omega(\omega_{i+1}^{n-1}))$$
+Then the image is divided by the points $a^\Omega$ and $b^\Omega$. If one or both of these points are inside the image, it gets divided into two or three disjunct intervals. 
+
+After all intervals for $i\in \widehat{k-1}$ are processed, all images or their divisions are sorted and denoted $[\omega_0,\omega_1), [\omega_1,\omega_2), \dots, [\omega_{m-1},\omega_m)$.
+
+It may also be desirable to not only acquire the division of the window by the same words, but to also acquire the words themselves. That is done by a simple modification of the described algorithm. Each interval is marked with the corresponding letter $A$, $B$, $C$, $D$ or $E$ at the beginning of the recursion. While dividing the image of the interval by the points $a^\Omega$ and/or $b^\Omega$, the mark is appended by an appropriate letter.
+
+
+\end{document}

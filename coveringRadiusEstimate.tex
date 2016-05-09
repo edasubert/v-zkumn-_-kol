@@ -1,0 +1,17 @@
+\documentclass[text.tex]{subfiles}
+
+\begin{document}
+
+\section{Estimate of covering radius}
+
+For further analysis covering radius of the quasicrystal must be evaluated. 
+Precise value is however not necessary, upper bound estimate is sufficient. 
+Estimate of the covering radius is used to limit the amount of the points of the quasicrystal needed to be included in the creation of a voronoi polygon, as in Theorem DOPLNIT. 
+
+The estimate is derived from impossible quasicrystal with only the largest distances between points (largest for the given window). Such quasicrystal has, for given window, certainly larger covering radius than any other. 
+
+The estimate is then evaluated as the radius of a circumscribed circle or circumradius of the triangle with vertices $(0,0)$, $(-1,0)$ and $\left(\frac{2-\beta}{2},\frac{1}{2}\right)$, as in Figure DOPLNIT. 
+
+$$R = \frac{a}{2sin(\alpha)} = \frac{1}{2\left(\frac{1+\sqrt{3}}{2\sqrt{2}}\right)} = \frac{\sqrt{2}(\sqrt{3}-1)}{2} < \frac{(32\beta-118)(\beta-3)}{2} = 161-43\beta$$
+
+\end{document}
