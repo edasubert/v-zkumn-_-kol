@@ -1,0 +1,86 @@
+\documentclass[text.tex]{subfiles}
+
+\begin{document}
+
+\subsection*{Delone set and voronoi tessellation}
+
+Subsection provides the definitions of a delone set, a covering radius and a voronoi tessellation.
+
+\begin{definition}
+\label{def:delone}
+Let $P\subset \mathbb{R}^n$ and $\exists R>0, \exists r>0$:
+$$\forall x,y\in P,\, x\neq y: r\leq \|x-y\|$$
+$$\forall z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R$$
+Then $P$ is called \textbf{delone} set.\\
+For each delone set $P$ \textbf{covering radius} is defined as:
+$$R_c = \inf\{R>0\,|\, z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R\}$$
+\end{definition}
+
+\begin{definition}
+Let $P\subset \mathbb{R}^n$, $P$ is a discrete set and $x\in P$. Then
+$$V(x) = \left\{ y \in \mathbb{R}^n \,|\, \forall z \in P, z\neq x:\, \|y-x\|<\|y-z\| \right\}$$
+is called \textbf{voronoi tile} (polygon) of $x$ on $P$.
+\end{definition}
+
+\begin{theorem}
+\label{the:radiusLimit}
+Let $P\subset \mathbb{R}^n$ is a delone set and $R_c$ it's covering radius. For any $x\in P$:
+$$N_x = \{z\in P\,|\, z\neq x \wedge \|z-x\|\leq 2R_c\}$$
+Then voronoi tile of $x$ on $P$ is
+$$V(x) = \bigcap_{z\in \boldsymbol{N}} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<\|y-z\| \right\}$$
+\end{theorem}
+
+\subsection{Two-dimensional quasicrystals}%=======================================================================================================================
+\label{sec:twoDimension}
+In the following section two-dimensional quasicrystal is defined and analyzed. Thanks to the Theorem \ref{the:twoToOne} analysis of one-dimensional quasicrystals can be in some way applied to two-dimensional quasicrystals as well. 
+\begin{definition}
+Vectors $\alpha_1$, $\alpha_2$, $\alpha_3$ and the set $M$ denote the following.
+$$\alpha_1 = \left( 1,0 \right) \quad \alpha_2 = \left( \frac{2-\beta}{2}, \frac{1}{2} \right) \quad \alpha_3 = \left( \frac{\beta-2}{2}, \frac{1}{2} \right)$$
+$$M = \ring\alpha_1 + \ring\alpha_2$$
+\end{definition}
+
+\begin{remark}
+The vectors and the set from previous definition are key to two-dimensional quasicrystal definition. The set $M$ is used as two-dimensional equivalent to $\ring$ from on-dimensional quasicrystal. Function from the following definition is used as two-dimensional equivalent to $'$.
+\end{remark}
+
+\begin{definition}
+\label{def:starFunction}
+Function $\ast: M \to M$ is called \textbf{star} function:
+$$v^\ast = (a\alpha_1 + b\alpha_2)^\ast = a'\alpha_1 + b'\alpha_3 \;\forall a,b\in\ring$$
+\end{definition}
+
+\begin{remark}
+Simple consequence of the Theorem \ref{def:starFunction} is $\alpha_1^\ast = \alpha_1$ and $\alpha_2^\ast = \alpha_3$.
+\end{remark}
+
+\begin{definition}
+Let $\Omega \subset \mathbb{R}^2$ be bounded set with nonempty interior. Then \textbf{two-dimensional quasicrystal} with the window $\Omega$ is defined as:
+$$\quasi{\Omega} = \left\{ x \in M\,|\,x^\ast \in \Omega \right\}$$
+\end{definition}
+
+\begin{remark}
+$\quasi{\Omega}$ where $\Omega \subset \mathbb{R}^2$ always denotes two-dimensional quasicrystal.
+\end{remark}
+
+To analyze two-dimensional quasicrystals again only windows of certain shape will be considered. That is sufficient again because of the Theorem \ref{the:quasiProperties}. Chosen window shape is parallelogram. 
+
+\begin{theorem}
+\label{the:twoToOne}
+Let $I_1 = [c_1,d_1)$ and $I_2 = [c_2,d_2)$, then for parallelogram $\Omega = I_1\alpha_1^\ast + I_2\alpha_2^\ast$ and quasicrystal $\quasi{\Omega}$ follows: 
+$$\quasi{\Omega} = \quasi{I_1}\alpha_1 + \quasi{I_2}\alpha_2$$
+\end{theorem}
+
+\begin{remark}
+Note in previous theorem that while $\Omega \subset \RN^2$ and so $\quasi{\Omega}$ is two-dimensional quasicrystal, $I_1, I_2 \subset \RN$ and so $\quasi{I_1}$ and $\quasi{I_2}$ are one-dimensional quasicrystals.
+\end{remark}
+
+From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne} follows that two-dimensional quasicrystals are delone sets.  
+
+To analyze distribution of the points of two-dimensional quasicrystal voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with parallelogram window. 
+
+\begin{itemize}
+\item first item in a list
+\item second item with yellow color
+\end{itemize}
+
+\end{document}

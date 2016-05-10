@@ -62,5 +62,57 @@ After all intervals for $i\in \widehat{k-1}$ are processed, all images or their 
 
 It may also be desirable to not only acquire the division of the window by the same words, but to also acquire the words themselves. That is done by a simple modification of the described algorithm. Each interval is marked with the corresponding letter $A$, $B$, $C$, $D$ or $E$ at the beginning of the recursion. While dividing the image of the interval by the points $a^\Omega$ and/or $b^\Omega$, the mark is appended by an appropriate letter.
 
+\begin{figure}
+\begin{center}
+\begin{tikzpicture}
+
+\coordinate (xc) at (0,0);
+\coordinate (xa) at (15*0.3301270191,0);
+\coordinate (xb) at (15*0.4641016151,0);
+\coordinate (xd) at (15*0.5980762115,0);
+
+\node [above] at (xc) {$c$};
+\node [above] at (xa) {$a^\Omega$};
+\node [above] at (xb) {$b^\Omega$};
+\node [above] at (xd) {$d$};
+
+% guide lines
+\draw [dashed,ultra thin, opacity=0.6] (xc) -- (xa) -- (15*0.598076,-1) -- (15*0.267949,-1) -- cycle;
+\draw [dashed,ultra thin, opacity=0.6] ($(xc)+(0,-1)$) -- ($(xa)+(0,-1)$) -- (15*0.598076,-2) -- (15*0.267949,-2) -- cycle;
+\draw [dashed,ultra thin, opacity=0.6] ($(xc)+(0,-2)$) -- ($(xa)+(0,-2)$) -- (15*0.598076,-3) -- (15*0.267949,-3) -- cycle;
+\draw [dashed,ultra thin, opacity=0.6] ($(xc)+(0,-3)$) -- ($(xa)+(0,-3)$) -- (15*0.598076,-4) -- (15*0.267949,-4) -- cycle;
+
+\draw [dashed,ultra thin, opacity=0.6] (15*0.330127, 0) -- (15*0.464102, 0) -- (15*0.267949,-1) -- (15*0.133975,-1) -- cycle;
+\draw [dashed,ultra thin, opacity=0.6] (15*0.330127,-1) -- (15*0.464102,-1) -- (15*0.267949,-2) -- (15*0.133975,-2) -- cycle;
+\draw [dashed,ultra thin, opacity=0.6] (15*0.330127,-2) -- (15*0.464102,-2) -- (15*0.267949,-3) -- (15*0.133975,-3) -- cycle;
+\draw [dashed,ultra thin, opacity=0.6] (15*0.330127,-3) -- (15*0.464102,-3) -- (15*0.267949,-4) -- (15*0.133975,-4) -- cycle;
+
+\draw [dashed,ultra thin,opacity=0.6] (15*0.464102, 0) -- (15*0.598076, 0) -- (15*0.133975,-1) -- (0,-1) -- cycle;
+\draw [dashed,ultra thin,opacity=0.6] (15*0.464102,-1) -- (15*0.598076,-1) -- (15*0.133975,-2) -- (0,-2) -- cycle;
+\draw [dashed,ultra thin,opacity=0.6] (15*0.464102,-2) -- (15*0.598076,-2) -- (15*0.133975,-3) -- (0,-3) -- cycle;
+\draw [dashed,ultra thin,opacity=0.6] (15*0.464102,-3) -- (15*0.598076,-3) -- (15*0.133975,-4) -- (0,-4) -- cycle;
+
+
+\path [fill,opacity=0.3,thin] (xc) -- (xa) -- (15*0.598076,-1) -- (15*0.267949,-1);
+
+\path [fill,opacity=0.3,thin] (15*0.330127,-1) -- (15*0.464102,-1) -- (15*0.267949,-2) -- (15*0.133975,-2);
+\path [fill,opacity=0.3,thin] (15*0.133975,-2) -- (15*0.267949,-2) -- (15*0.535898,-3) -- (15*0.401924,-3);
+\path [fill,opacity=0.3,thin] (15*0.401924,-3) -- (15*0.464102,-3) -- (15*0.267949,-4) -- (15*0.205771,-4);
+
+\foreach \x in {0,...,4}
+{
+\draw [|-|] ($(xc)+(0,-\x)$) -- ($(xd)+(0,-\x)$);
+\draw [fill] ($(xc)+(0,-\x)$) circle [radius=0.1];
+\draw [fill] ($(xa)+(0,-\x)$) circle [radius=0.1];
+\draw [fill] ($(xb)+(0,-\x)$) circle [radius=0.1];
+\draw [fill=white] ($(xd)+(0,-\x)$) circle [radius=0.1];
+}
+
+\end{tikzpicture}
+\end{center}
+\label{pic:iteration}
+\caption{Iteration of the stepping function $f^{\Omega}$ where $|\Omega| = \frac{3\beta-10}{2}$. Dashed lines show the exchange of intervals of the stepping function and the gray area shows progression of division for one interval.} 
+\end{figure}
+
 
 \end{document}
