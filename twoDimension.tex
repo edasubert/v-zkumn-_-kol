@@ -2,9 +2,9 @@
 
 \begin{document}
 
-\subsection*{Delone set and voronoi tessellation}
+\section*{Delone set and voronoi tessellation}
 
-Subsection provides the definitions of a delone set, a covering radius and a voronoi tessellation.
+Section provides the definitions of a delone set, a covering radius and a voronoi tessellation.
 
 \begin{definition}
 \label{def:delone}
@@ -30,7 +30,7 @@ Then voronoi tile of $x$ on $P$ is
 $$V(x) = \bigcap_{z\in \boldsymbol{N}} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<\|y-z\| \right\}$$
 \end{theorem}
 
-\subsection{Two-dimensional quasicrystals}%=======================================================================================================================
+\section{Two-dimensional quasicrystals}%=======================================================================================================================
 \label{sec:twoDimension}
 In the following section two-dimensional quasicrystal is defined and analyzed. Thanks to the Theorem \ref{the:twoToOne} analysis of one-dimensional quasicrystals can be in some way applied to two-dimensional quasicrystals as well. 
 \begin{definition}
@@ -78,9 +78,25 @@ From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne
 
 To analyze distribution of the points of two-dimensional quasicrystal voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with parallelogram window. 
 
-\begin{itemize}
-\item first item in a list
-\item second item with yellow color
-\end{itemize}
+First an algorithm for generation of a finite section of a quasicrystal is presented. To simplify even further, the algorithm is presented only for a rhombus window, $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$, where $I = [c,d)$.
 
+\section{Generation of a finite section of a quasicrystal with a rhombus window}
+The algorithm is rather simple. It uses the stepping function and the Theorem \ref{the:twoToOne}. 
+
+\paragraph{Algorithm definition} The algorithm receives as an input a rhombus window $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and bounds $x_1, x_2, y_1, y_2 \in \ring$.
+The algorithm returns a set of points from $\ring^2$ bounded by the given bounds.
+
+First the one-dimensional interval $I = [c,d)$ needs to be scaled and moved in such a way, that it becomes a base window and contains $0$.
+$$\exists k\in\ZN \exists \lambda\in\ring : I = \beta^k\tilde{I}+\lambda \wedge |\tilde{I}| \in \left(\frac{1}{\beta},1\right] \wedge 0\in\tilde{I}$$
+
+Now the stepping function can be used to iterate from 0 and generate enough points of the quasicrystal $\quasi{\tilde{I}}$ to cover the bounds. However since the bounds are for the quasicrystal $\quasi{\Omega}$ they also need to be transformed to be applicable to the quasicrystal $\quasi{\tilde{I}}$. 
+
+DOPLNIT VZORCE PRO TRANFRORMACI MEZÍ
+
+The stepping function is then used to acquire two sections of the quasicrystal $\quasi{\tilde{I}}$: $\quasi{\tilde{I}}\cap[\tilde{x_1},\tilde{x_2}]$ and $\quasi{\tilde{I}}\cap[\tilde{y_1},\tilde{y_2}]$.
+
+Each section needs to be transformed back:
+$$\quasi{I} = \beta^k\quasi{\tilde{I}} + \lambda'$$
+and the finite section of the quasicrystal $\quasi{\Omega}$ is constructed:
+$$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 \end{document}
