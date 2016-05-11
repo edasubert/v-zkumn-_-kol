@@ -32,7 +32,7 @@ $$V(x) = \bigcap_{z\in \boldsymbol{N}} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<
 
 \section{Two-dimensional quasicrystals}%=======================================================================================================================
 \label{sec:twoDimension}
-In the following section two-dimensional quasicrystal is defined and analyzed. Thanks to the Theorem \ref{the:twoToOne} analysis of one-dimensional quasicrystals can be in some way applied to two-dimensional quasicrystals as well. 
+In the following section two-dimensional quasicrystal is defined and analyzed. Thanks to the Theorem \ref{the:twoToOne} analysis of one-dimensional quasicrystals can be in some way applied to the two-dimensional quasicrystals as well. 
 \begin{definition}
 Vectors $\alpha_1$, $\alpha_2$, $\alpha_3$ and the set $M$ denote the following.
 $$\alpha_1 = \left( 1,0 \right) \quad \alpha_2 = \left( \frac{2-\beta}{2}, \frac{1}{2} \right) \quad \alpha_3 = \left( \frac{\beta-2}{2}, \frac{1}{2} \right)$$
@@ -40,7 +40,7 @@ $$M = \ring\alpha_1 + \ring\alpha_2$$
 \end{definition}
 
 \begin{remark}
-The vectors and the set from previous definition are key to two-dimensional quasicrystal definition. The set $M$ is used as two-dimensional equivalent to $\ring$ from on-dimensional quasicrystal. Function from the following definition is used as two-dimensional equivalent to $'$.
+The vectors and the set from previous definition are key to two-dimensional quasicrystal definition. The set $M$ is used as two-dimensional equivalent to $\ring$ from one-dimensional quasicrystal. Function from the following definition is used as two-dimensional equivalent to $'$.
 \end{remark}
 
 \begin{definition}
@@ -62,23 +62,29 @@ $$\quasi{\Omega} = \left\{ x \in M\,|\,x^\ast \in \Omega \right\}$$
 $\quasi{\Omega}$ where $\Omega \subset \mathbb{R}^2$ always denotes two-dimensional quasicrystal.
 \end{remark}
 
-To analyze two-dimensional quasicrystals again only windows of certain shape will be considered. That is sufficient again because of the Theorem \ref{the:quasiProperties}. Chosen window shape is parallelogram. 
+\begin{remark}
+\label{rem:quasiProperties}
+The same properties from the Theorem \ref{the:quasiProperties} for the one-dimensional quasicrystals apply to the two-dimensional quasicrystals as well.
+\end{remark}
+
+To analyze the two-dimensional quasicrystals again only windows of a certain shape will be considered. That is sufficient because of the Remark \ref{rem:quasiProperties}. The chosen window shape is a rhombus. 
 
 \begin{theorem}
 \label{the:twoToOne}
-Let $I_1 = [c_1,d_1)$ and $I_2 = [c_2,d_2)$, then for parallelogram $\Omega = I_1\alpha_1^\ast + I_2\alpha_2^\ast$ and quasicrystal $\quasi{\Omega}$ follows: 
-$$\quasi{\Omega} = \quasi{I_1}\alpha_1 + \quasi{I_2}\alpha_2$$
+Let $I_1 = [c_1,d_1)$, then for the rhombus $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and the quasicrystal $\quasi{\Omega}$: 
+$$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 \end{theorem}
 
 \begin{remark}
-Note in previous theorem that while $\Omega \subset \RN^2$ and so $\quasi{\Omega}$ is two-dimensional quasicrystal, $I_1, I_2 \subset \RN$ and so $\quasi{I_1}$ and $\quasi{I_2}$ are one-dimensional quasicrystals.
+Note in previous theorem that while $\Omega \subset \RN^2$ and so $\quasi{\Omega}$ is a two-dimensional quasicrystal, $I \subset \RN$ and so $\quasi{I}$ is a one-dimensional quasicrystal. 
+The same Theorem also applies to parallelogram shaped windows. 
 \end{remark}
 
-From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne} follows that two-dimensional quasicrystals are delone sets.  
+From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne} follows that the two-dimensional quasicrystals are delone sets.  
 
-To analyze distribution of the points of two-dimensional quasicrystal voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with parallelogram window. 
+To analyze distribution of the points of a two-dimensional quasicrystal, voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with a rhombus window. 
 
-First an algorithm for generation of a finite section of a quasicrystal is presented. To simplify even further, the algorithm is presented only for a rhombus window, $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$, where $I = [c,d)$.
+First an algorithm for generation of a finite section of a quasicrystal is presented. 
 
 \section{Generation of a finite section of a quasicrystal with a rhombus window}
 The algorithm is rather simple. It uses the stepping function and the Theorem \ref{the:twoToOne}. 
@@ -87,16 +93,21 @@ The algorithm is rather simple. It uses the stepping function and the Theorem \r
 The algorithm returns a set of points from $\ring^2$ bounded by the given bounds.
 
 First the one-dimensional interval $I = [c,d)$ needs to be scaled and moved in such a way, that it becomes a base window and contains $0$.
-$$\exists k\in\ZN \exists \lambda\in\ring : I = \beta^k\tilde{I}+\lambda \wedge |\tilde{I}| \in \left(\frac{1}{\beta},1\right] \wedge 0\in\tilde{I}$$
+$$(\exists k\in\ZN)(\exists \lambda\in\ring) : \left(I = \beta^k\tilde{I}+\lambda\right) \wedge \left(|\tilde{I}| \in \left(\frac{1}{\beta},1\right] \right)\wedge \left(0\in\tilde{I}\right)$$
 
 Now the stepping function can be used to iterate from 0 and generate enough points of the quasicrystal $\quasi{\tilde{I}}$ to cover the bounds. However since the bounds are for the quasicrystal $\quasi{\Omega}$ they also need to be transformed to be applicable to the quasicrystal $\quasi{\tilde{I}}$. 
-
-DOPLNIT VZORCE PRO TRANFRORMACI MEZÍ
-
+\begin{align*}
+\tilde{x_1} &= x_1 - (\beta-2)(y_2-y_1) & \tilde{y_1} &= 2y_1 \\
+\tilde{x_2} &= x_2 & \tilde{y_2} &= 2y_2 
+\end{align*}
 The stepping function is then used to acquire two sections of the quasicrystal $\quasi{\tilde{I}}$: $\quasi{\tilde{I}}\cap[\tilde{x_1},\tilde{x_2}]$ and $\quasi{\tilde{I}}\cap[\tilde{y_1},\tilde{y_2}]$.
 
 Each section needs to be transformed back:
 $$\quasi{I} = \beta^k\quasi{\tilde{I}} + \lambda'$$
-and the finite section of the quasicrystal $\quasi{\Omega}$ is constructed:
+and finaly the finite section of the quasicrystal $\quasi{\Omega}$ is constructed:
 $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
+
+\begin{remark}
+Due to the transformation of the bounds and the way the two-dimensional quasicrystal is constructed, the result will contain more points then requested. However the excess points can be easily discarded.
+\end{remark}
 \end{document}

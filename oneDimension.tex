@@ -3,7 +3,6 @@
 \begin{document}
 
 \section{Preliminaries}%================================================================================================
-This section provides the initial definitions.
 \begin{definition}
 \label{def:beta}
 Roots of the following quadratic equation are denoted as $\beta$ and $\beta'$.
@@ -206,7 +205,7 @@ Let $\Omega \subset \RN$ then $\forall k\in \mathbb{Z}: \quasi{\frac{1}{\beta^k}
 From remark \ref{rem:oneInterval} and theorem \ref{the:scale} follows that only windows $\Omega = [c,d)$ where $d-c\in\left( \frac{1}{\beta}, 1 \right]$ need to be analyzed. Such windows are called \textbf{base windows} or \textbf{windows in the base form}. Quasicrystals for all other windows can be acquired from the quasicrystals with the base windows by scaling and operations from remark \ref{rem:oneInterval}.
 \end{corollary}
 
-\subsubsection{One-dimensional quasicrystal structure}%====================================================================================================================
+\subsection{One-dimensional quasicrystal structure}%====================================================================================================================
 
 Figure \ref{fig:onedimensional} suggests that the one-dimensional quasicrystal is a sequence of points. This subsection presents an analysis of spacing and distribution of these points.
 
@@ -216,7 +215,7 @@ Strictly increasing sequence $(y_n^\Omega)_{n\in \mathbb{Z}}$ defined as $\left\
 
 \begin{theorem}
 \label{the:spaces:sum}
-Let $\Omega = [c,d)$ is a base window, then all possible distances between two immediately following points of the sequence of  the quasicrystal $\quasi{\Omega}$ $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in the table \ref{table:spaces}.
+Let $\Omega = [c,d)$ is a base window, then all possible distances between two immediately following points of the sequence of  the quasicrystal $\quasi{\Omega}$, $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in the table \ref{table:spaces}.
 \begin{table}[h]
 \begin{center}
 \begin{tabular}{ccccccc}
@@ -237,7 +236,7 @@ Let $\Omega = [c,d)$ is a base window, then all possible distances between two i
 \end{theorem}
 
 \begin{remark}
-Please notice that the cases for window sizes $\frac{1}{\beta}$, $\frac{\beta-2}{\beta}$, $\frac{\beta-1}{\beta}$ and $1$ each have only two different distances, therefore windows of these sizes are regarded as \textbf{singular}. Also distances for the size $\frac{1}{\beta}$ are $\beta$ multiples of distances for the size $1$.
+Please notice that the cases for window sizes $\frac{1}{\beta}$, $\frac{\beta-2}{\beta}$, $\frac{\beta-1}{\beta}$ and $1$ each have only two different distances, therefore windows of these sizes are regarded as \textbf{singular}. Also distances for the size $\frac{1}{\beta}$ are $\beta$ multiples of the distances for the size $1$.
 \end{remark}
 
 \begin{definition}
@@ -391,7 +390,7 @@ Set $\mathcal{L}_\ell(n)$ containing all different sub-words of the length $n$ i
 \end{definition}
 
 \begin{remark}
-Please note that the complexity and the language of the quasicrystal are defined dependent only on the length of the window. Correctness of such definition is verified in the following theorem.
+Please note that the complexity and the language of the quasicrystal are defined dependent only on the length of the window. 
 \end{remark}
 
 That concludes the analysis of the one-dimensional quasicrystal for now. Additional findings will be presented later. 
