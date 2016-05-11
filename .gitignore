@@ -7,3 +7,4 @@
 bakalarka/*
 *.bbl
 *.blg
+!img/*.pdf

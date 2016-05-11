@@ -97,8 +97,8 @@ $$(\exists k\in\ZN)(\exists \lambda\in\ring) : \left(I = \beta^k\tilde{I}+\lambd
 
 Now the stepping function can be used to iterate from 0 and generate enough points of the quasicrystal $\quasi{\tilde{I}}$ to cover the bounds. However since the bounds are for the quasicrystal $\quasi{\Omega}$ they also need to be transformed to be applicable to the quasicrystal $\quasi{\tilde{I}}$. 
 \begin{align*}
-\tilde{x_1} &= x_1 - (\beta-2)(y_2-y_1) & \tilde{y_1} &= 2y_1 \\
-\tilde{x_2} &= x_2 & \tilde{y_2} &= 2y_2 
+\tilde{x_1} &= x_1 & \tilde{y_1} &= 2y_1 \\
+\tilde{x_2} &= x_2 + (\beta-2)(y_2-y_1) & \tilde{y_2} &= 2y_2 
 \end{align*}
 The stepping function is then used to acquire two sections of the quasicrystal $\quasi{\tilde{I}}$: $\quasi{\tilde{I}}\cap[\tilde{x_1},\tilde{x_2}]$ and $\quasi{\tilde{I}}\cap[\tilde{y_1},\tilde{y_2}]$.
 
@@ -121,17 +121,18 @@ $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 \fill (-0.86602540378,0) circle (0.02);
 \fill (-2,0.5) circle (0.02);
 
-\node [below] at (0,0) {$[0,0]$};
-\node [below] at (-0.86602540378,0) {$[x_2,0]$};
-\node [below] at (-2,0) {$[x_1,0]$};
-\node [above right] at (0,0) {$n$};
+\node [below] at (0,0) {$[\tilde{x_2},y_1]$};
+\node [below] at (-0.86602540378,0) {$[x_2,y_1]$};
+\node [below] at (-2,0) {$[x_1,y_1]$};
+\node [above] at (-0.86602540378,0.5) {$[x_2,y_2]$};
+\node [above] at (-2,0.5) {$[x_1,y_2]$};
 
 \end{tikzpicture}
-\caption{Section of the artificial quasicrystal with the circumcircle and a circle of the estimated radius.}
-\label{fig:coveringRadius}
+\caption{Illustration of how big parallelogram section of the quasicrystal (not window) is needed to acquire a rectangular one.}
+\label{fig:finiteSectionRhombus}
 \end{figure}
 
 \begin{remark}
-Due to the transformation of the bounds and the way the two-dimensional quasicrystal is constructed, the result will contain more points then requested. However the excess points can be easily discarded.
+Due to the way the two-dimensional quasicrystal is constructed, the result will contain more points then requested (Figure \ref{fig:finiteSectionRhombus}). However the excess points can be easily discarded.
 \end{remark}
 \end{document}
