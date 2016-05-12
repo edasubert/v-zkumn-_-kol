@@ -20,10 +20,11 @@ $$R_c \leq R = \frac{a}{2sin(\alpha)} = \frac{1}{2\left(\frac{1+\sqrt{3}}{2\sqrt
 
 \begin{figure}[h]
 \centering
-\begin{tikzpicture}[scale=6]
+\begin{tikzpicture}[scale=3]
 
 % nodes
 \draw [-] (0,0)  -- (-1,0) -- (-0.86602540378,0.5) -- cycle;
+\fill (1,0) circle (0.04);
 \fill (0,0) circle (0.04);
 \fill (-1,0) circle (0.04);
 \fill (-0.86602540378,0.5) circle (0.04);
@@ -31,19 +32,30 @@ $$R_c \leq R = \frac{a}{2sin(\alpha)} = \frac{1}{2\left(\frac{1+\sqrt{3}}{2\sqrt
 \fill (-1.86602540378,0.5) circle (0.04);
 
 \fill (1-0.86602540378,0.5) circle (0.04);
+\fill (2-0.86602540378,0.5) circle (0.04);
+
+\fill (-1+0.86602540378,-0.5) circle (0.04);
+\fill (-2+0.86602540378,-0.5) circle (0.04);
+\fill (-3+0.86602540378,-0.5) circle (0.04);
+\fill (0.86602540378,-0.5) circle (0.04);
+
+\fill (-2*0.86602540378,1) circle (0.04);
+\fill (1-2*0.86602540378,1) circle (0.04);
+\fill (2-2*0.86602540378,1) circle (0.04);
+\fill (3-2*0.86602540378,1) circle (0.04);
 
 \draw (-0.5,0.13397) circle (0.5176);
 \draw (-0.5,0.13397) circle (0.552);
 
 
 \end{tikzpicture}
-\caption{Section of the artificial quasicrystal with the circumcircle and a circle of the estimated radius.}
+\caption{Section of the artificial quasicrystal with the circumcircle and a circle of the estimated radius $\hat{R}_c$.}
 \label{fig:coveringRadius}
 \end{figure}
 
 Since the estimate is used in comparison with coordinates of the points of the quasicrystal, it is advantageous if it is also from $\ring$. For that the estimate $1.414 \doteq \sqrt{2} <32\beta-118 \doteq 1.426$ is used.
 
-$$\frac{\sqrt{2}(\sqrt{3}-1)}{2} < \frac{(32\beta-118)(\beta-3)}{2} = 161-43\beta \doteq 0.522$$
+$$\frac{\sqrt{2}(\sqrt{3}-1)}{2} < \frac{(32\beta-118)(\beta-3)}{2} = 161-43\beta = \hat{R}_c \doteq 0.522$$
 
 \begin{remark}
 There is an easier way that removes the need for such deriving. Simply estimate the covering radius with the largest distance itself. That is at first sufficient, but computational complexity of quasicrystals with a general window forced us to use all optimizations available.

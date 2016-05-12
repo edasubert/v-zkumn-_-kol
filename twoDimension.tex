@@ -95,7 +95,7 @@ The algorithm returns a set of points from $\ring^2$ bounded by the given bounds
 First the one-dimensional interval $I = [c,d)$ needs to be scaled and moved in such a way, that it becomes a base window and contains $0$.
 $$(\exists k\in\ZN)(\exists \lambda\in\ring) : \left(I = \beta^k\tilde{I}+\lambda\right) \wedge \left(|\tilde{I}| \in \left(\frac{1}{\beta},1\right] \right)\wedge \left(0\in\tilde{I}\right)$$
 
-Now the stepping function can be used to iterate from 0 and generate enough points of the quasicrystal $\quasi{\tilde{I}}$ to cover the bounds. However since the bounds are for the quasicrystal $\quasi{\Omega}$ they also need to be transformed to be applicable to the quasicrystal $\quasi{\tilde{I}}$. 
+Now the stepping function can be used to iterate from 0 and generate enough points of the quasicrystal $\quasi{\tilde{I}}$ to cover the bounds. However since the bounds are for the quasicrystal $\quasi{\Omega}$ they need to be transformed to be applicable to the quasicrystal $\quasi{\tilde{I}}$. 
 \begin{align*}
 \tilde{x_1} &= x_1 & \tilde{y_1} &= 2y_1 \\
 \tilde{x_2} &= x_2 + (\beta-2)(y_2-y_1) & \tilde{y_2} &= 2y_2 
