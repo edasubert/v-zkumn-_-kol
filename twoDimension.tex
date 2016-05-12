@@ -30,6 +30,8 @@ Then voronoi tile of $x$ on $P$ is
 $$V(x) = \bigcap_{z\in \boldsymbol{N}} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<\|y-z\| \right\}$$
 \end{theorem}
 
+%
+\newpage
 \section{Two-dimensional quasicrystals}%=======================================================================================================================
 \label{sec:twoDimension}
 In the following section two-dimensional quasicrystal is defined and analyzed. Thanks to the Theorem \ref{the:twoToOne} analysis of one-dimensional quasicrystals can be in some way applied to the two-dimensional quasicrystals as well. 
@@ -86,7 +88,9 @@ To analyze distribution of the points of a two-dimensional quasicrystal, voronoi
 
 First an algorithm for generation of a finite section of a quasicrystal is presented. 
 
-\section{Generation of a finite section of a quasicrystal with a rhombus window}
+%
+\newpage
+\section{Generation of a finite section of a quasicrystal with a rhombus window}%=======================================================================================================================
 The algorithm is rather simple. It uses the stepping function and the Theorem \ref{the:twoToOne}. 
 
 \paragraph{Algorithm definition} The algorithm receives as an input a rhombus window $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and bounds $x_1, x_2, y_1, y_2 \in \ring$.
@@ -121,14 +125,14 @@ $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 \fill (-0.86602540378,0) circle (0.02);
 \fill (-2,0.5) circle (0.02);
 
-\node [below] at (0,0) {$[\tilde{x_2},y_1]$};
-\node [below] at (-0.86602540378,0) {$[x_2,y_1]$};
-\node [below] at (-2,0) {$[x_1,y_1]$};
-\node [above] at (-0.86602540378,0.5) {$[x_2,y_2]$};
-\node [above] at (-2,0.5) {$[x_1,y_2]$};
+\node [below] at (0,0) {$(\tilde{x_2},y_1)$};
+\node [below] at (-0.86602540378,0) {$(x_2,y_1)$};
+\node [below] at (-2,0) {$(x_1,y_1)$};
+\node [above] at (-0.86602540378,0.5) {$(x_2,y_2)$};
+\node [above] at (-2,0.5) {$(x_1,y_2)$};
 
 \end{tikzpicture}
-\caption{Illustration of how big parallelogram section of the quasicrystal (not window) is needed to acquire a rectangular one.}
+\caption{Illustration of how big parallelogram section of the quasicrystal (not a window) is needed to acquire a rectangular one.}
 \label{fig:finiteSectionRhombus}
 \end{figure}
 
