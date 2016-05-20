@@ -1,7 +1,42 @@
 \documentclass[text.tex]{subfiles}
 
 \begin{document}
-\section{Catalog of voronoi polygons for a single window}
+\section{Catalog of voronoi polygons for a single rhombus window}
+This section describes the algorithm for generating all voronoi polygons in a quasicrystal with a rhombus window. Unless otherwise stated, in this section quasicrystal always means two-dimensional quasicrystal and window always means rhombus window. The key components from previous sections are:
 
+\begin{enumerate}
+\item only the points of the quasicrystal that are close enough determain the shape of the voronoi polygon
+\item finite section of the quasicrystal is easy to generate from two one-dimensional quasicrystals
+\item language $\mathcal{L}_{\ell}(n)$ is finite and easy to generate
+\end{enumerate}
 
+The algorithm is then straight forward:
+
+\paragraph{Algorith definition} The algorithm receives as an input a rhombus window. As an output it returns a list of voronoi polygons found in the quasicrystal coresponding to the given window.
+
+The largest distance within the coresponding one-dimensional quasicrystal is denoted by $L$. Steps are described in more detail bellow.
+
+\begin{enumerate}
+\item evaluate $L\cdot\hat{R}_c$ covering radius of the quasicrystal
+\item determine the lenght of a word $n$ sufficient to cover a circle of radius $2L\cdot\hat{R}_c$
+\item generate the language $\mathcal{L}_{\ell}(n)$
+\item generate finite sections of the quasicrystal for each pair of the words form the language $\mathcal{L}_{\ell}(n)$ such that each finite section contains origin
+\item construct a voronoi polygon for the origin for each finite section
+\item filter duplicate voronoi polygons
+\end{enumerate}
+
+To justify that the algorithm finds all voronoi polygons for a given window consider, that the shape of each voronoi polygon is determined by the points of the quasicrystal, that are distant at most $2L\cdot\hat{R}_c$ from the center of the polygon. In other words, the shape is only determined by a finite section of the quasicrystal. Each finite section of the quasicrystal with a rhombus window is described by two finite sections of a one-dimensional quasicrystal. Each finite section of a one-dimensional quasicrystal of length $n$ is described by a finite word of the quasicrystal, that are all present in the language $\mathcal{L}_{\ell}(n)$.
+
+\subsection{Determine sufficient $n$}
+Part of the algorithm that was not covered in detail is how to determine the length of a word sufficianet to cover a circle of radius $2L\cdot\hat{R}_c$. First a rhombus is circumscribed to the circle of the radius $2L\cdot\hat{R}_c$. The side of such rhombus is $4$ times larger than the circle radius. Then such $n$ has to be found that a finite section of one-dimensional quasicrystal corresponding to each word from $2L\cdot\hat{R}_c$ has to be at least as long as the side of the circumscribed rhombus. 
+There are several approaches, two are described here. 
+
+One way is to get the smallest distance $S$ for the one-dimensional quasicrystal and set $n = \left\lceil\frac{8L\cdot\hat{R}_c}{S}\right\rceil$. 
+
+The second way is to start with $n=2$ and increase by $1$ until is $n$ sufficient. 
+
+The second way takes more time to compute but produces better estimate, which will be desirable once analyzing quasicrystals with a general window.
+
+\subsection{Diagram}
+Following diagram might help with understanging the algorithm.
 \end{document}
