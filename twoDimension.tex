@@ -22,6 +22,10 @@ $$V(x) = \left\{ y \in \mathbb{R}^n \,|\, \forall z \in P, z\neq x:\, \|y-x\|<\|
 is called \textbf{voronoi tile} (polygon) of $x$ on $P$.
 \end{definition}
 
+\begin{remark}
+Example of a delone set with the voronoi tessellation can be seen in the Figure \ref{fig:finiteSectionQuasi}.
+\end{remark}
+
 \begin{theorem}
 \label{the:radiusLimit}
 Let $P\subset \mathbb{R}^n$ is a delone set and $R_c$ it's covering radius. For any $x\in P$:
@@ -31,10 +35,10 @@ $$V(x) = \bigcap_{z\in \boldsymbol{N}} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<
 \end{theorem}
 
 %
-\newpage
+\clearpage
 \section{Two-dimensional quasicrystals}%=======================================================================================================================
 \label{sec:twoDimension}
-In the following section two-dimensional quasicrystal is defined and analyzed. Thanks to the Theorem \ref{the:twoToOne} analysis of one-dimensional quasicrystals can be in some way applied to the two-dimensional quasicrystals as well. 
+In the following section a two-dimensional quasicrystal is defined and analyzed. Thanks to the Theorem \ref{the:twoToOne}, analysis of one-dimensional quasicrystals can be in some way applied to the two-dimensional quasicrystals as well. 
 \begin{definition}
 Vectors $\alpha_1$, $\alpha_2$, $\alpha_3$ and the set $M$ denote the following.
 $$\alpha_1 = \left( 1,0 \right) \quad \alpha_2 = \left( \frac{2-\beta}{2}, \frac{1}{2} \right) \quad \alpha_3 = \left( \frac{\beta-2}{2}, \frac{1}{2} \right)$$
@@ -42,7 +46,7 @@ $$M = \ring\alpha_1 + \ring\alpha_2$$
 \end{definition}
 
 \begin{remark}
-The vectors and the set from previous definition are key to two-dimensional quasicrystal definition. The set $M$ is used as two-dimensional equivalent to $\ring$ from one-dimensional quasicrystal. Function from the following definition is used as two-dimensional equivalent to $'$.
+The vectors and the set from previous definition are key to two-dimensional quasicrystal definition. The set $M$ is used as a two-dimensional equivalent to $\ring$ from the one-dimensional quasicrystal. Function from following definition is used as a two-dimensional equivalent to $'$.
 \end{remark}
 
 \begin{definition}
@@ -52,7 +56,7 @@ $$v^\ast = (a\alpha_1 + b\alpha_2)^\ast = a'\alpha_1 + b'\alpha_3 \;\forall a,b\
 \end{definition}
 
 \begin{remark}
-Simple consequence of the Theorem \ref{def:starFunction} is $\alpha_1^\ast = \alpha_1$ and $\alpha_2^\ast = \alpha_3$.
+Simple consequence of the Theorem \ref{def:starFunction} is that $\alpha_1^\ast = \alpha_1$ and $\alpha_2^\ast = \alpha_3$.
 \end{remark}
 
 \begin{definition}
@@ -73,16 +77,23 @@ To analyze the two-dimensional quasicrystals again only windows of a certain sha
 
 \begin{theorem}
 \label{the:twoToOne}
-Let $I_1 = [c_1,d_1)$, then for the rhombus $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and the quasicrystal $\quasi{\Omega}$: 
+Let $I = [c,d)$, then for the rhombus $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and the quasicrystal $\quasi{\Omega}$: 
 $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 \end{theorem}
 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{rhombus_construction}
+\caption{Illustration of the construction of the two-dimensional quasicrystal with a rhombus window from two one-dimensional quasicrystals. Horizontal lines mark copies of $\quasi{I}\alpha_1$ and the skewed lines mark copies of $\quasi{I}\alpha_2$.}
+\label{fig:quasiRhombusConstruction}
+\end{figure}
+
 \begin{remark}
-Note in previous theorem that while $\Omega \subset \RN^2$ and so $\quasi{\Omega}$ is a two-dimensional quasicrystal, $I \subset \RN$ and so $\quasi{I}$ is a one-dimensional quasicrystal. 
+Note in the previous theorem that while $\Omega \subset \RN^2$ and so $\quasi{\Omega}$ is a two-dimensional quasicrystal, $I \subset \RN$ and so $\quasi{I}$ is a one-dimensional quasicrystal. Illustration of the construction is in the Figure \ref{fig:quasiRhombusConstruction}.
 The same Theorem also applies to parallelogram shaped windows. 
 \end{remark}
 
-From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne} follows that the two-dimensional quasicrystals are delone sets.  
+From the analysis of one-dimensional quasicrystals and the Theorem \ref{the:twoToOne} follows that the two-dimensional quasicrystals are delone sets.  
 
 To analyze distribution of the points of a two-dimensional quasicrystal, voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with a rhombus window. 
 
@@ -94,7 +105,8 @@ First an algorithm for generation of a finite section of a quasicrystal is prese
 The algorithm is rather simple. It uses the stepping function and the Theorem \ref{the:twoToOne}. 
 
 \paragraph{Algorithm definition} The algorithm receives as an input a rhombus window $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and bounds $x_1, x_2, y_1, y_2 \in \ring$.
-The algorithm returns a set of points from $\ring^2$ bounded by the given bounds.
+The algorithm returns a subset of the quasicrystal $\quasi{\Omega}$ bounded by the given bounds.
+$$\quasi{\Omega}\cap([x_1,x_2]\times[y_1,y_2])$$
 
 First the one-dimensional interval $I = [c,d)$ needs to be scaled and moved in such a way, that it becomes a base window and contains $0$.
 $$(\exists k\in\ZN)(\exists \lambda\in\ring) : \left(I = \beta^k\tilde{I}+\lambda\right) \wedge \left(|\tilde{I}| \in \left(\frac{1}{\beta},1\right] \right)\wedge \left(0\in\tilde{I}\right)$$
@@ -107,13 +119,13 @@ Now the stepping function can be used to iterate from 0 and generate enough poin
 The stepping function is then used to acquire two sections of the quasicrystal $\quasi{\tilde{I}}$: $\quasi{\tilde{I}}\cap[\tilde{x_1},\tilde{x_2}]$ and $\quasi{\tilde{I}}\cap[\tilde{y_1},\tilde{y_2}]$.
 
 Each section needs to be transformed back:
-$$\quasi{I} = \beta^k\quasi{\tilde{I}} + \lambda'$$
+$$\quasi{I} = \beta^{-k}\quasi{\tilde{I}} + \lambda'$$
 and finaly the finite section of the quasicrystal $\quasi{\Omega}$ is constructed:
 $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 
 \begin{figure}[h]
 \centering
-\begin{tikzpicture}[scale=4]
+\begin{tikzpicture}[scale=3]
 % nodes
 \draw [-] (0,0)  -- (-2,0) -- (-2.86602540378,0.5) -- (-0.86602540378,0.5) -- cycle;
 \draw [-] (-0.86602540378,0)  -- (-2,0) -- (-2,0.5) -- (-0.86602540378,0.5) -- cycle;
@@ -125,7 +137,7 @@ $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 \fill (-0.86602540378,0) circle (0.02);
 \fill (-2,0.5) circle (0.02);
 
-\node [below] at (0,0) {$(\tilde{x_2},y_1)$};
+\node [below] at (0,0) {$(\tilde{x}_2,y_1)$};
 \node [below] at (-0.86602540378,0) {$(x_2,y_1)$};
 \node [below] at (-2,0) {$(x_1,y_1)$};
 \node [above] at (-0.86602540378,0.5) {$(x_2,y_2)$};
@@ -140,5 +152,13 @@ $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 Due to the way the two-dimensional quasicrystal is constructed, the result will contain more points then requested (Figure \ref{fig:finiteSectionRhombus}). However the excess points can be easily discarded.
 \end{remark}
 
-The next goal is now to catalog all different voronoi polygons that appear in a quasicrystal for a single given window. 
+\begin{figure}[h]
+\centering
+\includegraphics[width=\textwidth]{rhombus_window_01_(-22_6_7)}
+\includegraphics[width=\textwidth]{rhombus_window_01_(-22_6_7)_window}
+\caption{Finite section of the quasicrystal $\quasi{I\alpha_1^\ast + I\alpha_2^\ast}$ where $|I| = \frac{6\beta-22}{7}$ with the voronoi tessellation and the rhombus window $I\alpha_1^\ast + I\alpha_2^\ast$ with $\ast$ images of the points from the finite section.}
+\label{fig:finiteSectionQuasi}
+\end{figure}
+
+The next goal is now to catalog all different voronoi polygons that appear in a quasicrystal for a single window. 
 \end{document}

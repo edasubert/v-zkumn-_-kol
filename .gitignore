@@ -8,3 +8,4 @@ bakalarka/*
 *.bbl
 *.blg
 !img/*.pdf
+!toReview.pdf
