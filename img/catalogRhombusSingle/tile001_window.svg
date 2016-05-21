@@ -1,0 +1,131 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="800" height="800" viewBox="-159.615 -159.615 319.23 319.23">
+
+<!--
+
+##############################
+Name: Voronoi cell
+Description: 
+Center: 
+
+====================
+Name: Point
+Coordinates: X = (0+0*beta)/1 Y = (0+0*beta)/1
+Description: 
+====================
+
+###############
+Cell: 
+
+*************************
+Name: Point Set
+Description: 
+
+====================
+Name: Point
+Coordinates: X = (1-5*beta)/6 Y = (1-5*beta)/6
+Description: newPoint
+====================
+
+====================
+Name: Point
+Coordinates: X = (1-5*beta)/4 Y = (-1+3*beta)/4
+Description: newPoint
+====================
+
+====================
+Name: Point
+Coordinates: X = (0-1*beta)/2 Y = (-1+2*beta)/2
+Description: newPoint
+====================
+
+====================
+Name: Point
+Coordinates: X = (-1+2*beta)/2 Y = (0+1*beta)/2
+Description: newPoint
+====================
+
+====================
+Name: Point
+Coordinates: X = (0+0*beta)/4 Y = (0-1*beta)/1
+Description: newPoint
+====================
+*************************
+
+###############
+Carrier set: 
+
+*************************
+Name: Delone Set
+Description: D1B1D1B1B1D1B1D1 D1B1B1D1B1D1B1D1
+Packing radius: 1.86603
+Covering radius: 10.641
+
+====================
+Name: Point
+Coordinates: X = (0+0*beta)/2 Y = (0+0*beta)/2
+Description: 0
+====================
+
+====================
+Name: Point
+Coordinates: X = (-1+2*beta)/2 Y = (0-1*beta)/2
+Description: 0
+====================
+
+====================
+Name: Point
+Coordinates: X = (-1+1*beta)/2 Y = (-1+3*beta)/2
+Description: 0
+====================
+
+====================
+Name: Point
+Coordinates: X = (0-1*beta)/2 Y = (-1+4*beta)/2
+Description: 0
+====================
+
+====================
+Name: Point
+Coordinates: X = (1-4*beta)/2 Y = (0-1*beta)/2
+Description: 0
+====================
+
+====================
+Name: Point
+Coordinates: X = (0-1*beta)/2 Y = (1-4*beta)/2
+Description: 0
+====================
+*************************
+
+##############################
+-->
+<g transform="scale(300,-300)">
+<!-- **STARED**
+D1B1D1B1B1D1B1D1 D1B1B1D1B1D1B1D1 -->
+<!-- **STARED**
+0 -->
+<circle cx="0.00000" cy="0.00000" r="0.0021547" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.23205" cy="-0.13397" r="0.0021547" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.36603" cy="-0.09808" r="0.0021547" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.13397" cy="0.03590" r="0.0021547" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.03590" cy="-0.13397" r="0.0021547" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.13397" cy="-0.03590" r="0.0021547" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<polygon points="-0.43301,-0.11603 0.03109,-0.11603 0.43301,0.11603 -0.03109,0.11603 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.17468,-0.08013 -0.10289,-0.08013 0.00481,-0.01795 -0.06699,-0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.19134,-0.01795 -0.06699,-0.01795 -0.00481,0.01795 -0.12917,0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="0.00481,-0.01795 0.12917,-0.01795 0.19134,0.01795 0.06699,0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.00481,0.01795 0.06699,0.01795 0.17468,0.08013 0.10289,0.08013 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+</g>
+</svg>

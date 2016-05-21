@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="1400" height="1400" viewBox="-159.615 -159.615 319.23 319.23">
+
+<g transform="scale(300,-300)">
+  <line x1="-0.5" x2="0.5" y1="0" y2="0" style="fill:none;stroke:rgb(25,25,25);stroke-width:0.0015;stroke-dasharray:0.005,0.005" fill-opacity="0.5" transform="rotate(15)" />
+  <line x1="-0.16" x2="0.16" y1="0" y2="0" style="fill:none;stroke:rgb(25,25,25);stroke-width:0.0015;stroke-dasharray:0.005,0.005" fill-opacity="0.5" transform="rotate(105)" />
+  
+<polygon points="-0.43301,-0.11603 0.03109,-0.11603 0.43301,0.11603 -0.03109,0.11603 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="0.06699,0.01795 0.26314,0.01795 0.43301,0.11603 0.23686,0.11603 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.43301,-0.11603 -0.23686,-0.11603 -0.06699,-0.01795 -0.26314,-0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.17468,-0.08013 -0.10289,-0.08013 0.00481,-0.01795 -0.06699,-0.01795 " style="fill:#000000;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.4" />
+<polygon points="0.00481,-0.01795 0.12917,-0.01795 0.19134,0.01795 0.06699,0.01795 " style="fill:#000000;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.4" />
+<polygon points="-0.19134,-0.01795 -0.06699,-0.01795 -0.00481,0.01795 -0.12917,0.01795 " style="fill:#000000;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.4" />
+<polygon points="-0.00481,0.01795 0.06699,0.01795 0.17468,0.08013 0.10289,0.08013 " style="fill:#000000;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.4" />
+<polygon points="-0.23686,-0.11603 -0.16506,-0.11603 0.00481,-0.01795 -0.06699,-0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="0.00481,-0.01795 0.20096,-0.01795 0.26314,0.01795 0.06699,0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.26314,-0.01795 -0.06699,-0.01795 -0.00481,0.01795 -0.20096,0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.00481,0.01795 0.06699,0.01795 0.23686,0.11603 0.16506,0.11603 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.10289,-0.08013 0.02147,-0.08013 0.12917,-0.01795 0.00481,-0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.12917,0.01795 -0.00481,0.01795 0.10289,0.08013 -0.02147,0.08013 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.10289,-0.08013 0.09327,-0.08013 0.20096,-0.01795 0.00481,-0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.16506,-0.11603 -0.04071,-0.11603 0.12917,-0.01795 0.00481,-0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.12917,0.01795 -0.00481,0.01795 0.16506,0.11603 0.04071,0.11603 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.20096,0.01795 -0.00481,0.01795 0.10289,0.08013 -0.09327,0.08013 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.16506,-0.11603 0.03109,-0.11603 0.20096,-0.01795 0.00481,-0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.20096,0.01795 -0.00481,0.01795 0.16506,0.11603 -0.03109,0.11603 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.06699,-0.01795 0.00481,-0.01795 0.06699,0.01795 -0.00481,0.01795 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+</g>
+</svg>

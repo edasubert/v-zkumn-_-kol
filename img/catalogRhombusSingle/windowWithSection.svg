@@ -1,0 +1,33 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="800" height="800" viewBox="-159.615 -159.615 319.23 319.23">
+
+<g transform="scale(300,-300)">
+<!-- **STARED**
+D1B1D1B1B1D1B1D1 D1B1B1D1B1D1B1D1 -->
+<!-- **STARED**
+0 -->
+<g transform="translate(0.1,0.06)">
+<circle cx="0.00000" cy="0.00000" r="0.0043094" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<circle cx="0.00000" cy="0.00000" r="0.0083094" stroke="rgb(25,25,25)" stroke-width="0.004" fill="none" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.23205" cy="-0.13397" r="0.0043094" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.36603" cy="-0.09808" r="0.0043094" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.13397" cy="0.03590" r="0.0043094" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.03590" cy="-0.13397" r="0.0043094" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- **STARED**
+0 -->
+<circle cx="-0.13397" cy="-0.03590" r="0.0043094" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</g>
+
+<polygon points="-0.43301,-0.11603 0.03109,-0.11603 0.43301,0.11603 -0.03109,0.11603 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.002" fill-opacity="0.5" />
+<polygon points="-0.00481,0.01795 0.06699,0.01795 0.17468,0.08013 0.10289,0.08013 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.003" fill-opacity="0.5" />
+</g>
+</svg>
