@@ -81,12 +81,13 @@ To analyze the two-dimensional quasicrystals again only windows of a certain sha
 \label{the:twoToOne}
 Let $I = [c,d)$, then for the rhombus $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and the quasicrystal $\quasi{\Omega}$: 
 $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
+The size of the rhombus refers to the size of the interval $|I|$ also a base rhombic window refers to a rhombic window constructed from a base window $I$.
 \end{theorem}
 
 \begin{figure}[h]
 \centering
 \includegraphics[width=\textwidth]{rhombus_construction}
-\caption{Illustration of the construction of the two-dimensional quasicrystal with a rhombus window from two one-dimensional quasicrystals. Horizontal lines mark copies of $\quasi{I}\alpha_1$ and the skewed lines mark copies of $\quasi{I}\alpha_2$.}
+\caption{Illustration of the construction of the two-dimensional quasicrystal with a rhombic window from two one-dimensional quasicrystals. Horizontal lines mark copies of $\quasi{I}\alpha_1$ and the skewed lines mark copies of $\quasi{I}\alpha_2$.}
 \label{fig:quasiRhombusConstruction}
 \end{figure}
 
@@ -97,16 +98,16 @@ The same Theorem also applies to parallelogram shaped windows.
 
 From the analysis of one-dimensional quasicrystals and the Theorem \ref{the:twoToOne} follows that the two-dimensional quasicrystals are delone sets.  
 
-To analyze distribution of the points of a two-dimensional quasicrystal, voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with a rhombus window. 
+To analyze distribution of the points of a two-dimensional quasicrystal, voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with a rhombic window. 
 
 First an algorithm for generation of a finite section of a quasicrystal is presented. 
 
 %
 \newpage
-\section{Generation of a finite section of a quasicrystal with a rhombus window}%=======================================================================================================================
+\section{Generation of a finite section of a quasicrystal with a rhombic window}%=======================================================================================================================
 The algorithm is rather simple. It uses the stepping function and the Theorem \ref{the:twoToOne}. 
 
-\paragraph{Algorithm definition} The algorithm receives as an input a rhombus window $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and bounds $x_1, x_2, y_1, y_2 \in \ring$.
+\paragraph{Algorithm definition} The algorithm receives as an input a rhombic window $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and bounds $x_1, x_2, y_1, y_2 \in \ring$.
 The algorithm returns a subset of the quasicrystal $\quasi{\Omega}$ bounded by the given bounds.
 $$\quasi{\Omega}\cap([x_1,x_2]\times[y_1,y_2])$$
 
@@ -158,7 +159,7 @@ Due to the way the two-dimensional quasicrystal is constructed, the result will 
 \centering
 \includegraphics[width=\textwidth]{rhombus_window_01_(-22_6_7)}
 \includegraphics[width=\textwidth]{rhombus_window_01_(-22_6_7)_window}
-\caption{Finite section of the quasicrystal $\quasi{I\alpha_1^\ast + I\alpha_2^\ast}$ where $|I| = \frac{6\beta-22}{7}$ with the voronoi tessellation and the rhombus window $I\alpha_1^\ast + I\alpha_2^\ast$ with $\ast$ images of the points from the finite section.}
+\caption{Finite section of the quasicrystal $\quasi{I\alpha_1^\ast + I\alpha_2^\ast}$ where $|I| = \frac{6\beta-22}{7}$ with the voronoi tessellation and the rhombic window $I\alpha_1^\ast + I\alpha_2^\ast$ with $\ast$ images of the points from the finite section.}
 \label{fig:finiteSectionQuasi}
 \end{figure}
 

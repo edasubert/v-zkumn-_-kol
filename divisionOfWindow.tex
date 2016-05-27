@@ -17,33 +17,6 @@ Then $(\forall i \in \widehat{m}\cup\{0\})(\forall {\left(y_l^\Omega\right)}' ,{
 In other words the Theorem \ref{the:spaces:iteration} states that the discontinuities of the $n$-th iteration of the stepping function divide the window into intervals of images of the points of the quasicrystal after which the same sequence of distances of the length $n$ follow.
 \end{remark}
 
-\begin{theorem}
-\label{the:complexity}
-Let $\Omega = [c,c+\ell)$.\\
-If $\ell \notin \ring$ then $\mathcal{C}_{\ell}(n) = 2n+1,\, \forall n\in\mathbb{N}$. \\
-If $\ell \in \ring$ then $\exists^1 k \in \mathbb{N}$ such that $\left({(f^\Omega)}^{k}(a^\Omega) = b^\Omega\right)$ or $\left({(f^\Omega)}^{k+1}(b^\Omega) = a^\Omega\right)$ and 
-$$\mathcal{C}_{\ell}(n) = \left\{
-	\begin{array}{l l}
-		2n+1	&	\forall n\leq k \\
-		n+k+1	&	\forall n > k
-	\end{array}
-	\right.
-$$
-\end{theorem}
-
-\begin{theorem}
-\label{the:sameSpaces}
-Let $\Omega = [c,c+\ell)$.
-$$\mathcal{D}_n = \left\{ \ell\,\left|\, \ell\in \left(\frac{1}{\beta},1\right] \,\wedge\, \mathcal{C}_\ell(n) < 2n+1 \right.\right\}$$
-Then elements of $\mathcal{D}_n$ divide interval $I \vcentcolon= \left(\frac{1}{\beta},1\right]$ into finite amount of disjoint sub-intervals $(I_m)_{m\in\hat{N}}$ such that $\mathcal{L}_{\ell_1}(n) = \mathcal{L}_{\ell_2}(n)$ $\forall \ell_1, \ell_2 \in I_m,\, \forall m\in\hat{N}, \forall n\in\NN$.
-\end{theorem}
-
-\begin{remark}
-Please note that $\mathcal{D}_n$ from theorem \ref{the:sameSpaces} divides base windows into sets of same language whereas $D_n$ from theorem \ref{the:spaces:iteration} divides specific window into intervals by the sequences of points that follow.
-\end{remark}
-
-
-
 \begin{figure}[h]
 \centering
 \caption{Graph of stepping function for quasicrystal $\quasi{\Omega}$ where $\Omega = [c,d),\, c=0,\, d=12-3\beta$. $C= 2\beta-1$, $D= \beta$ and $E= \beta-1$.}
@@ -73,7 +46,7 @@ Please note that $\mathcal{D}_n$ from theorem \ref{the:sameSpaces} divides base 
 \end{tikzpicture}
 \end{figure}
 
-The algorithm uses the stepping function of a quasicrystal. As is apparent from Figure \ref{img:steppingFunction} and Theorem \ref{the:ffff} DOPLNIT, stepping function is piece wise linear and after points of quasicrystal corresponding to one linear segment follows the same distance to the next point of the quasicrystal. Alternatively all the points of the sequence of the quasicrystal $y_n$ whose images $y_n'$ are in a single segment of linearity, have the same corresponding letter in the word of the quasicrystal. That is precisely what the algorithm uses. 
+The algorithm uses the stepping function of a quasicrystal. As is apparent from Figure \ref{img:steppingFunction} and Theorem \ref{def:stepingFunc}, stepping function is piece wise linear and after points of quasicrystal corresponding to one linear segment follows the same distance to the next point of the quasicrystal. Alternatively all the points of the sequence of the quasicrystal $y_n$ whose images $y_n'$ are in a single segment of linearity, have the same corresponding letter in the word of the quasicrystal. That is precisely what the algorithm uses. 
 
 First only non-singular windows are considered.
 
@@ -97,6 +70,10 @@ $$f^\Omega\left([\omega_i^{n-1},\omega_{i+1}^{n-1})\right) = [f^\Omega(\omega_i^
 Then the image is divided by the points $a^\Omega$ and $b^\Omega$. If one or both of these points are inside the image, it gets divided into two or three disjunct intervals. 
 
 After all intervals for $i\in \widehat{k-1}$ are processed, all images or their divisions are sorted and denoted $[\omega_0,\omega_1), [\omega_1,\omega_2), \dots, [\omega_{m-1},\omega_m)$.
+
+For the singular windows $a^\Omega = b^\Omega$ and so for $n=1$ the division becomes:
+$$m=2, \omega_1 = a^\Omega$$
+At each step the image can be divided at most into two parts by the one point.
 
 It may also be desirable to not only acquire the division of the window by the same words, but to also acquire the words themselves. That is done by a simple modification of the described algorithm. Each interval is marked with the corresponding letter $A$, $B$, $C$, $D$ or $E$ at the beginning of the recursion. While dividing the image of the interval by the points $a^\Omega$ and/or $b^\Omega$, the mark is appended by an appropriate letter.
 
@@ -152,6 +129,7 @@ It may also be desirable to not only acquire the division of the window by the s
 \caption{Iteration of the stepping function $f^{\Omega}$ where $|\Omega| = \frac{3\beta-10}{2}$. Dashed lines show the exchange of intervals of the stepping function and the gray area shows progression of division for one interval.} 
 \end{figure}
 
-To summarize, for given $n\in\NN$ and window $I=[c,d)$ is the language $\mathcal{L}_{d-c}(n)$ finite and the described algorithm provides every word from the language. The next section takes together finite section generation, covering radius estimate and the language $\mathcal{L}_{\ell}(n)$ to provide catalog of all shapes of voronoi polygons for a given window.
+\paragraph{Summary}
+For given $n\in\NN$ and window $I=[c,d)$ is the language $\mathcal{L}_{d-c}(n)$ finite and the described algorithm provides every word from the language. The next section takes together finite section generation, covering radius estimate and the language $\mathcal{L}_{\ell}(n)$ to provide catalog of all shapes of voronoi polygons for a given window.
 
 \end{document}

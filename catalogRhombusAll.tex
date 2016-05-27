@@ -1,0 +1,69 @@
+\documentclass[text.tex]{subfiles}
+
+\begin{document}
+\section{Cataloging voronoi polygons for all rhombic windows}
+
+To catalog all different shapes of voronoi polygons in all quasicrystals with a rhombic window, several simplifications are put in place.
+First only base rhombic windows are considered since polygons from other quasicrystals are not different in shape only in scale. Secondly the base windows are divided by the same language in finitely many groups. 
+
+\begin{theorem}
+\label{the:complexity}
+Let $\Omega = [c,c+\ell)$.\\
+If $\ell \notin \ring$ then $\mathcal{C}_{\ell}(n) = 2n+1,\, \forall n\in\mathbb{N}$. \\
+If $\ell \in \ring$ then $\exists^1 k \in \mathbb{N}$ such that $\left({(f^\Omega)}^{k}(a^\Omega) = b^\Omega\right)$ or $\left({(f^\Omega)}^{k+1}(b^\Omega) = a^\Omega\right)$ and 
+$$\mathcal{C}_{\ell}(n) = \left\{
+	\begin{array}{l l}
+		2n+1	&	\forall n\leq k \\
+		n+k+1	&	\forall n > k
+	\end{array}
+	\right.
+$$
+\end{theorem}
+
+\begin{theorem}
+\label{the:sameSpaces}
+Let $\Omega = [c,c+\ell)$.
+$$\mathcal{D}_n = \left\{ \ell\,\left|\, \ell\in \left(\frac{1}{\beta},1\right] \,\wedge\, \mathcal{C}_\ell(n) < 2n+1 \right.\right\}$$
+Then elements of $\mathcal{D}_n$ divide interval $I \vcentcolon= \left(\frac{1}{\beta},1\right]$ into finite amount of disjoint sub-intervals $(I_m)_{m\in\hat{N}}$ such that $\mathcal{L}_{\ell_1}(n) = \mathcal{L}_{\ell_2}(n)$ $\forall \ell_1, \ell_2 \in I_m,\, \forall m\in\hat{n}, \forall n\in\NN$.
+\end{theorem}
+
+\begin{remark}
+Please note that $\mathcal{D}_n$ from theorem \ref{the:sameSpaces} divides base windows into sets of same language whereas $D_n$ from theorem \ref{the:spaces:iteration} divides specific window into intervals by the sequences of points that follow.
+\end{remark}
+
+Previous two theorem give a guide to which points divide the base windows into groups of the same language and also how to find those points. 
+
+Now is the time to introduce new view on the one-dimensional base windows as a whole. Figure \ref{fig:allBaseWindows} shows a plot of all base windows side by side.
+
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=6]
+\draw (0.26795,0) -- (1,0) -- (1,1) -- (0.26795,0.26795);
+\draw [dashed] (0.26795,0) -- (0,0) -- (0.26795,0.26795) -- cycle;
+
+\draw [dashed] (0.46410,0) -- (0.46410,0.46410);
+\draw [dashed] (0.73205,0) -- (0.73205,0.73205);
+
+\draw (0.26795,0) -- (1,0.73205);
+
+\draw (0.26795,0.19615) -- (0.46410,0.19615);
+\draw (0.46410,0.46410) -- (0.73205,0.46410);
+\draw (0.73205,0.73205) -- (1,0.73205);
+
+\node [below] at (0,0) {$0$};
+\node [below] at (0.26795,0) {$\frac{1}{\beta}$};
+\node [below] at (0.46410,0) {$\frac{\beta-2}{\beta}$};
+\node [below] at (0.73205,0) {$\frac{\beta-1}{\beta}$};
+\node [below] at (1,0) {$1$};
+\end{tikzpicture}
+\caption{One-dimensional base windows. Each vertical slice represents one base window. The skewed line marks the point $a^\Omega$ and the horizontal line the point $b^\Omega$.}
+\label{fig:allBaseWindows}
+\end{figure}
+
+It shows well how the window changes while increasing in size and how the singular windows come to existence. However more importantly it shows that $\mathcal{D}_1 = \left\{\frac{\beta-2}{\beta}, \frac{\beta-1}{\beta}\right\}$.
+The algorithm for generating $\mathcal{D}_n$ is very similar to the algorithm for division of a single window or the algorithm for generating $D_n$. Only this time instead of getting a stepping function image of the endpoints of interval, the function is used on whole line segments representing $a^\Omega$ and $b^\Omega$. Every time images of these line segments intersect a new point is added to the set $\mathcal{D}_n$.
+
+For a sufficient $n$ such $\mathcal{D}_n$ can be constructed that the same language on the subintervals implies the same set of shapes of voronoi polygons on corresponding quasicrystals. The endpoints of the subintervals are then examined independently. 
+
+
+\end{document}
