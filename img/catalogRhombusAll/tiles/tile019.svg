@@ -1,0 +1,30 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="1000" height="1000" viewBox="-252 -252 504 504">
+
+<!--
+6 40.00000 -1.83959
+-->
+<text x="-242.00000" y="-162.00000" style="font-size:100;font-family:Latin Modern Roman">
+19
+</text>
+<g transform="scale(17,-17)">
+<!--  -->
+<polygon points="-5.09808,0.00000 -5.09808,-2.36603 0.00000,-3.73205 1.86603,-3.23205 1.86603,3.23205 -1.07735,4.02073 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.4" />
+<!-- B1D1B1D1B1 D1B1A1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="-6.96410" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-10.19615" cy="0.00000" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</g>
+</svg>

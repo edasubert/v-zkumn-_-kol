@@ -1,0 +1,943 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="2143.59" height="643.078" viewBox="-0.535898 -0.16077 1.0718 0.321539">
+
+<rect x="-50%" y="-50%" width="100%" height="100%" fill="white" />
+<g transform="scale(1,-1)">
+<polygon points="-0.50000,-0.13397 0.03590,-0.13397 0.50000,0.13397 -0.03590,0.13397 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<!--D1B1D1C1D1B1D1B1 D1B1D1C1D1B1D1B1-->
+<polygon points="-0.50000,-0.13397 -0.42820,-0.13397 -0.36603,-0.09808 -0.43782,-0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.44909" y="-0.13210" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1C1D1B1D1B1 D1B1D1C1D1B1D1B1 -->
+<polygon points="-2.73205,-1.00000 1.86603,-2.23205 1.86603,0.50000 -1.36603,1.36603 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1C1D1B1D1B1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-0.86603" cy="-3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1C1D1B1D1B1 D1B1D1C1D1B1D1B1 -->
+<polygon points="-2.73205,-1.00000 1.86603,-2.23205 1.86603,0.50000 -1.36603,1.36603 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1C1D1B1D1B1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-0.86603" cy="-3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--B1D1B1D1C1D1B1D1 B1D1B1D1C1D1B1D1-->
+<polygon points="0.36603,0.09808 0.43782,0.09808 0.50000,0.13397 0.42820,0.13397 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.41694" y="0.09995" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- B1D1B1D1C1D1B1D1 B1D1B1D1C1D1B1D1 -->
+<polygon points="2.73205,1.00000 -1.86603,2.23205 -1.86603,-0.50000 1.36603,-1.36603 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- B1D1B1D1C1D1B1D1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="0.86603" cy="3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- B1D1B1D1C1D1B1D1 B1D1B1D1C1D1B1D1 -->
+<polygon points="2.73205,1.00000 -1.86603,2.23205 -1.86603,-0.50000 1.36603,-1.36603 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- B1D1B1D1C1D1B1D1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="0.86603" cy="3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1C1D1B1D1B1 D1B1D1B1D1C1D1B1-->
+<polygon points="-0.43782,-0.09808 -0.36603,-0.09808 -0.19615,0.00000 -0.26795,0.00000 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.33306" y="-0.06512" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1C1D1B1D1B1 D1B1D1B1D1C1D1B1 -->
+<polygon points="-3.23205,-1.86603 0.50000,-2.86603 1.86603,-2.23205 1.86603,0.50000 -1.36603,1.36603 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1C1D1B1D1B1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="2.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1C1D1B1D1B1 D1B1D1B1D1C1D1B1 -->
+<polygon points="-3.23205,-1.86603 0.50000,-2.86603 1.86603,-2.23205 1.86603,0.50000 -1.36603,1.36603 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1C1D1B1D1B1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="2.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1B1D1C1D1B1 D1B1D1C1D1B1D1B1-->
+<polygon points="-0.42820,-0.13397 -0.23205,-0.13397 -0.16987,-0.09808 -0.36603,-0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.31512" y="-0.13210" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1B1D1C1D1B1 D1B1D1C1D1B1D1B1 -->
+<polygon points="-1.86603,-2.23205 1.86603,-3.23205 1.86603,0.50000 -1.36603,1.36603 -2.73205,-1.00000 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1B1D1C1D1B1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-4.59808" cy="-3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1B1D1C1D1B1 D1B1D1C1D1B1D1B1 -->
+<polygon points="-1.86603,-2.23205 1.86603,-3.23205 1.86603,0.50000 -1.36603,1.36603 -2.73205,-1.00000 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1B1D1C1D1B1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-4.59808" cy="-3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--B1D1B1D1C1D1B1D1 C1D1B1D1B1D1C1D1-->
+<polygon points="0.19615,0.00000 0.26795,0.00000 0.43782,0.09808 0.36603,0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.30091" y="0.03296" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- B1D1B1D1C1D1B1D1 C1D1B1D1B1D1C1D1 -->
+<polygon points="3.23205,1.86603 -0.50000,2.86603 -1.86603,2.23205 -1.86603,-0.50000 1.36603,-1.36603 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- B1D1B1D1C1D1B1D1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-2.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- B1D1B1D1C1D1B1D1 C1D1B1D1B1D1C1D1 -->
+<polygon points="3.23205,1.86603 -0.50000,2.86603 -1.86603,2.23205 -1.86603,-0.50000 1.36603,-1.36603 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- B1D1B1D1C1D1B1D1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-2.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--C1D1B1D1B1D1C1D1 B1D1B1D1C1D1B1D1-->
+<polygon points="0.16987,0.09808 0.36603,0.09808 0.42820,0.13397 0.23205,0.13397 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.28296" y="0.09995" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- C1D1B1D1B1D1C1D1 B1D1B1D1C1D1B1D1 -->
+<polygon points="2.73205,1.00000 1.86603,2.23205 -1.86603,3.23205 -1.86603,-0.50000 1.36603,-1.36603 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- C1D1B1D1B1D1C1D1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="4.59808" cy="3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- C1D1B1D1B1D1C1D1 B1D1B1D1C1D1B1D1 -->
+<polygon points="2.73205,1.00000 1.86603,2.23205 -1.86603,3.23205 -1.86603,-0.50000 1.36603,-1.36603 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- C1D1B1D1B1D1C1D1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="4.59808" cy="3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1B1D1C1D1B1 D1B1D1B1D1C1D1B1-->
+<polygon points="-0.36603,-0.09808 -0.16987,-0.09808 0.00000,0.00000 -0.19615,0.00000 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.19909" y="-0.06512" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1B1D1C1D1B1 D1B1D1B1D1C1D1B1 -->
+<polygon points="-3.23205,-1.86603 1.86603,-3.23205 1.86603,0.50000 -1.36603,1.36603 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1B1D1C1D1B1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1B1D1C1D1B1 D1B1D1B1D1C1D1B1 -->
+<polygon points="-3.23205,-1.86603 1.86603,-3.23205 1.86603,0.50000 -1.36603,1.36603 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1B1D1C1D1B1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--C1D1B1D1B1D1C1D1 C1D1B1D1B1D1C1D1-->
+<polygon points="0.00000,0.00000 0.19615,0.00000 0.36603,0.09808 0.16987,0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.16694" y="0.03296" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- C1D1B1D1B1D1C1D1 C1D1B1D1B1D1C1D1 -->
+<polygon points="3.23205,1.86603 -1.86603,3.23205 -1.86603,-0.50000 1.36603,-1.36603 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- C1D1B1D1B1D1C1D1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- C1D1B1D1B1D1C1D1 C1D1B1D1B1D1C1D1 -->
+<polygon points="3.23205,1.86603 -1.86603,3.23205 -1.86603,-0.50000 1.36603,-1.36603 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- C1D1B1D1B1D1C1D1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--B1D1B1D1C1D1B1D1 D1B1D1C1D1B1D1B1-->
+<polygon points="-0.03590,-0.13397 0.03590,-0.13397 0.09808,-0.09808 0.02628,-0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.01501" y="-0.13210" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- B1D1B1D1C1D1B1D1 D1B1D1C1D1B1D1B1 -->
+<polygon points="-1.86603,-3.23205 2.54904,-0.68301 0.00000,3.73205 -1.86603,0.50000 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- B1D1B1D1C1D1B1D1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="-3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- B1D1B1D1C1D1B1D1 D1B1D1C1D1B1D1B1 -->
+<polygon points="-1.86603,-3.23205 2.54904,-0.68301 0.00000,3.73205 -1.86603,0.50000 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- B1D1B1D1C1D1B1D1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="-3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1C1D1B1D1B1 B1D1B1D1C1D1B1D1-->
+<polygon points="-0.09808,0.09808 -0.02628,0.09808 0.03590,0.13397 -0.03590,0.13397 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.04717" y="0.09995" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1C1D1B1D1B1 B1D1B1D1C1D1B1D1 -->
+<polygon points="0.00000,-3.73205 1.86603,-0.50000 1.86603,3.23205 -2.54904,0.68301 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1C1D1B1D1B1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1C1D1B1D1B1 B1D1B1D1C1D1B1D1 -->
+<polygon points="0.00000,-3.73205 1.86603,-0.50000 1.86603,3.23205 -2.54904,0.68301 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1C1D1B1D1B1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1C1D1B1D1B1D1B1 B1D1B1D1C1D1B1D1-->
+<polygon points="-0.02628,0.09808 0.09808,0.09808 0.16025,0.13397 0.03590,0.13397 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.05091" y="0.09995" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1C1D1B1D1B1D1B1 B1D1B1D1C1D1B1D1 -->
+<polygon points="-2.94338,-2.94338 0.00000,-3.73205 1.86603,-0.50000 1.86603,3.23205 -3.73205,0.00000 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1C1D1B1D1B1D1B1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1C1D1B1D1B1D1B1 B1D1B1D1C1D1B1D1 -->
+<polygon points="-2.94338,-2.94338 0.00000,-3.73205 1.86603,-0.50000 1.86603,3.23205 -3.73205,0.00000 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1C1D1B1D1B1D1B1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1C1D1B1D1B1 C1D1B1D1B1D1C1D1-->
+<polygon points="-0.20577,0.03590 -0.13397,0.03590 -0.02628,0.09808 -0.09808,0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.13210" y="0.05091" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1C1D1B1D1B1 C1D1B1D1B1D1C1D1 -->
+<polygon points="1.86603,3.23205 -1.07735,4.02073 -3.23205,1.86603 0.00000,-3.73205 1.86603,-0.50000 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1C1D1B1D1B1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1C1D1B1D1B1 C1D1B1D1B1D1C1D1 -->
+<polygon points="1.86603,3.23205 -1.07735,4.02073 -3.23205,1.86603 0.00000,-3.73205 1.86603,-0.50000 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1C1D1B1D1B1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--C1D1B1D1B1D1C1D1 D1B1D1C1D1B1D1B1-->
+<polygon points="-0.16025,-0.13397 -0.03590,-0.13397 0.02628,-0.09808 -0.09808,-0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.08306" y="-0.13210" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- C1D1B1D1B1D1C1D1 D1B1D1C1D1B1D1B1 -->
+<polygon points="2.94338,2.94338 0.00000,3.73205 -1.86603,0.50000 -1.86603,-3.23205 3.73205,0.00000 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- C1D1B1D1B1D1C1D1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="-3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- C1D1B1D1B1D1C1D1 D1B1D1C1D1B1D1B1 -->
+<polygon points="2.94338,2.94338 0.00000,3.73205 -1.86603,0.50000 -1.86603,-3.23205 3.73205,0.00000 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- C1D1B1D1B1D1C1D1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="-3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--B1D1B1D1C1D1B1D1 D1C1D1B1D1B1D1B1-->
+<polygon points="0.02628,-0.09808 0.09808,-0.09808 0.20577,-0.03590 0.13397,-0.03590 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.09995" y="-0.08306" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- B1D1B1D1C1D1B1D1 D1C1D1B1D1B1D1B1 -->
+<polygon points="1.07735,-4.02073 3.23205,-1.86603 0.00000,3.73205 -1.86603,0.50000 -1.86603,-3.23205 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- B1D1B1D1C1D1B1D1 D1C1D1B1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- B1D1B1D1C1D1B1D1 D1C1D1B1D1B1D1B1 -->
+<polygon points="1.07735,-4.02073 3.23205,-1.86603 0.00000,3.73205 -1.86603,0.50000 -1.86603,-3.23205 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- B1D1B1D1C1D1B1D1 D1C1D1B1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1B1D1C1D1B1 B1D1B1D1C1D1B1D1-->
+<polygon points="0.09808,0.09808 0.16987,0.09808 0.23205,0.13397 0.16025,0.13397 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.14899" y="0.09995" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1B1D1C1D1B1 B1D1B1D1C1D1B1D1 -->
+<polygon points="-2.94338,-2.94338 0.00000,-3.73205 1.86603,-0.50000 1.86603,2.23205 0.68301,2.54904 -3.73205,0.00000 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1B1D1C1D1B1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1B1D1C1D1B1 B1D1B1D1C1D1B1D1 -->
+<polygon points="-2.94338,-2.94338 0.00000,-3.73205 1.86603,-0.50000 1.86603,2.23205 0.68301,2.54904 -3.73205,0.00000 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1B1D1C1D1B1 B1D1B1D1C1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1C1D1B1D1B1 B1D1C1D1B1D1B1D1-->
+<polygon points="-0.26795,0.00000 -0.19615,0.00000 -0.13397,0.03590 -0.20577,0.03590 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.21704" y="0.00187" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1C1D1B1D1B1 B1D1C1D1B1D1B1D1 -->
+<polygon points="1.86603,3.23205 -1.07735,4.02073 -3.23205,1.86603 -0.68301,-2.54904 0.50000,-2.86603 1.86603,-0.50000 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1C1D1B1D1B1 B1D1C1D1B1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1C1D1B1D1B1 B1D1C1D1B1D1B1D1 -->
+<polygon points="1.86603,3.23205 -1.07735,4.02073 -3.23205,1.86603 -0.68301,-2.54904 0.50000,-2.86603 1.86603,-0.50000 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1C1D1B1D1B1 B1D1C1D1B1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--B1D1C1D1B1D1B1D1 D1B1D1C1D1B1D1B1-->
+<polygon points="-0.23205,-0.13397 -0.16025,-0.13397 -0.09808,-0.09808 -0.16987,-0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.18114" y="-0.13210" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- B1D1C1D1B1D1B1D1 D1B1D1C1D1B1D1B1 -->
+<polygon points="2.94338,2.94338 0.00000,3.73205 -1.86603,0.50000 -1.86603,-2.23205 -0.68301,-2.54904 3.73205,0.00000 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- B1D1C1D1B1D1B1D1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="-3.23205" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- B1D1C1D1B1D1B1D1 D1B1D1C1D1B1D1B1 -->
+<polygon points="2.94338,2.94338 0.00000,3.73205 -1.86603,0.50000 -1.86603,-2.23205 -0.68301,-2.54904 3.73205,0.00000 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- B1D1C1D1B1D1B1D1 D1B1D1C1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="-3.23205" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--B1D1B1D1C1D1B1D1 D1B1D1B1D1C1D1B1-->
+<polygon points="0.13397,-0.03590 0.20577,-0.03590 0.26795,0.00000 0.19615,0.00000 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.18488" y="-0.03403" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- B1D1B1D1C1D1B1D1 D1B1D1B1D1C1D1B1 -->
+<polygon points="1.07735,-4.02073 3.23205,-1.86603 0.68301,2.54904 -0.50000,2.86603 -1.86603,0.50000 -1.86603,-3.23205 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- B1D1B1D1C1D1B1D1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- B1D1B1D1C1D1B1D1 D1B1D1B1D1C1D1B1 -->
+<polygon points="1.07735,-4.02073 3.23205,-1.86603 0.68301,2.54904 -0.50000,2.86603 -1.86603,0.50000 -1.86603,-3.23205 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- B1D1B1D1C1D1B1D1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1B1D1C1D1B1 B1D1C1D1B1D1B1D1-->
+<polygon points="-0.07180,0.00000 0.00000,0.00000 0.06218,0.03590 -0.00962,0.03590 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.02089" y="0.00187" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1B1D1C1D1B1 B1D1C1D1B1D1B1D1 -->
+<polygon points="-4.02073,1.07735 -3.23205,-1.86603 0.50000,-2.86603 1.86603,-0.50000 1.86603,2.23205 -1.86603,3.23205 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1B1D1C1D1B1 B1D1C1D1B1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1B1D1C1D1B1 B1D1C1D1B1D1B1D1 -->
+<polygon points="-4.02073,1.07735 -3.23205,-1.86603 0.50000,-2.86603 1.86603,-0.50000 1.86603,2.23205 -1.86603,3.23205 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1B1D1C1D1B1 B1D1C1D1B1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--B1D1C1D1B1D1B1D1 D1B1D1B1D1C1D1B1-->
+<polygon points="-0.06218,-0.03590 0.00962,-0.03590 0.07180,0.00000 0.00000,0.00000 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.01127" y="-0.03403" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- B1D1C1D1B1D1B1D1 D1B1D1B1D1C1D1B1 -->
+<polygon points="1.86603,-3.23205 4.02073,-1.07735 3.23205,1.86603 -0.50000,2.86603 -1.86603,0.50000 -1.86603,-2.23205 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- B1D1C1D1B1D1B1D1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- B1D1C1D1B1D1B1D1 D1B1D1B1D1C1D1B1 -->
+<polygon points="1.86603,-3.23205 4.02073,-1.07735 3.23205,1.86603 -0.50000,2.86603 -1.86603,0.50000 -1.86603,-2.23205 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- B1D1C1D1B1D1B1D1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1B1D1B1D1C1D1B1 C1D1B1D1B1D1C1D1-->
+<polygon points="-0.00962,0.03590 0.06218,0.03590 0.16987,0.09808 0.09808,0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.06405" y="0.05091" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1B1D1B1D1C1D1B1 C1D1B1D1B1D1C1D1 -->
+<polygon points="-2.94338,-2.94338 0.00000,-3.73205 1.86603,-0.50000 1.86603,2.23205 -1.86603,3.23205 -4.02073,1.07735 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1B1D1B1D1C1D1B1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1B1D1B1D1C1D1B1 C1D1B1D1B1D1C1D1 -->
+<polygon points="-2.94338,-2.94338 0.00000,-3.73205 1.86603,-0.50000 1.86603,2.23205 -1.86603,3.23205 -4.02073,1.07735 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1B1D1B1D1C1D1B1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1C1D1B1D1B1D1B1 B1D1C1D1B1D1B1D1-->
+<polygon points="-0.19615,0.00000 -0.07180,0.00000 -0.00962,0.03590 -0.13397,0.03590 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.11896" y="0.00187" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1C1D1B1D1B1D1B1 B1D1C1D1B1D1B1D1 -->
+<polygon points="-4.02073,1.07735 -3.23205,-1.86603 0.50000,-2.86603 1.86603,-0.50000 1.86603,3.23205 -1.07735,4.02073 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1C1D1B1D1B1D1B1 B1D1C1D1B1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1C1D1B1D1B1D1B1 B1D1C1D1B1D1B1D1 -->
+<polygon points="-4.02073,1.07735 -3.23205,-1.86603 0.50000,-2.86603 1.86603,-0.50000 1.86603,3.23205 -1.07735,4.02073 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1C1D1B1D1B1D1B1 B1D1C1D1B1D1B1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--B1D1C1D1B1D1B1D1 D1C1D1B1D1B1D1B1-->
+<polygon points="-0.16987,-0.09808 -0.09808,-0.09808 0.00962,-0.03590 -0.06218,-0.03590 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.09620" y="-0.08306" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- B1D1C1D1B1D1B1D1 D1C1D1B1D1B1D1B1 -->
+<polygon points="1.86603,-3.23205 4.02073,-1.07735 2.94338,2.94338 0.00000,3.73205 -1.86603,0.50000 -1.86603,-2.23205 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- B1D1C1D1B1D1B1D1 D1C1D1B1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- B1D1C1D1B1D1B1D1 D1C1D1B1D1B1D1B1 -->
+<polygon points="1.86603,-3.23205 4.02073,-1.07735 2.94338,2.94338 0.00000,3.73205 -1.86603,0.50000 -1.86603,-2.23205 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- B1D1C1D1B1D1B1D1 D1C1D1B1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--C1D1B1D1B1D1C1D1 D1B1D1B1D1C1D1B1-->
+<polygon points="0.00962,-0.03590 0.13397,-0.03590 0.19615,0.00000 0.07180,0.00000 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.08681" y="-0.03403" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- C1D1B1D1B1D1C1D1 D1B1D1B1D1C1D1B1 -->
+<polygon points="1.07735,-4.02073 4.02073,-1.07735 3.23205,1.86603 -0.50000,2.86603 -1.86603,0.50000 -1.86603,-3.23205 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- C1D1B1D1B1D1C1D1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- C1D1B1D1B1D1C1D1 D1B1D1B1D1C1D1B1 -->
+<polygon points="1.07735,-4.02073 4.02073,-1.07735 3.23205,1.86603 -0.50000,2.86603 -1.86603,0.50000 -1.86603,-3.23205 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- C1D1B1D1B1D1C1D1 D1B1D1B1D1C1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--D1C1D1B1D1B1D1B1 C1D1B1D1B1D1C1D1-->
+<polygon points="-0.13397,0.03590 -0.00962,0.03590 0.09808,0.09808 -0.02628,0.09808 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="-0.03403" y="0.05091" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- D1C1D1B1D1B1D1B1 C1D1B1D1B1D1C1D1 -->
+<polygon points="-2.94338,-2.94338 0.00000,-3.73205 1.86603,-0.50000 1.86603,3.23205 -1.07735,4.02073 -4.02073,1.07735 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- D1C1D1B1D1B1D1B1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- D1C1D1B1D1B1D1B1 C1D1B1D1B1D1C1D1 -->
+<polygon points="-2.94338,-2.94338 0.00000,-3.73205 1.86603,-0.50000 1.86603,3.23205 -1.07735,4.02073 -4.02073,1.07735 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- D1C1D1B1D1B1D1B1 C1D1B1D1B1D1C1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="-1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+<!--C1D1B1D1B1D1C1D1 D1C1D1B1D1B1D1B1-->
+<polygon points="-0.09808,-0.09808 0.02628,-0.09808 0.13397,-0.03590 0.00962,-0.03590 " style="fill:none;stroke:rgb(25,25,25);stroke-width:0.000535898" fill-opacity="0.5" />
+<svg x="0.00187" y="-0.08306" width="0.03215" height="0.03215" viewBox="-10.64102 -10.64102 21.28203 21.28203">
+
+<!-- C1D1B1D1B1D1C1D1 D1C1D1B1D1B1D1B1 -->
+<polygon points="1.07735,-4.02073 4.02073,-1.07735 2.94338,2.94338 0.00000,3.73205 -1.86603,0.50000 -1.86603,-3.23205 " fill="none" stroke="#ffffff" stroke-width="1.11962" />
+<!-- C1D1B1D1B1D1C1D1 D1C1D1B1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="1.11962" stroke="#ffffff" stroke-width="0" fill="#ffffff" />
+<!-- C1D1B1D1B1D1C1D1 D1C1D1B1D1B1D1B1 -->
+<polygon points="1.07735,-4.02073 4.02073,-1.07735 2.94338,2.94338 0.00000,3.73205 -1.86603,0.50000 -1.86603,-3.23205 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.447846" />
+<!-- C1D1B1D1B1D1C1D1 D1C1D1B1D1B1D1B1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.86603" cy="6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="6.96410" cy="1.86603" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-5.09808" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.447846" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</svg>
+</g>
+</svg>

@@ -10,6 +10,11 @@ This section describes the algorithm for generating all voronoi polygons in a qu
 \item language $\mathcal{L}_{\ell}(n)$ is finite and easy to generate
 \end{enumerate}
 
+There is a correspondence between a section of a word of a one-dimensional quasicrystal and a finite section of the one-dimensional quasicrystal. 
+$$t_m t_{m+1}\dots t_{m+k-1} t_{m+k}\quad\longleftrightarrow\quad y_m, y_{m+1},\dots ,y_{m+k-1},y_{m+k},y_{m+k+1}$$
+$$y_{i+1}-y_{i} = t_{i}$$
+Where the last equality is in terms of the Definition \ref{def:distancesNotation}.
+
 The algorithm is then straight forward:
 
 \paragraph{Algorith definition} The algorithm receives as an input a rhombic window. As an output it returns a list of voronoi polygons found in the quasicrystal coresponding to the given window.

@@ -1,0 +1,26 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="1000" height="1000" viewBox="-252 -252 504 504">
+
+<!--
+4 67.00000 -2.87979
+-->
+<text x="-242.00000" y="-162.00000" style="font-size:100;font-family:Latin Modern Roman">
+6
+</text>
+<g transform="scale(17,-17)">
+<!--  -->
+<polygon points="-6.96410,-1.86603 5.09808,-5.09808 5.09808,1.36603 -3.73205,3.73205 " fill="none" stroke="rgb(25,25,25)" stroke-width="0.4" />
+<!-- E1D1D1E1D1 E1D1D1E1D1 -->
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="1.36603" cy="5.09808" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="-6.96410" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="10.19615" cy="0.00000" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-8.83013" cy="5.09808" r="0.4" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+</g>
+</svg>
