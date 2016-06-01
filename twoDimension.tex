@@ -3,8 +3,9 @@
 \begin{document}
 
 \section*{Delone set and voronoi tessellation}
+\addcontentsline{toc}{section}{Delone set and voronoi tessellation}
 
-Section provides the definitions of a delone set, a covering radius and a voronoi tessellation.
+Section provides the definitions of a delone set a covering radius and a voronoi tessellation.
 
 \begin{definition}
 \label{def:delone}
@@ -25,7 +26,7 @@ Voronoi polygon $V(x)$ is said to belong to the point $x$ and $x$ is called the 
 \end{definition}
 
 \begin{remark}
-Example of a delone set with the voronoi tessellation can be seen in the Figure \ref{fig:finiteSectionQuasi}.
+Example of a delone set with the voronoi tessellation can be seen in Figure \ref{fig:finiteSectionQuasi}.
 \end{remark}
 
 \begin{theorem}
@@ -36,6 +37,9 @@ Then voronoi tile of $x$ on $P$ is
 $$V(x) = \bigcap_{z\in \boldsymbol{N}} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<\|y-z\| \right\}$$
 \end{theorem}
 
+\begin{remark}
+Theorem \ref{the:radiusLimit} gives an algorithm for voronoi polygon construction. First it limits the amount of points of $P$ that need to be considered and also shows that the polygon can be constructed by series of cuts between the center and each of the points form $N_x$. 
+\end{remark}
 %
 \clearpage
 \section{Two-dimensional quasicrystals}%=======================================================================================================================
@@ -58,7 +62,7 @@ $$v^\ast = (a\alpha_1 + b\alpha_2)^\ast = a'\alpha_1 + b'\alpha_3 \;\forall a,b\
 \end{definition}
 
 \begin{remark}
-Simple consequence of the Theorem \ref{def:starFunction} is that $\alpha_1^\ast = \alpha_1$ and $\alpha_2^\ast = \alpha_3$.
+Simple consequence of Definition \ref{def:starFunction} is that $\alpha_1^\ast = \alpha_1$ and $\alpha_2^\ast = \alpha_3$.
 \end{remark}
 
 \begin{definition}
@@ -72,10 +76,10 @@ $\quasi{\Omega}$ where $\Omega \subset \mathbb{R}^2$ always denotes two-dimensio
 
 \begin{remark}
 \label{rem:quasiProperties}
-The same properties from the Theorem \ref{the:quasiProperties} for the one-dimensional quasicrystals apply to the two-dimensional quasicrystals as well.
+The same properties from Theorem \ref{the:quasiProperties} for the one-dimensional quasicrystals apply to the two-dimensional quasicrystals as well.
 \end{remark}
 
-To analyze the two-dimensional quasicrystals again only windows of a certain shape will be considered. That is sufficient because of the Remark \ref{rem:quasiProperties}. The chosen window shape is a rhombus. 
+To analyze the two-dimensional quasicrystals again only windows of a certain shape will be considered. That is sufficient because of Remark \ref{rem:quasiProperties}. The chosen window shape is a rhombus. 
 
 \begin{theorem}
 \label{the:twoToOne}
@@ -93,10 +97,9 @@ The size of the rhombus refers to the size of the interval $|I|$ also a base rho
 
 \begin{remark}
 Note in the previous theorem that while $\Omega \subset \RN^2$ and so $\quasi{\Omega}$ is a two-dimensional quasicrystal, $I \subset \RN$ and so $\quasi{I}$ is a one-dimensional quasicrystal. Illustration of the construction is in the Figure \ref{fig:quasiRhombusConstruction}.
-The same Theorem also applies to parallelogram shaped windows. 
 \end{remark}
 
-From the analysis of one-dimensional quasicrystals and the Theorem \ref{the:twoToOne} follows that the two-dimensional quasicrystals are delone sets.  
+From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne} follows that the two-dimensional quasicrystals are delone sets.  
 
 To analyze distribution of the points of a two-dimensional quasicrystal, voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with a rhombic window. 
 
@@ -105,7 +108,7 @@ First an algorithm for generation of a finite section of a quasicrystal is prese
 %
 \clearpage
 \section{Generation of a finite section of a quasicrystal with a rhombic window}%=======================================================================================================================
-The algorithm is rather simple. It uses the stepping function and the Theorem \ref{the:twoToOne}. 
+The algorithm is rather simple. It uses the stepping function and Theorem \ref{the:twoToOne}. 
 
 \paragraph{Algorithm definition} The algorithm receives as an input a rhombic window $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and bounds $x_1, x_2, y_1, y_2 \in \ring$.
 The algorithm returns a subset of the quasicrystal $\quasi{\Omega}$ bounded by the given bounds.

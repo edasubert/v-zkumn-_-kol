@@ -34,7 +34,7 @@ $$\ring = \{ a + b\beta |a,b\in \mathbb{Z} \}$$
 \end{definition}
 
 \begin{remark}
-Similarly, ring $\mathbb{Z}[\beta']$ can be defined. According to the Theorem \ref{the:betaProperties} the two rings are equivalent: $\ring = \mathbb{Z}\left[\beta'\right]$.
+Similarly, ring $\mathbb{Z}[\beta']$ can be defined. According to Theorem \ref{the:betaProperties} the two rings are equivalent: $\ring = \mathbb{Z}\left[\beta'\right]$.
 \end{remark}
 
 \section{One-dimensional quasicrystals}
@@ -45,7 +45,7 @@ To define a quasicrystal one more definition is needed. Function connecting a sp
 Function $':\ring\to\mathbb{Z}[\beta']$ is defined as $(a+b\beta)' = a+b\beta'$.
 \end{definition}
 \begin{remark}
-Notation is consistent with the Definition \ref{def:beta}: $(\beta)'=\beta'$.
+Notation is consistent with Definition \ref{def:beta}: $(\beta)'=\beta'$.
 \end{remark}
 
 \begin{definition}
@@ -168,7 +168,7 @@ Let $\Omega, \tilde{\Omega} \subset \RN$ and $\lambda\in\ring$.
 
 \begin{remark}
 \label{rem:oneInterval}
-Further only left-closed right-open intervals will be analyzed as windows. That is justified by theorem \ref{the:quasiProperties} and following analysis.
+Further only left-closed right-open intervals will be analyzed as windows. That is justified by Theorem \ref{the:quasiProperties} and following analysis.
 %
 \begin{multicols}{2}
 \noindent\begin{align*}
@@ -202,12 +202,12 @@ Let $\Omega \subset \RN$ then $\forall k\in \mathbb{Z}: \quasi{\frac{1}{\beta^k}
 
 \begin{corollary}
 \label{cor:baseInterval}
-From remark \ref{rem:oneInterval} and theorem \ref{the:scale} follows that only windows $\Omega = [c,d)$ where $d-c\in\left( \frac{1}{\beta}, 1 \right]$ need to be analyzed. Such windows are called \textbf{base windows} or \textbf{windows in the base form}. Quasicrystals for all other windows can be acquired from the quasicrystals with the base windows by scaling and operations from remark \ref{rem:oneInterval}.
+From Remark \ref{rem:oneInterval} and Theorem \ref{the:scale} follows that only windows $\Omega = [c,d)$ where $d-c\in\left( \frac{1}{\beta}, 1 \right]$ need to be analyzed. Such windows are called \textbf{base windows} or \textbf{windows in the base form}. Quasicrystals for all other windows can be acquired from the quasicrystals with the base windows by scaling and operations from Remark \ref{rem:oneInterval}.
 \end{corollary}
 
 \subsection{One-dimensional quasicrystal structure}%====================================================================================================================
 
-Figure \ref{fig:onedimensional} suggests that the one-dimensional quasicrystal is a sequence of points. This subsection presents an analysis of spacing and distribution of these points.
+Figure \ref{fig:onedimensional} suggests that the one-dimensional quasicrystal is a sequence of points. This section presents an analysis of spacing and distribution of these points.
 
 \begin{definition}
 Strictly increasing sequence $(y_n^\Omega)_{n\in \mathbb{Z}}$ defined as $\left\{y_n^\Omega\,|\, n\in\mathbb{Z} \right\} = \quasi{\Omega}$ where $\Omega \subset \RN$ is called the \textbf{sequence of quasicrystal $\quasi{\Omega}$}.
@@ -215,7 +215,7 @@ Strictly increasing sequence $(y_n^\Omega)_{n\in \mathbb{Z}}$ defined as $\left\
 
 \begin{theorem}
 \label{the:spaces:sum}
-Let $\Omega = [c,d)$ is a base window, then all possible distances between two immediately following points of the sequence of  the quasicrystal $\quasi{\Omega}$, $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in the table \ref{table:spaces}.
+Let $\Omega = [c,d)$ is a base window, then all possible distances between two immediately following points of the sequence of  the quasicrystal $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in Table \ref{table:spaces}.
 \begin{table}[h]
 \begin{center}
 \begin{tabular}{ccccccc}
@@ -280,10 +280,7 @@ Stepping function takes $(\cdot)'$ image of a point of the quasicrystal and retu
 
 \begin{figure}
 \centering
-\fcapside
-{\caption{Graph of stepping function for quasicrystal $\quasi{\Omega}$ where $\Omega = [c,d),\, c=0,\, d=12-3\beta$. $C= 2\beta-1$, $D= \beta$ and $E= \beta-1$ (as in Definition \ref{def:distancesNotation}).}}
-{%
-\begin{tikzpicture}[scale=0.6]
+\begin{tikzpicture}
 \draw [<->] (0,5.3) -- (0,0) -- (5.3,0);
 
 \draw [thick,*-o,shorten <=-3pt,shorten >=-3pt] (0,1.674682453) 				-- (3.325317548,5);
@@ -306,7 +303,7 @@ Stepping function takes $(\cdot)'$ image of a point of the quasicrystal and retu
 \node [below] at (5,0) {$d$};
 \node [left] at (0,5) {$d$};
 \end{tikzpicture}
-}
+\caption{Graph of the stepping function for quasicrystal $\quasi{\Omega}$ where $\Omega = [c,d),\, c=0,\, d=12-3\beta$. $C= 2\beta-1$, $D= \beta$ and $E= \beta-1$ (as in Definition \ref{def:distancesNotation}).}
 \end{figure}
 
 Stepping function is a valuable tool in theoretical quasicrystal analysis and has direct practical use in quasicrystal generation. Therefore the following theorem lists several key properties of this function.

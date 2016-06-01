@@ -2,7 +2,7 @@
 
 \begin{document}
 \section{Cataloging voronoi polygons for a single rhombic window}
-This section describes the algorithm for generating all voronoi polygons in a quasicrystal with a rhombic window. Unless otherwise stated, in this section quasicrystal always means two-dimensional quasicrystal and window always means rhombic window. The key components from previous sections are:
+This section describes the algorithm for generating all voronoi polygons in a quasicrystal with a rhombic window. Unless otherwise stated, in this section quasicrystal always means two-dimensional quasicrystal and window always means a rhombic window. The key components from previous sections are:
 
 \begin{enumerate}
 \item only the points of the quasicrystal that are close enough determain the shape of the voronoi polygon
@@ -56,7 +56,7 @@ The largest distance within the coresponding one-dimensional quasicrystal is den
 To justify that the algorithm finds all voronoi polygons for a given window consider, that the shape of each voronoi polygon is determined by the points of the quasicrystal, that are distant at most $2L\cdot\hat{R}_c$ from the center of the polygon. In other words, the shape is only determined by a finite section of the quasicrystal. Each finite section of the quasicrystal with a rhombic window is described by two finite sections of a one-dimensional quasicrystal. Each finite section of one-dimensional quasicrystal with $n+1$ points is described by a finite word of the quasicrystal, every such word is present in the language $\mathcal{L}_{\ell}(n)$.
 
 \subsection{Determine sufficient $n$}
-Part of the algorithm that was not covered in detail is how to determine the length of a word sufficianet to cover a circle of radius $2L\cdot\hat{R}_c$. First a rhombus is circumscribed to the circle of the radius $2L\cdot\hat{R}_c$. The side of such rhombus is $4$ times larger than the circle radius. Then such $n$ has to be found that a finite section of one-dimensional quasicrystal corresponding to each word from $2L\cdot\hat{R}_c$ has to be at least as long as the side of the circumscribed rhombus. 
+Part of the algorithm that was not covered in detail is how to determine the length of a word sufficient to cover a circle of radius $2L\cdot\hat{R}_c$. First a rhombus is circumscribed to the circle of the radius $2L\cdot\hat{R}_c$. The side of such rhombus is $4$ times larger than the circle radius. Then such $n$ has to be found that a finite section of one-dimensional quasicrystal corresponding to each word from $\mathcal{L}_{\ell}(n)$ has to be at least as long as the side of the circumscribed rhombus. 
 There are several approaches, two are described here. 
 
 \begin{figure}[h]
@@ -68,12 +68,12 @@ There are several approaches, two are described here.
 
 One way is to get the smallest distance $S$ for the one-dimensional quasicrystal and set $n = \left\lceil\frac{8L\cdot\hat{R}_c}{S}\right\rceil$. 
 
-The second way is to start with $n=2$, test each word of the language and increase by $1$ until is $n$ sufficient. 
+The second way is to start with $n=2$, test each word of the language $\mathcal{L}_{\ell}(n)$ and increase by $1$ until $n$ is sufficient. 
 
 The second way takes more time to compute but produces better estimate, which will be desirable once analyzing quasicrystals with a general window.
 
 \subsection{Different orientations}
-As is apparent from the figure \ref{fig:finiteSectionForTileGeneration:more}, the same shape of a voronoi polygon appears in the quasicrystal in more orientations. This subsection covers analysis of different orientations of voronoi polygons. 
+As is apparent from Figure \ref{fig:finiteSectionForTileGeneration:more}, the same shape of a voronoi polygon appears in the quasicrystal in more orientations. This section covers the analysis of different orientations of voronoi polygons. 
 
 It is helpful to see the connection between the domain of the voronoi polygon and it's $\ast$ image in the window of the quasicrystal. Figure \ref{fig:windowWithDomain} shows a voronoi polygon from the quasicrystal with the window size $2-7\beta$, the window and $\ast$ image of it's domain and it's center. 
 
@@ -106,17 +106,17 @@ In fact the entire window can be divided in such sections. Every point of the qu
 From the division two axis of symmetry are apparent. These are the sources of the different orientations of the voronoi polygons of the same shape. The highlighted sections in the Figure \ref{fig:windowWithDivision} correspond to the four voronoi polygons form the Figure \ref{fig:finiteSectionForTileGeneration:more}
 
 \subsection{Dividing a rhombic window into sections by the shape of the corresponding voronoi polygon}
-Algorithm for checking whether a set of points belong to the quasicrystal also produces the shape of the section of the window. 
+Algorithm for checking whether a set of points belongs to the quasicrystal also produces the shape of the section of the window. 
 
-Let $\Omega$ be a rhombic window, $V$ one of the voronoi polygons in the quasicrystal $\quasi{\Omega}$, $c\in M$ the center of $V$, $D = \{p_1,\dots,p_k\in M\}$ the domain of $V$ and $q_i = p_i - c$, $i\hat{k}$.
+Let $\Omega$ be a rhombic window, $V$ one of the voronoi polygons in the quasicrystal $\quasi{\Omega}$, $c\in M$ the center of $V$, $D = \{p_1,\dots,p_k\}\subset M$ the domain of $V$ and $q_i = p_i - c$, $i\in\hat{k}$.
 Then the $\ast$ image of the center and the domain fit inside the window:
 $$c^\ast\in\Omega \quad\wedge\quad c^\ast + q_i^\ast\in\Omega \quad(\forall i\in\hat{k})$$
-which is equivalent to checking whether the image of the center $c^\ast$ fits inside translated windows:
+which is equivalent to whether the image of the center $c^\ast$ fits inside translated windows:
 $$c^\ast\in\Omega \quad\wedge\quad c^\ast\in\Omega-q_i^\ast \quad(\forall i\in\hat{k})$$
-$$c^\ast\in\left(\bigcap\limits_{i\in\hat{k}}(\Omega-q_i^\ast)\right)\cap\Omega$$
+$$c^\ast\in\bigcap\limits_{i\in\hat{k}}(\Omega-q_i^\ast)\cap\Omega$$
 Now first if the intersection is not empty then the polygon $V$ appears in the quasicrystal $\quasi{\Omega}$, this finding will be useful while analyzing quasicrystals with a general window. Also the intersection shows exactly the desired section of the window. Only if the image of the center fits inside this intersection does the image of the domain fit inside the window and that determines the shape of the voronoi polygon. 
 
-There is however a slight caveat. The intersection might be larger than the desired section. Consider this example, in the so far analyzed quasicrystal with the window size $2\beta-7$ there is a tile very similar in shape to the one in the Figure \ref{fig:finiteSectionForTileGeneration:more} (Figure \ref{fig:finiteSectionForTileGeneration:bigger}).
+There is however a slight caveat. The intersection might be larger than the desired section. Consider this example, in the so far analyzed quasicrystal with the window size $2\beta-7$ there is a polygon very similar in shape to the one in the Figure \ref{fig:finiteSectionForTileGeneration:more} (Figure \ref{fig:finiteSectionForTileGeneration:bigger}).
 \begin{figure}[h]
 \centering
 \includegraphics[width=0.14\textwidth]{finiteSectionForTileGeneration/tile003}
@@ -132,7 +132,7 @@ There is however a slight caveat. The intersection might be larger than the desi
 \label{fig:finiteSectionForTileGeneration:bigger}
 \end{figure}
 
-Therefore the intersection is a superset of the section. The Figure \ref{fig:intersectionsComparison} shows the intersections for first polygons of each line in the Figure \ref{fig:finiteSectionForTileGeneration:bigger}.
+The intersection is a superset of the section. The Figure \ref{fig:intersectionsComparison} shows the intersections for first polygons of each line in the Figure \ref{fig:finiteSectionForTileGeneration:bigger}.
 
 \begin{figure}[h]
 \centering

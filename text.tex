@@ -29,6 +29,9 @@
 \usepackage{longtable}
 \usepackage{multicol}
 \usepackage{rotating}
+\usepackage{accents}
+\usepackage[ruled,english]{algorithm2e}
+\usepackage{hyperref}
 
 
 \usepackage[capbesideposition=inside,facing=yes,capbesidesep=quad]{floatrow}
@@ -51,7 +54,8 @@
 \newtheorem{remark}{Remark}
 \newtheorem*{remarkn}{Remark}
 
-\newcommand{\ring}{\mathbb{Z}\left[\beta\right]}
+\renewcommand{\ring}{\mathbb{Z}\left[\beta\right]}
+\newcommand{\field}{\mathbb{Q}(\beta)}
 \newcommand{\quasi}[1]{\Sigma(#1)}
 \newcommand{\widequasi}[1]{\Sigma\left(#1\right)}
 \newcommand{\RN}{\mathbb{R}}
@@ -60,8 +64,36 @@
 \newcolumntype{d}[1]{ D{:}{:}{-1} }
 
 \setlength{\parskip}{0.6em}
+\setcounter{tocdepth}{1}
+
 
 \graphicspath{ {img/} }
+
+
+\newcommand{\uhat}{\underaccent{\check}}
+
+\newcommand{\uwidehat}[1]{%
+  \mathpalette\douwidehat{#1}%
+}
+
+\makeatletter
+\newcommand{\douwidehat}[2]{%
+  \sbox0{$\m@th#1\widehat{\hphantom{#2}}$}%
+  \sbox2{$\m@th#1x$}
+  \sbox4{$\m@th#1#2$}
+  \dimen0=\ht0
+  \advance\dimen0 -0.5\ht2
+  \dimen2=\dp4
+  \rlap{%
+    \raisebox{\dimexpr\dimen0-\dimen2}{%
+      \scalebox{1}[-1]{\box0}%
+    }%
+  }%
+  {#2}%
+}
+\makeatother
+
+
 
 \begin{document}
 
@@ -83,44 +115,44 @@
 %\end{center}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%% TITULNÍ STRANA PRÁCE
-%\clearpage
-%\thispagestyle{empty}
-%\cleardoublepage
+%% TITULNÍ STRANA PRÁCE
+\clearpage
+\pagestyle{empty}
+\cleardoublepage
 
-%\thispagestyle{empty}
+\thispagestyle{empty}
 
-%\begin{center}
+\begin{center}
 
-%{\Large ČESKÉ VYSOKÉ UČENÍ TECHNICKÉ V~PRAZE} \\[3.5mm]
-%{\Large Fakulta jaderná a fyzikálně inženýrská} \\[3.5mm]
-%{\Large Katedra matematiky}
+{\Large ČESKÉ VYSOKÉ UČENÍ TECHNICKÉ V~PRAZE} \\[3.5mm]
+{\Large Fakulta jaderná a fyzikálně inženýrská} \\[3.5mm]
+{\Large Katedra matematiky}
 
-%\vspace{\stretch{0.75}}
+\vspace{\stretch{0.75}}
 
-%{\Large BAKALÁŘSKÁ PRÁCE}
+{\Large VÝZKUMNÝ ÚKOL}
 
-%\vspace{\stretch{0.5}}
+\vspace{\stretch{0.5}}
 
-%{\LARGE
-%\textbf{Voronoiova dláždění a Cut-and-Project množiny}
-%\par}
+{\LARGE
+\textbf{Voronoiova dláždění kvazikrystalů s~dvanáctičetnou symetrií}
+\par}
 
-%\vspace{1cm}
+\vspace{1cm}
 
-%{\LARGE
-%\textbf{Voronoi Tiling and Cut-and-Project Sets}
-%\par}
+{\LARGE
+\textbf{Voronoi tillings of quasicrystals with dodecagonal symmetry}
+\par}
 
-%\vspace{\stretch{1.25}}
+\vspace{\stretch{1.25}}
 
-%\end{center}
+\end{center}
 
-%\begin{tabular}{ll} 
-%{\Large Vypracoval:} & {\Large Eduard Šubert} \\[1mm]
-%{\Large \v{S}kolitel:} & {\Large Ing. Petr Ambrož, Ph.D.} \\[2mm]
-%{\Large Akademický rok:}     & {\Large 2013/2014}
-%\end{tabular}
+\begin{tabular}{ll} 
+{\Large Author:} & {\Large Eduard Šubert} \\[1mm]
+{\Large Supervisor:} & {\Large Ing. Petr Ambrož, Ph.D.} \\[1mm]
+{\Large Academic year:}     & {\Large 2015/2016}
+\end{tabular}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% ZADÁNÍ PRÁCE
@@ -141,113 +173,103 @@
 %%% ČESTNÉ PROHLÁŠENÍ
 
 %\clearpage
-%\thispagestyle{empty}
-%\cleardoublepage
+\thispagestyle{empty}
+\cleardoublepage
 
-%\thispagestyle{empty}
+\thispagestyle{empty}
 
-%\vspace*{\stretch{1}}
+\vspace*{\stretch{1}}
 
-%\noindent{\bf Čestné prohlášení}
+\noindent{\bf Declaration of Authorship}
 
-%\vspace{0.5cm}
+\vspace{0.5cm}
 
-%Prohlašuji na tomto místě, že jsem předloženou práci vypracoval samostatně 
-%a že jsem uvedl veškerou použitou literaturu.
+I, Eduard Šubert, declare that this thesis and the work presented in it are my own.
 
-%\vspace{1.5cm}
+\vspace{1.5cm}
 
-%\noindent
-%\begin{minipage}[b]{5cm}
-%V~Praze dne \today
-%\end{minipage}
-%\hfill
-%\begin{minipage}[t]{5cm}
-%\begin{center}
-%\dotfill\\
-%Eduard Šubert
-%\end{center}
-%\end{minipage}
+\noindent
+\begin{minipage}[b]{5cm}
+In~Prague \today
+\end{minipage}
+\hfill
+\begin{minipage}[t]{5cm}
+\begin{center}
+\dotfill\\
+Eduard Šubert
+\end{center}
+\end{minipage}
 
-%\vspace*{2cm}
+\vspace*{2cm}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% PODĚKOVÁNÍ
 
-%\clearpage
-%\thispagestyle{empty}
-%\cleardoublepage
+\cleardoublepage
 
-%\thispagestyle{empty}
+\thispagestyle{empty}
 
-%\vspace*{\stretch{1}}
-
-%Děkuji Ing. Petrovi Ambrožovi, Ph.D. za příkladné vedení mé bakalářské práce a za podnětné návrhy. Také děkuji doc. Ing. Zuzaně Masákové, Ph.D. ze rady v teoretické části práce.
-
-%\vspace*{2cm}
+\vspace*{\stretch{1}}
+\begin{center}\small
+Děkuji Ing. Petrovi Ambrožovi, Ph.D. a doc. Ing. Zuzaně Masákové, Ph.D. za pomoc s touto prací.
+\end{center}
+\vspace*{\stretch{1}}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% CZ/EN ABSTRAKTY A KLÍČOVÁ SLOVA
 
-%\clearpage
-%\thispagestyle{empty}
-%\cleardoublepage
+\cleardoublepage
 
-%\thispagestyle{empty}
+{
+\setlength{\parindent}{0pt}
 
-%{
-%\setlength{\parindent}{0pt}
+\textit{Název práce:}
+\textbf{Voronoiova dláždění kvazikrystalů s dvanáctičetnou symetrií} \\
 
-%\textit{Název práce:}
-%\textbf{Voronoiova dláždění a Cut-and-Project množiny} \\
+\textit{Autor:} Eduard Šubert \\
 
-%\textit{Autor:} Eduard Šubert \\
+\textit{Obor:} Matematická informatika \\
 
-%\textit{Obor:} Inženýrská informatika \\
+\textit{Druh práce:} Výzkumný úkol \\
 
-%\textit{Zaměření:} Softwarové inženýrství a matematická informatika \\
+\textit{Vedoucí práce:}  Ing. Petr Ambrož Ph.D., Katedra matematiky, FJFI ČVUT v~Praze \\
 
-%\textit{Druh práce:} Bakalářská práce \\
+\textit{Abstrakt:} 
+Práce se zabývá kvazikrystaly definovanými iracionalitou $2+\sqrt{3}$. Jsou rozebrány jednorozměrné kvazikrystaly především s okny ve tvaru $[c,d)$ a dvourozměrné kvazikrystaly s rovnoběžníkovým oknem i s oknem obecného tvaru. Pro oba případy je studována struktura kvazikrystalů pomocí konstrukce voronoiova diagramu, nejdříve lokálně a po té globálně. \\
 
-%\textit{Vedoucí práce:}  Ing. Petr Ambrož Ph.D., Katedra matematiky, FJFI ČVUT v~Praze \\
+\vspace{1.5cm}
 
-%\textit{Abstrakt:} 
-%Práce se zabývá kvazikrystaly definovanými iracionalitou $2+\sqrt{3}$. Jsou rozebrány jednorozměrné kvazikrystaly především s okny ve tvaru $(c,d]$, ale uvádíme metody, jak výsledky zobecnit na libovolné okno. Dále poznatky aplikujeme na dvourozměrné kvazikrystaly a analyzujeme jejich strukturu pomocí Voronoiova okolí. Na závěr uvádíme všechny možné tvary Voronoiových okolí, které se vyskytují na studovaných kvazikrystalech. \\
+\textit{Title:}
+\textbf{Voronoi tillings of quasicrystals with dodecagonal symmetry} \\
 
-%\vspace{1.5cm}
+\textit{Author:} Eduard Šubert\\
 
-%\textit{Title:}
-%\textbf{Voronoi Tiling and Cut-and-Project Sets} \\
+\textit{Abstract:} 
+Main focus of the thesis are quasicrystals defined by irrationality $2+\sqrt{3}$. First one-dimensional quasicrystals are analyzed. Next two-dimensional quasicrystals with rhombic window and with a window of a general shape are analyzed also. For each case the structure is investigated with the aid of the voronoi diagram at first locally and then globally. \\
 
-%\textit{Author:} Eduard Šubert\\
-
-%\textit{Abstract:} 
-%Main focus of the thesis are quasicrystals defined by irrationality $2+\sqrt{3}$. One dimensional case is analysed primarily for windows as intervals $(c,d]$, however methods for generalization are presented. Next foundings are applied to Two dimensional case and the structure is investigated with the aid of Voronoi  tessellation. In conclusion all different shapes of observed Voronoi tiles are listed.\\
-
-%}
+}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%% Konec uvodnich stran
 
-%\clearpage
-%\thispagestyle{empty}
-%\cleardoublepage
-%\thispagestyle{empty}
+\cleardoublepage
 
-%\tableofcontents
+\tableofcontents
+\setcounter{page}{1}
+\cleardoublepage
 
-%\clearpage
-%%\thispagestyle{empty}
-%%\cleardoublepage
+\section*{Introduction}
+Quasiperiodic crystal, or quasicrystal, is a structure that displays some order, however it is not periodic. It fills an infinite space without having a translational symmetry. Qualicrystals however do posses rotational symmetry. 
 
-%\section*{Úvod}
-%V polovině minulého století byly objeveny slitiny s~difrakčními obrazy, které neměly krystalografickou symetrii \cite{metallic}. Rychle byl zahájen experimentální i teoretický výzkum takových struktur. Díky zdánlivé podobnosti s~krystaly vznikl název kvazikrystal.
+Most of the research done on quasicrystals is done for the irrationality $\tau = \frac{1+\sqrt{5}}{2}$, also known as golden ratio. There are more options available for example the focus of this work: quasicrystals defined with the irrationality $2+\sqrt{3}$, apparently otherwise not known.
 
-%Dnes bylo již o~kvazikrystalech, jako o~matematické struktuře, odvozeno a dokázáno mnoho tvrzení. Většina prací se zabývá kvazikrystaly definovanými pomocí iracionální konstanty $\tau = \frac{1+\sqrt{5}}{2}$ známější jako zlatý řez. V~této práci budeme studovat kvazikrystaly definované pomocí iracionality $2+\sqrt{3}$.
+Such quasicrystals do have some different properties, in comparison with the golden ration ones, which mostly cause the computational complexity to rise significantly. 
 
-%V~sekci \ref{sec:oneDimension} definujeme jednorozměrné kvazikrystaly a analyzujeme jejich strukturu. Sekce \ref{sec:oneDimensionAlg} shrnuje algoritmy požité při analýze jednorozměrných kvazikrystalů. V~sekci \ref{sec:twoDimension} definujeme dvourozměrné kvazikrystaly a ukážeme jejich souvislost s~jednorozměrnými. Sekce \ref{sec:graphics} shrnuje nabyté poznatky grafickou formou.
+The first section covers the essentials for one-dimensional quasicrystals, which are mostly results of a previous work. Next the one-dimensional quasicrystal is fully analyzed and the analysis is applied to a certain subset of two-dimensional quasicrystals. Lastly the results of the analysis of these special two-dimensional quasicrystals are used to analyze a general two-dimensional quasicrystal. 
 
-%\newpage
+In the end the bulk of the work is again applied to a different subset of two-dimensional quasicrystals that do exhibit a twelve-fold rotational symmetry. Unfortunately due to the already mentioned rise in computational complexity, these special cases were only studied locally, global analysis will be subject of future work. 
+\cleardoublepage
+\pagestyle{plain}
 \subfile{oneDimension}
 %%
 \clearpage
@@ -265,27 +287,50 @@
 \clearpage
 \subfile{catalogRhombusAll}
 %%
-\clearpage
+\cleardoublepage
 \subfile{generalWindowFinite}
 %%
+\clearpage
+\subfile{generalWindowSingle}
+%%
+\clearpage
+\subfile{generalWindowAll}
+%%
+\clearpage
+\subfile{circle}
+%%
+\clearpage
+\subfile{computation}
+%%
 
-%\newpage
-%\restoregeometry
-%\section*{Závěr}
-%Výsledkem této práce je především analýza různých Voronoiových okolí, které se vyskytují na kvazikrystalech definovaných pomocí iracionality $\beta = 2+\sqrt{3}$. Tuto analýzu jsme zatím provedli pouze pro speciální případ kosočtvercového okna. Nicméně nabyté znalosti jsou velmi užitečné i pro analýzu kvazitrystalů s obecnými okny. 
+\clearpage
+\pagestyle{empty}
+\section*{Conclusion}
+This work presented mostly the theoretical preparation for the analysis of the quasicrystals with a circular window. The analysis is however not yet concluded and so will be subject of future work. That leaves enough space for a nice quasicrystal with a dodecagonal window which also posses twelve-fold rotational symmetry and also will be a part of the future work. 
 
-%V průběhu celé práce vznikla řada krátkých programů, které generovaly úseky slov kvazikrystalu, hledaly singulární body a nakonec i generovaly uvedené obrázky. Všechny zdrojové kódy jsou k nalezení na adrese:\\
-%\url{http://github.com/edasubert/quasicrystal}\\
-%Zde uvádím seznam programů s krátkým popisem:
-%\begin{description}
-%\item[betaSet{.}cpp] Popis třídy \texttt{betaSet}, která poskytuje číselný typ $\ring$.
-%\item[geometricObject{.}h] Třídy pro geometrické útvary jako bod, množina bodů nebo Voronoiovo okolí.
-%\item[generate{.}cpp] Funkce pro práci s jednorozměrnými kvazikrystaly
-%\item[diagramMachine2{.}cpp] Generátor dvourozměrných kvazikrystalů.
-%\item[finite{.}cpp] Generátor množných podslov dané délky (množiny $\mathcal{L}_\ell(n)$).
-%\item[generateTile{.}cpp] Generátor všech různých Voronoiových okolí.
-%\end{description}
+\begin{figure}[h!]
+\centering
+\includegraphics[width=\textwidth]{dodecagon}
+\end{figure}
 
-%\newpage
-%\subfile{bibliografie}
+\clearpage
+\begin{thebibliography}{9}
+
+\bibitem{classification}
+	Z~MASÁKOVÁ, J PATERA a J ZICH. \emph{Classification of Voronoi and Delone tiles in quasicrystals. I. General method.} J. Phys. A \textbf{36} (2003), 1869--1894.
+
+\bibitem{classificationII}
+	Z~MASÁKOVÁ, J PATERA a J ZICH. \emph{Classification of Voronoi and Delone tiles of quasicrystals: II. Circular acceptance window of arbitrary size} J. Phys. A \textbf{36} (2003), 1895--1912.
+
+\bibitem{combinatorial}
+	L-S GUIMOND, Z~MASÁKOVÁ, E PELANTOVÁ. \emph{Combinatorial properties of infinite words associated with cut-and-project
+ sequences.} J. Théor. Nombres Bordeaux \textbf{15} (2003), 697--725.
+	
+\bibitem{magister}
+	J ZICH. \emph{Voronoi \& Delone tiling of quasicrystals}. Fakulta jaderná a fyzikálně inženýrská České vysoké učení technické v~Praze, 2002. Diplomová práce. Vedoucí práce Z~Masáková.
+
+\bibitem{assignment}
+	E ŠUBERT. \emph{Voronoiova dláždění a Cut-and-Project množiny}. Fakulta jaderná a fyzikálně inženýrská České vysoké učení technické v~Praze, 2014. Bakalářská práce.
+	
+\end{thebibliography}
 \end{document}

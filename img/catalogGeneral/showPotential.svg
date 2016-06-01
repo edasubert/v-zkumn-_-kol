@@ -1,0 +1,208 @@
+<?xml version="1.0" standalone="no"?>
+
+<svg width="1000" height="1000" viewBox="-15 -15 30 30">
+
+<g id="Delone Set" transform="scale(1,-1)">
+<!-- 0 -->
+<circle cx="0.13397" cy="0.50000" r="0.13" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="0.63397" cy="2.36603" r="0.13" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="3.86603" cy="0.50000" r="0.13" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="-3.09808" cy="2.36603" r="0.13" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="4.23205" cy="-1.86603" r="0.13" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- 0 -->
+<circle cx="7.96410" cy="-1.86603" r="0.13" stroke="rgb(25,25,25)" stroke-width="0" fill="rgb(25,25,25)" />
+<!-- POTENTIAL -->
+<!-- 0 -->
+<circle cx="0.00000" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-0.86603" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="-1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-4.09808" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-6.46410" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-7.33013" cy="0.50000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-8.83013" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-9.69615" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-10.56218" cy="2.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-12.06218" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="2.73205" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="1.86603" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="-1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-3.73205" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-4.59808" cy="0.50000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-6.09808" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-6.96410" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-7.83013" cy="2.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-9.33013" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="3.73205" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="2.86603" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="0.50000" cy="-1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-0.36603" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-2.73205" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-3.59808" cy="0.50000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-5.96410" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-6.83013" cy="2.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-8.33013" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="5.46410" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="4.59808" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="2.23205" cy="-1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="1.36603" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-1.00000" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="0.50000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-3.36603" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-4.23205" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-5.09808" cy="2.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-6.59808" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="6.46410" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="5.59808" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="3.23205" cy="-1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="2.36603" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="0.00000" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-0.86603" cy="0.50000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-2.36603" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-3.23205" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-4.09808" cy="2.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-5.59808" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="7.46410" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="6.59808" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="3.36603" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="1.00000" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-2.23205" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-4.59808" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="9.19615" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="8.33013" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="5.96410" cy="-1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="5.09808" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="2.73205" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="1.86603" cy="0.50000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="0.36603" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-0.50000" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-1.36603" cy="2.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-2.86603" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="10.19615" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="9.33013" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="6.96410" cy="-1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="6.09808" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="3.73205" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="2.86603" cy="0.50000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="1.36603" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="0.50000" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-0.36603" cy="2.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-1.86603" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="11.19615" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="10.33013" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="7.09808" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="4.73205" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="2.36603" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="1.50000" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="-0.86603" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="12.92820" cy="-3.73205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="12.06218" cy="-3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="9.69615" cy="-1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="8.83013" cy="-1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="6.46410" cy="0.00000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="5.59808" cy="0.50000" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="4.09808" cy="1.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="3.23205" cy="1.86603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="2.36603" cy="2.36603" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+<!-- 0 -->
+<circle cx="0.86603" cy="3.23205" r="0.1" stroke="rgb(25,25,25)" stroke-width="0.04" fill="none" />
+</g>
+</svg>

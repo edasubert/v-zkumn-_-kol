@@ -4,7 +4,7 @@
 \section{Cataloging voronoi polygons for all rhombic windows}
 
 To catalog all different shapes of voronoi polygons in all quasicrystals with a rhombic window, several simplifications are put in place.
-First only base rhombic windows are considered since polygons from other quasicrystals are not different in shape only in scale. Secondly the base windows are divided by the same language in finitely many groups. 
+First only base rhombic windows are considered since polygons from other quasicrystals are not different in shape only in scale. Secondly the base windows are divided by the same language into finitely many groups. 
 
 \begin{theorem}
 \label{the:complexity}
@@ -22,16 +22,15 @@ $$
 
 \begin{theorem}
 \label{the:sameSpaces}
-Let $\Omega = [c,c+\ell)$.
 $$\mathcal{D}_n = \left\{ \ell\,\left|\, \ell\in \left(\frac{1}{\beta},1\right] \,\wedge\, \mathcal{C}_\ell(n) < 2n+1 \right.\right\}$$
-Then elements of $\mathcal{D}_n$ divide interval $I \vcentcolon= \left(\frac{1}{\beta},1\right]$ into finite amount of disjoint sub-intervals $(I_m)_{m\in\hat{N}}$ such that $\mathcal{L}_{\ell_1}(n) = \mathcal{L}_{\ell_2}(n)$ $\forall \ell_1, \ell_2 \in I_m,\, \forall m\in\hat{n}, \forall n\in\NN$.
+Then elements of $\mathcal{D}_n$ divide interval $I \vcentcolon= \left(\frac{1}{\beta},1\right]$ into finite amount of disjoint sub-intervals $(I_m)_{m\in\widehat{N}}$ such that $\mathcal{L}_{\ell_1}(n) = \mathcal{L}_{\ell_2}(n)$ $\forall \ell_1, \ell_2 \in I_m,\, \forall m\in\hat{N}, \forall N\in\NN$.
 \end{theorem}
 
 \begin{remark}
-Please note that $\mathcal{D}_n$ from theorem \ref{the:sameSpaces} divides base windows into sets by the same language whereas $D_n$ from theorem \ref{the:spaces:iteration} divides specific window into intervals by the sequences of points that follow.
+Please note that $\mathcal{D}_n$ from Theorem \ref{the:sameSpaces} divides base windows into sets by the same language whereas $D_n$ from Theorem \ref{the:spaces:iteration} divides a single window into intervals by the sequences of points that follow.
 \end{remark}
 
-Previous two theorem give a guide to which points divide the base windows into groups of the same language and also how to find those points. 
+Previous two theorems give a guide to which points divide the base windows into groups of the same language and also how to find those points. 
 
 Now is the time to introduce new view on the one-dimensional base windows as a whole. Figure \ref{fig:allBaseWindows} shows a plot of all base windows side by side.
 
@@ -60,28 +59,28 @@ Now is the time to introduce new view on the one-dimensional base windows as a w
 \label{fig:allBaseWindows}
 \end{figure}
 
-It shows well how the window changes while increasing in size and how the singular windows come to existence. However more importantly it shows that $\mathcal{D}_1 = \left\{\frac{\beta-2}{\beta}, \frac{\beta-1}{\beta}\right\}$.
-The algorithm for generating $\mathcal{D}_n$ is very similar to the algorithm for division of a single window or the algorithm for generating $D_n$. Only this time instead of getting a stepping function image of the endpoints of interval, the function is used on whole line segments representing $a^\Omega$ and $b^\Omega$. Every time images of these line segments intersect a new point is added to the set $\mathcal{D}_n$.
+It shows well how the window changes while increasing in size and how the singular windows come to existence. However more importantly it shows that $\mathcal{D}_1 = \left\{\frac{\beta-2}{\beta},\; \frac{\beta-1}{\beta},\; 1\right\}$.
+The algorithm for generating $\mathcal{D}_n$ is very similar to the algorithm for division of a single window or the algorithm for generating $D_n$. Only this time instead of getting a stepping function image of the endpoints of a interval, the function is used on the whole line segments representing $a^\Omega$ and $b^\Omega$. Every time images of these line segments intersect a new point is added to the set $\mathcal{D}_n$.
 
 For a sufficient $n$, such $\mathcal{D}_n$ can be constructed that the same language on the subintervals implies the same set of different shapes of voronoi polygons on corresponding quasicrystals. The endpoints of the subintervals are then examined independently. 
 
-Such $n$ is determined by the algorithm from the previous section. For the base windows there are three combinations of the largest and smallest distance possible: $A,D$; $B,D$ and $C,E$. The $n$ is determined for each and the largest is selected. The first approach is used. 
+Such $n$ is determined by the algorithm from the previous section. The first approach is used. For the base windows there are three combinations of the largest and smallest distance possible: $A,D$; $B,D$ and $C,E$. The $n$ is determined for each and the largest is selected. 
 \begin{align*}
 n_1 &= \left\lceil\frac{8A\cdot\hat{R}_c}{D}\right\rceil = 16 & n_2 &= \left\lceil\frac{8B\cdot\hat{R}_c}{D}\right\rceil = 12 & n_3 &= \left\lceil\frac{8C\cdot\hat{R}_c}{E}\right\rceil = 10\\
 \end{align*}
-Therefore $n=16$ and $\mathcal{D}_{16}$ is constructed. To generate all possible voronoi polygons in all quasicrystals with base windows, the algorithm from the previous section is used on all rhombic windows with a side $\ell\in\mathcal{D}_{16}$ and for any $\ell\in I_m$ for each of the disjoint intervals. Thus the voronoi polygons will be analyzed for each different language $\mathcal{L}_\ell(16)$, which is sufficient for analysis of every different voronoi polygon. 
+Therefore $n=16$ and $\mathcal{D}_{16}$ is constructed. To generate all possible voronoi polygons in all quasicrystals with base windows, the algorithm from the previous section is used on all rhombic windows with a side $\ell\in\mathcal{D}_{16}$ and for any $\ell\in I_m$ for each of the disjoint intervals. Thus the voronoi polygons will be analyzed for each different language $\mathcal{L}_\ell(16)$, which is sufficient to catalog every different voronoi polygon. 
 
 However the resulting set of voronoi polygons from $\mathcal{D}_{16}$ is identical to the set of voronoi polygons for $\mathcal{D}_4$ and is different from the one for $\mathcal{D}_3$. Thus it is assumed, that the generous estimates inflated the $n$ greatly and $n=4$ is sufficient.
 
 \paragraph{Summary} This section covered the method for generating a catalog of all different voronoi polygons for all quasicrystals with base windows. Additionally it finalized the sufficient $n$ as $n=4$.
 
-The next section will conclude the analysis of the two-dimensional quasicrystal with rhombic windows with the catalog of all different voronoi polygons.
+The next section will conclude the analysis of the two-dimensional quasicrystals with rhombic windows with the catalog of all different voronoi polygons.
 
 \clearpage
 \section{Catalog of voronoi polygons for a rhombic window}
 As concluded in the previous section the sufficient $n=4$. 
 $$\mathcal{D}_4 = \left\{4-\beta,\, 10\beta-37,\, 19-5\beta,\, 6\beta-22,\, 2\beta-7,\, 8-2\beta,\, 5\beta-18,\, \beta-3,\, 12-3\beta,\, 4\beta-14,\, 1\right\}$$
-The endpoints $4-\beta$ and $1$ are added for ease of use. To get the full set of sizes of rhombic windows that need to be analyzed a mean of each two consecutive numbers from $\mathcal{D}_4$ is added. These represent the intervals of the same language. 
+The endpoint $4-\beta = \frac{1}{\beta}$ is added for ease of use. To get the full set of sizes of rhombic windows that need to be analyzed a mean of each two consecutive numbers from $\mathcal{D}_4$ is added. These represent the intervals of the same language. 
 \begin{multline*}
 \mathcal{D} = \left\{4-\beta,\, \frac{9\beta-33}{2},\, 10\beta-37,\, \frac{5\beta-18}{2},\, 19-5\beta,\, \frac{\beta-3}{2},\, 6\beta-22,\, \right. \\
 \frac{8\beta-29}{2},\, 2\beta-7,\, \frac{1}{2},\, 8-2\beta,\, \frac{3\beta-10}{2},\,  5\beta-18,\, \frac{6\beta-21}{2},\, \beta-3,\, \\
@@ -305,7 +304,6 @@ The catalog is then concluded by a list of all voronoi polygons for quasicrystal
 \end{flushleft}
 \end{figure}
 
-\pagestyle{plain}
 
 \begin{table}
 \centering

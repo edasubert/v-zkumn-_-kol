@@ -46,24 +46,24 @@ In other words the Theorem \ref{the:spaces:iteration} states that the discontinu
 \end{tikzpicture}
 \end{figure}
 
-The algorithm uses the stepping function of a quasicrystal. As is apparent from Figure \ref{img:steppingFunction} and Theorem \ref{def:stepingFunc}, stepping function is piece wise linear and after points of quasicrystal corresponding to one linear segment follows the same distance to the next point of the quasicrystal. Alternatively all the points of the sequence of the quasicrystal $y_n$ whose images $y_n'$ are in a single segment of linearity, have the same corresponding letter in the word of the quasicrystal. That is precisely what the algorithm uses. 
+The algorithm uses the stepping function of a quasicrystal. As is apparent from Figure \ref{img:steppingFunction} and Theorem \ref{def:stepingFunc}, the stepping function is piece wise linear and after points of the quasicrystal corresponding to one linear segment follows the same distance to the next point of the quasicrystal. Alternatively all the points of the sequence of the quasicrystal $y_n^\Omega$ whose images ${y_n^\Omega}'$ are in a single segment of linearity, have the same corresponding letter in the word of the quasicrystal. That is precisely what the algorithm uses. 
 
 First only non-singular windows are considered.
 
 \paragraph{Algorithm definition}
 Algorithm receives as an input an interval $\Omega = [c,d)$ representing the window of the quasicrystal and $n\in\NN$ representing the desired length of the words.
 
-As an output algorithm provides the division of $\Omega$ into disjunt intervals $[\omega_0,\omega_1)$, $[\omega_1,\omega_2), \dots, [\omega_{m-1},\omega_m)$ such that $\omega_0 = c$ and $\omega_m = d$.
+As an output algorithm provides the division of $\Omega$ into disjunt intervals $$[\omega_0,\omega_1),\;[\omega_1,\omega_2), \dots, [\omega_{m-1},\omega_m)$$ such that $\omega_0 = c$ and $\omega_m = d$.
 $$\left(\forall y_j^\Omega,y_k^\Omega\in\left(y_n^\Omega\right)_{n\in\ZN} \right)\left(\forall i\in\widehat{m-1}\right): \left(\left({y_j^\Omega}\right)',\left({y_k^\Omega}\right)' \in [\omega_i,\omega_{i+1})\right) \Rightarrow \left(\left(t_n^\Omega\right)_j^{j+n} = \left(t_n^\Omega\right)_k^{k+n}\right)$$
 
 The division is acquired by recursion. 
 
 For $n=1$ is the division already known.
-$$m=3, \omega_1 = a^\Omega, \omega_2 = b^\Omega$$
+$$m=3,\; \omega_1 = a^\Omega,\; \omega_2 = b^\Omega$$
 
-For $n>1$ is the division found from the division for $n-1$.
+For $n>1$ is the division derived from the division for $n-1$.
 Intervals 
-$[\omega_0^{n-1},\omega_1^{n-1})$, $[\omega_1^{n-1},\omega_2^{n-1}), \dots, [\omega_{m-1}^{k-1},\omega_{k}^{n-1})$ denote the division for $n-1$.
+$$[\omega_0^{n-1},\omega_1^{n-1}),\;[\omega_1^{n-1},\omega_2^{n-1}), \dots, [\omega_{m-1}^{k-1},\omega_{k}^{n-1})$$ denote the division for $n-1$.
 
 For each interval $[\omega_i^{n-1},\omega_{i+1}^{n-1})$ the stepping function image is evaluated. 
 $$f^\Omega\left([\omega_i^{n-1},\omega_{i+1}^{n-1})\right) = [f^\Omega(\omega_i^{n-1}),f^\Omega(\omega_{i+1}^{n-1}))$$

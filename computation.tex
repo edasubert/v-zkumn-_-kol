@@ -1,0 +1,89 @@
+\documentclass[text.tex]{subfiles}
+
+\begin{document}
+\section*{Computation}
+\addcontentsline{toc}{section}{Computation}
+It should not be a surprise that most of the analysis is done with a computer program. These programs were not yet discussed since they are a literal transcriptions of the described algorithms. There are two concepts that make it possible: precise arithmetic in $\field$ and object-oriented programming. 
+\subsection{Precise arithmetic in $\field$}
+Nearly every calculation in the algorithms is inside the number field $\field$. It is possible to implement a custom class that will enable precise calculations. Since $\beta$ is quadratic the field has the following simple form.
+$$\field = \left\{\left. \frac{a + b\beta}{c} \right|a,b\in \mathbb{Z},\; c\in\NN \right\}$$
+Therefore each number $x\in\field$ can be represented by three integers and integer arithmetic is precise. Several operations are listed here. Particularly useful is the \texttt{simplify} function which makes sure that $a,\;b,\;c$ do not overflow. (\texttt{gcd} returns the greatest common divisor)
+
+\begin{algorithm}
+	%\SetKwFunction{algo}{algo}\SetKwFunction{struct}{}
+	\SetKwFunction{algo}{algo}\SetKwFunction{add}{operator + }
+	%\SetKwFunction{algo}{algo}\SetKwFunction{mulint}{operator *}
+	\SetKwFunction{algo}{algo}\SetKwFunction{mul}{operator * }
+	\SetKwFunction{algo}{algo}\SetKwFunction{div}{operator / }
+	\SetKwFunction{algo}{algo}\SetKwFunction{div}{operator < }
+	\SetKwFunction{algo}{algo}\SetKwFunction{div}{simplify}
+	\SetKwProg{myalg}{Algorithm}{}{}
+	
+	%\setcounter{AlgoLine}{0}
+	%\SetKwProg{myproc}{Struct}{}{}
+	%\myproc{\struct{\textnormal{p}}}{
+	%\nl int a\;
+	%\nl int b\;
+	%\nl int c\;
+	%}
+	
+	\setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\add{\textnormal{p,q}}}{
+	\nl p.a = p.a*q.c + q.a*p.c\;
+	\nl p.b = p.b*q.c + q.b*p.c\;
+	\nl p.c = p.c * q.c\;
+	\nl \KwRet p\;}
+	
+	%\setcounter{AlgoLine}{0}
+	%\SetKwProg{myproc}{Function}{}{}
+	%\myproc{\mulint{\textnormal{p,i}}}{
+	%\nl p.a = p.a*i\;
+	%\nl p.b = p.b*i\;
+	%\nl p.c = p.c\;
+	%\nl \KwRet p\;}
+	
+	\setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\mul{\textnormal{p,q}}}{
+	\nl p.a = p.a*q.a - p.b*q.b\;
+	\nl p.b = p.b*q.a + p.a*q.b + 4*p.b*q.b\;
+	\nl p.c = p.c * q.c\;
+	\nl \KwRet p\;}
+	
+	\setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\div{\textnormal{p,q}}}{
+	\nl p.a = (p.a*q.a + p.b*q.b + 4*p.a*q.b)*q.c\;
+	\nl p.b = (p.b*q.a - p.a*q.b)*q.c\;
+	\nl p.c = (q.a*q.a + 4*q.a*q.b + q.b*q.b)*p.c\;
+	\nl \KwRet p\;}
+  
+  \setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\div{\textnormal{p,q}}}{
+  \nl A = p.a*q.c+p.b*q.c*2 - q.a*p.c-q.b*p.c*2\;
+  \nl B = q.b*p.c - p.b*q.c\;
+  \nl \If{sign(A)*A*A $<$ sign(B)*B*B}{
+  \nl \KwRet true\;}
+	\nl \KwRet false\;}
+  
+  \setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\div{\textnormal{p}}}{
+  \nl cache = 0\;
+  \nl \If{((cache = gcd(a,b)) != 0) $\&\&$ ((cache = gcd(cache,c)) != 0) $\&\&$ (cache $>$ 1 )}{
+  \nl p.a = p.a/cache\;
+  \nl p.b = p.b/cache\;
+  \nl p.c = p.c/cache\;}
+	\nl \KwRet p\;}
+  
+	\caption{Precise arithmetic inside $\field$.}
+\end{algorithm}
+
+\subsection{Object-oriented programming}
+Many objects were implemented to represent various structures used in the algorithms: \texttt{Cpoint}, \texttt{CpointSet}, \texttt{CdeloneSet}, \texttt{CvoronoiCell} and more. Such abstraction truly allows a literal transcription of the algorithms as they are explained in the text. 
+
+If you are interested in diving into the code yourself, every program used to make this text is available online:
+\url{https://github.com/edasubert/quasicrystal}
+\end{document}
