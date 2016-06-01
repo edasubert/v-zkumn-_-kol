@@ -3,7 +3,7 @@
 \begin{document}
 \section*{Computation}
 \addcontentsline{toc}{section}{Computation}
-It should not be a surprise that most of the analysis is done with a computer program. These programs were not yet discussed since they are a literal transcriptions of the described algorithms. There are two concepts that make it possible: precise arithmetic in $\field$ and object-oriented programming. 
+It should not be a surprise that most of the analysis is done with a computer programs. These programs were not yet discussed since they are a literal transcriptions of the described algorithms. There are two concepts that make it possible: precise arithmetic in $\field$ and object-oriented programming. 
 \subsection{Precise arithmetic in $\field$}
 Nearly every calculation in the algorithms is inside the number field $\field$. It is possible to implement a custom class that will enable precise calculations. Since $\beta$ is quadratic the field has the following simple form.
 $$\field = \left\{\left. \frac{a + b\beta}{c} \right|a,b\in \mathbb{Z},\; c\in\NN \right\}$$
@@ -11,12 +11,11 @@ Therefore each number $x\in\field$ can be represented by three integers and inte
 
 \begin{algorithm}
 	%\SetKwFunction{algo}{algo}\SetKwFunction{struct}{}
-	\SetKwFunction{algo}{algo}\SetKwFunction{add}{operator + }
-	%\SetKwFunction{algo}{algo}\SetKwFunction{mulint}{operator *}
-	\SetKwFunction{algo}{algo}\SetKwFunction{mul}{operator * }
-	\SetKwFunction{algo}{algo}\SetKwFunction{div}{operator / }
-	\SetKwFunction{algo}{algo}\SetKwFunction{div}{operator < }
-	\SetKwFunction{algo}{algo}\SetKwFunction{div}{simplify}
+	\SetKwFunction{algo}{algo}\SetKwFunction{add}{operator $+$ }
+	\SetKwFunction{algo}{algo}\SetKwFunction{mul}{operator $*$ }
+	\SetKwFunction{algo}{algo}\SetKwFunction{div}{operator $/$ }
+	\SetKwFunction{algo}{algo}\SetKwFunction{com}{operator $<$ }
+	\SetKwFunction{algo}{algo}\SetKwFunction{sim}{simplify}
 	\SetKwProg{myalg}{Algorithm}{}{}
 	
 	%\setcounter{AlgoLine}{0}
@@ -61,16 +60,16 @@ Therefore each number $x\in\field$ can be represented by three integers and inte
   
   \setcounter{AlgoLine}{0}
 	\SetKwProg{myproc}{Function}{}{}
-	\myproc{\div{\textnormal{p,q}}}{
+	\myproc{\com{\textnormal{p,q}}}{
   \nl A = p.a*q.c+p.b*q.c*2 - q.a*p.c-q.b*p.c*2\;
   \nl B = q.b*p.c - p.b*q.c\;
-  \nl \If{sign(A)*A*A $<$ sign(B)*B*B}{
+  \nl \If{sign(A)*A*A $<$ 3*sign(B)*B*B}{
   \nl \KwRet true\;}
 	\nl \KwRet false\;}
   
   \setcounter{AlgoLine}{0}
 	\SetKwProg{myproc}{Function}{}{}
-	\myproc{\div{\textnormal{p}}}{
+	\myproc{\sim{\textnormal{p}}}{
   \nl cache = 0\;
   \nl \If{((cache = gcd(a,b)) != 0) $\&\&$ ((cache = gcd(cache,c)) != 0) $\&\&$ (cache $>$ 1 )}{
   \nl p.a = p.a/cache\;
