@@ -63,7 +63,7 @@
 \newcommand{\NN}{\mathbb{N}}
 \newcolumntype{d}[1]{ D{:}{:}{-1} }
 
-\setlength{\parskip}{0.6em}
+\setlength{\parskip}{0.3em}
 \setcounter{tocdepth}{1}
 
 
@@ -176,21 +176,20 @@
 \thispagestyle{empty}
 \cleardoublepage
 
-\thispagestyle{empty}
-
 \vspace*{\stretch{1}}
 
-\noindent{\bf Declaration of Authorship}
+\noindent{\bf Čestné prohlášení}
 
 \vspace{0.5cm}
 
-I, Eduard Šubert, declare that this thesis and the work presented in it are my own.
+Prohlašuji na tomto místě, že jsem předloženou práci vypracoval samostatně 
+a že jsem uvedl veškerou použitou literaturu.
 
 \vspace{1.5cm}
 
 \noindent
 \begin{minipage}[b]{5cm}
-In~Prague \today
+V~Praze dne \today
 \end{minipage}
 \hfill
 \begin{minipage}[t]{5cm}
@@ -199,6 +198,8 @@ In~Prague \today
 Eduard Šubert
 \end{center}
 \end{minipage}
+
+\vspace*{2cm}
 
 \vspace*{2cm}
 
@@ -235,7 +236,7 @@ Děkuji Ing. Petrovi Ambrožovi, Ph.D. a doc. Ing. Zuzaně Masákové, Ph.D. za 
 \textit{Vedoucí práce:}  Ing. Petr Ambrož Ph.D., Katedra matematiky, FJFI ČVUT v~Praze \\
 
 \textit{Abstrakt:} 
-Práce se zabývá kvazikrystaly definovanými iracionalitou $2+\sqrt{3}$. Jsou rozebrány jednorozměrné kvazikrystaly především s okny ve tvaru $[c,d)$ a dvourozměrné kvazikrystaly s rovnoběžníkovým oknem i s oknem obecného tvaru. Pro oba případy je studována struktura kvazikrystalů pomocí konstrukce voronoiova diagramu, nejdříve lokálně a po té globálně. \\
+Práce se zabývá kvazikrystaly definovanými iracionalitou $2+\sqrt{3}$. Jsou rozebrány jednorozměrné kvazikrystaly především s okny ve tvaru $[c,d)$ a dvourozměrné kvazikrystaly s rovnoběžníkovým oknem i s oknem obecného tvaru. Pro oba případy je studována struktura kvazikrystalů pomocí konstrukce Voronoiova diagramu, nejdříve lokálně a po té globálně. \\
 
 \vspace{1.5cm}
 
@@ -245,7 +246,7 @@ Práce se zabývá kvazikrystaly definovanými iracionalitou $2+\sqrt{3}$. Jsou 
 \textit{Author:} Eduard Šubert\\
 
 \textit{Abstract:} 
-Main focus of the thesis are quasicrystals defined by irrationality $2+\sqrt{3}$. First one-dimensional quasicrystals are analyzed. Next two-dimensional quasicrystals with rhombic window and with a window of a general shape are analyzed also. For each case the structure is investigated with the aid of the voronoi diagram at first locally and then globally. \\
+Main focus of the thesis are quasicrystals defined by irrationality $2+\sqrt{3}$. First one-dimensional quasicrystals are analyzed. Next two-dimensional quasicrystals with rhombic window and with a window of a general shape are analyzed also. For each case the structure is investigated with the aid of the Voronoi diagram at first locally and then globally. \\
 
 }
 
@@ -259,11 +260,12 @@ Main focus of the thesis are quasicrystals defined by irrationality $2+\sqrt{3}$
 \cleardoublepage
 
 \section*{Introduction}
+\addcontentsline{toc}{section}{Introduction}
 Quasiperiodic crystal, or quasicrystal, is a structure that displays some order, however it is not periodic. It fills an infinite space without having a translational symmetry. Qualicrystals however do posses rotational symmetry. 
 
-Most of the research on quasicrystals is done for the irrationality $\tau = \frac{1+\sqrt{5}}{2}$, also known as golden ratio. There are more options available for example the focus of this work: quasicrystals defined with the irrationality $2+\sqrt{3}$, apparently otherwise not known.
+A lot of research \cite{classification,classificationII,classificationIII} has been done on quasicrystals connected to the irrationality $\tau = \frac{1+\sqrt{5}}{2}$, also known as golden ratio. However there are other irrationalities that give rise to quasicrystal structures: $1+\sqrt{2}$ and $2+\sqrt{3}$. In this work we consider $2+\sqrt{3}$.
 
-Such quasicrystals do have some different properties, in comparison with the golden ration ones, which mostly cause the computational complexity to rise significantly. 
+Such quasicrystals do have some different properties in comparison with the golden ratio ones, which mostly cause the computational complexity of the algorithms used for analysis to rise significantly. 
 
 The first section covers the essentials for one-dimensional quasicrystals, which are mostly results of a previous work. Next the one-dimensional quasicrystal is fully analyzed and the analysis is applied to a certain subset of two-dimensional quasicrystals. Lastly the results of the analysis of these special two-dimensional quasicrystals are used to analyze a general two-dimensional quasicrystal. 
 
@@ -296,7 +298,7 @@ In the end the bulk of the work is again applied to a different subset of two-di
 \clearpage
 \subfile{generalWindowAll}
 %%
-\clearpage
+%\clearpage
 \subfile{circle}
 %%
 \clearpage
@@ -306,6 +308,7 @@ In the end the bulk of the work is again applied to a different subset of two-di
 \clearpage
 \pagestyle{empty}
 \section*{Conclusion}
+\addcontentsline{toc}{section}{Conclusion}
 This work presented mostly the theoretical preparation for the analysis of the quasicrystals with a circular window. The analysis is however not yet concluded and so will be subject of future work. That leaves enough space for a nice quasicrystal with a dodecagonal window which also posses twelve-fold rotational symmetry and also will be a part of the future work. 
 
 \begin{figure}[h!]
@@ -322,6 +325,9 @@ This work presented mostly the theoretical preparation for the analysis of the q
 \bibitem{classificationII}
 	Z~MASÁKOVÁ, J PATERA a J ZICH. \emph{Classification of Voronoi and Delone tiles of quasicrystals: II. Circular acceptance window of arbitrary size} J. Phys. A \textbf{36} (2003), 1895--1912.
 
+\bibitem{classificationIII}
+	Z~MASÁKOVÁ, J PATERA a J ZICH. \emph{Classification of Voronoi and Delone tiles of quasicrystals: III. Decagonal acceptance window of any size} J. Phys. A \textbf{38} (2005), 1847--1960.
+  
 \bibitem{combinatorial}
 	L-S GUIMOND, Z~MASÁKOVÁ, E PELANTOVÁ. \emph{Combinatorial properties of infinite words associated with cut-and-project
  sequences.} J. Théor. Nombres Bordeaux \textbf{15} (2003), 697--725.

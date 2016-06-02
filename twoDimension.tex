@@ -2,43 +2,42 @@
 
 \begin{document}
 
-\section*{Delone set and voronoi tessellation}
-\addcontentsline{toc}{section}{Delone set and voronoi tessellation}
+\section{Delone set and Voronoi tessellation}
 
-Section provides the definitions of a delone set a covering radius and a voronoi tessellation.
+This section provides the definitions of a Delone set a covering radius and a Voronoi tessellation.
 
 \begin{definition}
-\label{def:delone}
-Let $P\subset \mathbb{R}^n$ and $\exists R>0, \exists r>0$:
+\label{def:Delone}
+Let $P\subset \mathbb{R}^n$ and let there exist $R>0$ and $ r>0$ such that:
 $$\forall x,y\in P,\, x\neq y: r\leq \|x-y\|$$
-$$\forall z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R$$
-Then $P$ is called \textbf{delone} set.\\
-For each delone set $P$ \textbf{covering radius} is defined as:
-$$R_c = \inf\{R>0\,|\, z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R\}$$
+$$\forall z\in\mathbb{R}^n\; \exists x\in P: \|z-x\|\leq R$$
+Then $P$ is called \textbf{Delone} set.\\
+For each Delone set $P$ \textbf{covering radius} is defined as:
+$$R_c = \inf\{R>0\,|\, \forall z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R\}$$
 \end{definition}
 
 \begin{definition}
 Let $P\subset \mathbb{R}^n$, $P$ is a discrete set and $x\in P$. Then
-$$V(x) = \left\{ y \in \mathbb{R}^n \,|\, \forall z \in P, z\neq x:\, \|y-x\|<\|y-z\| \right\}$$
-is called \textbf{voronoi polygon} of $x$ on $P$.
+$$V(x) = \left\{ y \in \mathbb{R}^n \,|\, \forall z \in P, z\neq x:\, \|y-x\|\leq\|y-z\| \right\}$$
+is called \textbf{Voronoi polygon} of $x$ on $P$.
 
 Voronoi polygon $V(x)$ is said to belong to the point $x$ and $x$ is called the center of the polygon $V(x)$. The subset of $P$ that directly shapes the polygon $V(x)$ is called the domain of the polygon.
 \end{definition}
 
 \begin{remark}
-Example of a delone set with the voronoi tessellation can be seen in Figure \ref{fig:finiteSectionQuasi}.
+Example of a Delone set with the Voronoi tessellation can be seen in Figure \ref{fig:finiteSectionQuasi}.
 \end{remark}
 
 \begin{theorem}
 \label{the:radiusLimit}
-Let $P\subset \mathbb{R}^n$ is a delone set and $R_c$ it's covering radius. For any $x\in P$:
+Let $P\subset \mathbb{R}^n$ be a Delone set and $R_c$ its covering radius. For any $x\in P$ define:
 $$N_x = \{z\in P\,|\, z\neq x \wedge \|z-x\|\leq 2R_c\}$$
-Then voronoi tile of $x$ on $P$ is
-$$V(x) = \bigcap_{z\in \boldsymbol{N}} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<\|y-z\| \right\}$$
+Then Voronoi tile of $x$ on $P$ is
+$$V(x) = \bigcap_{z\in N_x} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<\|y-z\| \right\}$$
 \end{theorem}
 
 \begin{remark}
-Theorem \ref{the:radiusLimit} gives an algorithm for voronoi polygon construction. First it limits the amount of points of $P$ that need to be considered and also shows that the polygon can be constructed by series of cuts between the center and each of the points form $N_x$. 
+Theorem \ref{the:radiusLimit} gives an algorithm for Voronoi polygon construction. First it limits the amount of points of $P$ that need to be considered and also it shows that the polygon can be constructed by series of cuts between the center and each of the points form $N_x$. 
 \end{remark}
 %
 \clearpage
@@ -51,6 +50,19 @@ $$\alpha_1 = \left( 1,0 \right) \quad \alpha_2 = \left( \frac{2-\beta}{2}, \frac
 $$M = \ring\alpha_1 + \ring\alpha_2$$
 \end{definition}
 
+\begin{figure}[h]
+\centering
+\begin{tikzpicture}[scale=2]
+\draw [dotted] (0,-0.1) -- (0,0.8);
+\draw [dotted] (-1.1,0) -- (1.1,0);
+
+\draw [thick,->] (0,0) -- node[below] {$\alpha_1$} (1,0);
+\draw [thick,->] (0,0) -- node[above] {$\alpha_2$} (-0.866,0.5);
+\draw [thick,->] (0,0) -- node[above] {$\alpha_3$} (0.866,0.5);
+\end{tikzpicture}
+\caption{Plot of the three vectors $\alpha_1$, $\alpha_2$ and $\alpha_3$.}
+\end{figure}
+
 \begin{remark}
 The vectors and the set from previous definition are key to two-dimensional quasicrystal definition. The set $M$ is used as a two-dimensional equivalent to $\ring$ from the one-dimensional quasicrystal. Function from following definition is used as a two-dimensional equivalent to $'$.
 \end{remark}
@@ -58,7 +70,7 @@ The vectors and the set from previous definition are key to two-dimensional quas
 \begin{definition}
 \label{def:starFunction}
 Function $\ast: M \to M$ is called \textbf{star} function:
-$$v^\ast = (a\alpha_1 + b\alpha_2)^\ast = a'\alpha_1 + b'\alpha_3 \;\forall a,b\in\ring$$
+$$v^\ast = (a\alpha_1 + b\alpha_2)^\ast = a'\alpha_1 + b'\alpha_3 \quad\forall a,b\in\ring$$
 \end{definition}
 
 \begin{remark}
@@ -83,7 +95,7 @@ To analyze the two-dimensional quasicrystals again only windows of a certain sha
 
 \begin{theorem}
 \label{the:twoToOne}
-Let $I = [c,d)$, then for the rhombus $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and the quasicrystal $\quasi{\Omega}$: 
+Let $I = [c,d)$, then for the rhombus $\Omega = I\alpha_1^\ast + I\alpha_2^\ast$ and the quasicrystal $\quasi{\Omega}$ it holds that: 
 $$\quasi{\Omega} = \quasi{I}\alpha_1 + \quasi{I}\alpha_2$$
 The size of the rhombus refers to the size of the interval $|I|$ also a base rhombic window refers to a rhombic window constructed from a base window $I$.
 \end{theorem}
@@ -99,9 +111,9 @@ The size of the rhombus refers to the size of the interval $|I|$ also a base rho
 Note in the previous theorem that while $\Omega \subset \RN^2$ and so $\quasi{\Omega}$ is a two-dimensional quasicrystal, $I \subset \RN$ and so $\quasi{I}$ is a one-dimensional quasicrystal. Illustration of the construction is in the Figure \ref{fig:quasiRhombusConstruction}.
 \end{remark}
 
-From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne} follows that the two-dimensional quasicrystals are delone sets.  
+From the analysis of one-dimensional quasicrystals and Theorem \ref{the:twoToOne} it follows that the two-dimensional quasicrystals are Delone sets.  
 
-To analyze distribution of the points of a two-dimensional quasicrystal, voronoi tessellation is used. The goal is to catalog shapes of all voronoi tiles that appear in a quasicrystal with a rhombic window. 
+To analyze distribution of the points of a two-dimensional quasicrystal, Voronoi tessellation is used. The goal is to catalog shapes of all Voronoi tiles that appear in a quasicrystal with a rhombic window. 
 
 First an algorithm for generation of a finite section of a quasicrystal is presented. 
 
@@ -162,9 +174,9 @@ Due to the way the two-dimensional quasicrystal is constructed, the result will 
 \centering
 \includegraphics[width=\textwidth]{rhombus_window_01_(-22_6_7)}
 \includegraphics[width=\textwidth]{rhombus_window_01_(-22_6_7)_window}
-\caption{Finite section of the quasicrystal $\quasi{I\alpha_1^\ast + I\alpha_2^\ast}$ where $|I| = \frac{6\beta-22}{7}$ with the voronoi tessellation and the rhombic window $I\alpha_1^\ast + I\alpha_2^\ast$ with $\ast$ images of the points from the finite section.}
+\caption{Finite section of the quasicrystal $\quasi{I\alpha_1^\ast + I\alpha_2^\ast}$ where $|I| = \frac{6\beta-22}{7}$ with the Voronoi tessellation and the rhombic window $I\alpha_1^\ast + I\alpha_2^\ast$ with $\ast$ images of the points from the finite section.}
 \label{fig:finiteSectionQuasi}
 \end{figure}
 
-The next goal is now to catalog all different voronoi polygons that appear in a quasicrystal for a single window. 
+The next goal is now to catalog all different Voronoi polygons that appear in a quasicrystal for a single window. 
 \end{document}

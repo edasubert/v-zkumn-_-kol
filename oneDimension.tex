@@ -10,7 +10,7 @@ $$x^2=4x-1 \qquad \beta = 2 + \sqrt{3} \doteq 3.732 \qquad \beta' = 2 - \sqrt{3}
 \end{definition}
 
 \begin{remark}
-The number $\beta$ as defined in Definition \ref{def:beta} will represent the same value in the entire text.
+The numbers $\beta$ and $\beta'$ as defined in Definition \ref{def:beta} will represent the same values in the entire text.
 \end{remark}
 
 Being roots of the same quadratic equation, $\beta$ and $\beta'$ have some interesting properties that are often used while working with quasicrystals. 
@@ -20,17 +20,17 @@ Being roots of the same quadratic equation, $\beta$ and $\beta'$ have some inter
 Properties of the roots $\beta$ and $\beta'$.
 \begin{align*}
 \beta\beta' &= 1 &   
-\beta^{k+2} &= 4\cdot\beta^{k+1} - \beta^k & 
+\beta^{k+2} &= 4\beta^{k+1} - \beta^k & 
 \frac{1}{\beta} &= \beta' = 4 - \beta \\
 \beta + \beta' &= 4 &
-{\beta'}^{k+2} &= 4\cdot{\beta'}^{k+1} - {\beta'}^k &
+{\beta'}^{k+2} &= 4{\beta'}^{k+1} - {\beta'}^k &
 \frac{1}{\beta'} &= \beta = 4 - \beta'
 \end{align*}
 \end{theorem}
 
 \begin{definition} 
 Symbol $\ring$ denotes the smallest ring containing integers $\mathbb{Z}$ and the irrationality $\beta$. Since $\beta$ is quadratic the ring has the following simple form.
-$$\ring = \{ a + b\beta |a,b\in \mathbb{Z} \}$$
+$$\ring = \{ a + b\beta \;|\;a,b\in \mathbb{Z} \}$$
 \end{definition}
 
 \begin{remark}
@@ -38,8 +38,9 @@ Similarly, ring $\mathbb{Z}[\beta']$ can be defined. According to Theorem \ref{t
 \end{remark}
 
 \section{One-dimensional quasicrystals}
+Theorems in this section are part of previous work. Hence they are only formulated here. Proofs can be found in \cite{assignment}.
 
-To define a quasicrystal one more definition is needed. Function connecting a space of the quasicrystal with a space of the acceptance set called acceptance window.
+To define a quasicrystal one more definition is needed. Function connecting the space of the quasicrystal with the space of the acceptance set called acceptance window.
 
 \begin{definition}
 Function $':\ring\to\mathbb{Z}[\beta']$ is defined as $(a+b\beta)' = a+b\beta'$.
@@ -57,6 +58,55 @@ $$\quasi{\Omega} = \{ x\in \ring \,|\, x'\in \Omega\}$$
 \begin{remark}
 $\quasi{\Omega}$ where $\Omega \subset \mathbb{R}$ always denotes one-dimensional quasicrystal.
 \end{remark}
+
+Some properties of one-dimensional quasicrystals are crucial for the algorithms used for the analysis.
+
+\begin{theorem} 
+\label{the:quasiProperties}
+Let $\Omega, \tilde{\Omega} \subset \RN$ and $\lambda\in\ring$.
+\begin{align*}
+\Omega \subset \tilde{\Omega} &\Rightarrow \quasi{\Omega} \subset \quasi{\tilde{\Omega}} & \quasi{\Omega} \cap \quasi{\tilde{\Omega}} &= \quasi{\Omega \cap \tilde{\Omega}} \\
+\quasi{\Omega + \lambda'} &= \quasi{\Omega} + \lambda & \quasi{\Omega} \cup \quasi{\tilde{\Omega}} &= \quasi{\Omega \cup \tilde{\Omega}} \\
+\quasi{\beta\Omega} &= \frac{1}{\beta}\quasi{\Omega} \\
+\end{align*}
+\end{theorem}
+
+\begin{remark} %By theorem
+\label{rem:oneInterval}
+By Theorem \ref{the:quasiProperties} it is sufficient to analyze only intervals as windows. There are several possibilities of openness/closeness of these intervals. However only left-closed right-open intervals will be analyzed. That is justified by the following:
+\begin{align*}
+\quasi{(c,d)} &= \left\{ 
+	\begin{array}{l l}
+	\quasi{[c,d)} & c \notin \ring\\
+	\quasi{[c,d)}\setminus\{c'\} & c \in \ring
+	\end{array} \right. &
+  \quasi{[c,d]} &= \left\{ 
+	\begin{array}{l l}
+	\quasi{[c,d)} & d \notin \ring\\
+	\quasi{[c,d)}\cup\{d'\} & d \in \ring
+	\end{array} \right.
+  \\
+\quasi{(c,d]} &= \left\{ 
+	\begin{array}{l l}
+	\quasi{(c,d)} & d \notin \ring\\
+	\quasi{(c,d)}\cup\{d'\} & d \in \ring
+	\end{array} \right.\\
+\end{align*}
+\end{remark}
+
+\begin{theorem}
+\label{the:scale}
+Let $\Omega \subset \RN$ then $\forall k\in \mathbb{Z}: \quasi{\frac{1}{\beta^k}\Omega} = \beta^k\quasi{\Omega}$.
+\end{theorem}
+
+\begin{corollary}
+\label{cor:baseInterval}
+From Remark \ref{rem:oneInterval} and Theorem \ref{the:scale} follows that only windows $\Omega = [c,d)$ where $d-c\in\left( \frac{1}{\beta}, 1 \right]$ need to be analyzed. Such windows are called \textbf{base windows} or \textbf{windows in the base form}. Quasicrystals for all other windows can be acquired from the quasicrystals with the base windows by scaling and operations from Remark \ref{rem:oneInterval}.
+\end{corollary}
+
+\subsection{One-dimensional quasicrystal structure}%====================================================================================================================
+
+Figure \ref{fig:onedimensional} suggests that the one-dimensional quasicrystal is a sequence of points. This section presents an analysis of spacing and distribution of these points.
 
 \begin{figure}[h]
 \centering
@@ -154,89 +204,34 @@ $\quasi{\Omega}$ where $\Omega \subset \mathbb{R}$ always denotes one-dimensiona
 \label{fig:onedimensional}
 \end{figure}
 
-Some properties of one-dimensional quasicrystals are crucial for the algorithms used for the analysis.
-
-\begin{theorem} 
-\label{the:quasiProperties}
-Let $\Omega, \tilde{\Omega} \subset \RN$ and $\lambda\in\ring$.
-\begin{align*}
-\Omega \subset \tilde{\Omega} &\Rightarrow \quasi{\Omega} \subset \quasi{\tilde{\Omega}} & \quasi{\Omega} \cap \quasi{\tilde{\Omega}} &= \quasi{\Omega \cap \tilde{\Omega}} \\
-\quasi{\Omega + \lambda'} &= \quasi{\Omega} + \lambda & \quasi{\Omega} \cup \quasi{\tilde{\Omega}} &= \quasi{\Omega \cup \tilde{\Omega}} \\
-\quasi{\beta\Omega} &= \frac{1}{\beta}\quasi{\Omega} \\
-\end{align*}
-\end{theorem}
-
-\begin{remark}
-\label{rem:oneInterval}
-Further only left-closed right-open intervals will be analyzed as windows. That is justified by Theorem \ref{the:quasiProperties} and following analysis.
-%
-\begin{multicols}{2}
-\noindent\begin{align*}
-\quasi{(c,d)} &= \left\{ 
-	\begin{array}{l l}
-	\quasi{[c,d)} & c \notin \ring\\
-	\quasi{[c,d)}\setminus\{c'\} & c \in \ring
-	\end{array} \right.\\
-%\quasi{(c,d]} &= \quasi{(c,d)}\cap\quasi{[c,d]}
-\quasi{(c,d]} &= \left\{ 
-	\begin{array}{l l}
-	\quasi{(c,d)} & d \notin \ring\\
-	\quasi{(c,d)}\cup\{d'\} & d \in \ring
-	\end{array} \right.\\
-\end{align*}
-\begin{align*}
-\quasi{[c,d]} &= \left\{ 
-	\begin{array}{l l}
-	\quasi{[c,d)} & d \notin \ring\\
-	\quasi{[c,d)}\cup\{d'\} & d \in \ring
-	\end{array} \right.
-\end{align*}
-\end{multicols}
-%
-\end{remark}
-
-\begin{theorem}
-\label{the:scale}
-Let $\Omega \subset \RN$ then $\forall k\in \mathbb{Z}: \quasi{\frac{1}{\beta^k}\Omega} = \beta^k\quasi{\Omega}$.
-\end{theorem}
-
-\begin{corollary}
-\label{cor:baseInterval}
-From Remark \ref{rem:oneInterval} and Theorem \ref{the:scale} follows that only windows $\Omega = [c,d)$ where $d-c\in\left( \frac{1}{\beta}, 1 \right]$ need to be analyzed. Such windows are called \textbf{base windows} or \textbf{windows in the base form}. Quasicrystals for all other windows can be acquired from the quasicrystals with the base windows by scaling and operations from Remark \ref{rem:oneInterval}.
-\end{corollary}
-
-\subsection{One-dimensional quasicrystal structure}%====================================================================================================================
-
-Figure \ref{fig:onedimensional} suggests that the one-dimensional quasicrystal is a sequence of points. This section presents an analysis of spacing and distribution of these points.
-
 \begin{definition}
 Strictly increasing sequence $(y_n^\Omega)_{n\in \mathbb{Z}}$ defined as $\left\{y_n^\Omega\,|\, n\in\mathbb{Z} \right\} = \quasi{\Omega}$ where $\Omega \subset \RN$ is called the \textbf{sequence of quasicrystal $\quasi{\Omega}$}.
 \end{definition}
 
 \begin{theorem}
 \label{the:spaces:sum}
-Let $\Omega = [c,d)$ is a base window, then all possible distances between two immediately following points of the sequence of  the quasicrystal $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in Table \ref{table:spaces}.
+Let $\Omega = [c,d)$ be a base window, then all possible distances between two consecutive points of the sequence of  the quasicrystal $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in Table \ref{table:spaces}.
 \begin{table}[h]
 \begin{center}
-\begin{tabular}{ccccccc}
+\begin{tabular}{c|ccccccc}
 	\toprule
-		$\frac{1}{\beta}$	&	$\left( \frac{1}{\beta}, \frac{\beta - 2}{\beta} \right)$	&	$\frac{\beta-2}{\beta}$	&	$\left( \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta} \right)$	&	$\frac{\beta-1}{\beta}$	&	$\left( \frac{\beta-1}{\beta}, 1 \right)$	&	$1$\\
+		\begin{tabular}[x]{@{}c@{}}Window\\size\end{tabular}&$\frac{1}{\beta}$	&	$\left( \frac{1}{\beta}, \frac{\beta - 2}{\beta} \right)$	&	$\frac{\beta-2}{\beta}$	&	$\left( \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta} \right)$	&	$\frac{\beta-1}{\beta}$	&	$\left( \frac{\beta-1}{\beta}, 1 \right)$	&	$1$\\
 	\midrule
-		$4\beta-1$ 	&	$4\beta-1$	&				&				&				&				&			 	\\ 
-		$3\beta-1$	&	$3\beta-1$	&	$3\beta-1$	&	$3\beta-1$	&				&				&			 	\\
-					&				&				&	$2\beta-1$	&	$2\beta-1$	&	$2\beta-1$	&				\\
-					&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		\\
-					&				&				&				&				&	$\beta-1$	&	$\beta-1$	\\
+		&$4\beta-1$ 	&	$4\beta-1$	&				&				&				&				&			 	\\ 
+		&$3\beta-1$	&	$3\beta-1$	&	$3\beta-1$	&	$3\beta-1$	&				&				&			 	\\
+		Distances&			&				&				&	$2\beta-1$	&	$2\beta-1$	&	$2\beta-1$	&				\\
+		&			&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		&	$\beta$		\\
+		&			&				&				&				&				&	$\beta-1$	&	$\beta-1$	\\
 	\bottomrule
 \end{tabular}
-\caption{All possible distances between two immediately following points of the sequence of the quasicrystal with a window of the given size.}
+\caption{All possible distances between two consecutive points of the sequence of the quasicrystal with a window of the given size.}
 \label{table:spaces}
 \end{center}
 \end{table}
 \end{theorem}
 
 \begin{remark}
-Please notice that the cases for window sizes $\frac{1}{\beta}$, $\frac{\beta-2}{\beta}$, $\frac{\beta-1}{\beta}$ and $1$ each have only two different distances, therefore windows of these sizes are regarded as \textbf{singular}. Also distances for the size $\frac{1}{\beta}$ are $\beta$ multiples of the distances for the size $1$.
+Please note that the cases for window sizes $\frac{1}{\beta}$, $\frac{\beta-2}{\beta}$, $\frac{\beta-1}{\beta}$ and $1$ each have only two different distances, therefore windows of these sizes are regarded as \textbf{singular}. Also distances for the size $\frac{1}{\beta}$ are $\beta$ multiples of the distances for the size $1$.
 \end{remark}
 
 \begin{definition}
@@ -247,7 +242,6 @@ The distances $y_{n+1}^\Omega-y_n^\Omega$ are denoted: $A = 4\beta-1$, $B = 3\be
 \begin{definition}
 \label{def:steppingFunction}
 Function $f^\Omega: \Omega \to \Omega$ for $\Omega = [c,d)$ defined as
-
 \begin{align*}
 d-c \in \left( \frac{1}{\beta}, \frac{\beta - 2}{\beta} \right]:& \quad
 		f^\Omega(x) = \left\{ \begin{array}{l l}
@@ -275,7 +269,7 @@ is called the \textbf{stepping function} of the quasicrystal $\quasi{\Omega}$.
 \end{definition}
 
 \begin{remark}
-Stepping function takes $(\cdot)'$ image of a point of the quasicrystal and returns $(\cdot)'$ image of immediately following point.\\
+Stepping function takes $(\cdot)'$ image of a point of the quasicrystal and returns $(\cdot)'$ image of the consecutive point.\\
 \end{remark}
 
 \begin{figure}
@@ -306,7 +300,7 @@ Stepping function takes $(\cdot)'$ image of a point of the quasicrystal and retu
 \caption{Graph of the stepping function for quasicrystal $\quasi{\Omega}$ where $\Omega = [c,d),\, c=0,\, d=12-3\beta$. $C= 2\beta-1$, $D= \beta$ and $E= \beta-1$ (as in Definition \ref{def:distancesNotation}).}
 \end{figure}
 
-Stepping function is a valuable tool in theoretical quasicrystal analysis and has direct practical use in quasicrystal generation. Therefore the following theorem lists several key properties of this function.
+Stepping function is a valuable tool in theoretical quasicrystal analysis and has direct practical use in quasicrystal generation. The following theorem lists several key properties of this function.
 
 \begin{theorem}
 \label{def:stepingFunc}
@@ -315,7 +309,7 @@ Let $\Omega \subset \RN$:
 \item $f^\Omega(\,(y_n^\Omega)'\,) = (y_{n+1}^\Omega)' \quad \forall n\in\mathbb{N}$
 \item $\left({f^\Omega}\right)^{-1}(\,(y_{n+1}^\Omega)'\,) = (y_{n}^\Omega)' \quad \forall n\in\mathbb{N}$
 \item $f^\Omega$ is piece-wise translation 
-\item Discontinuities  of $f^\Omega$ divide the window $\Omega$ into intervals. After the preimages of the points of one interval there is the same distance to the next point of the quasicrystal.
+\item Discontinuities  of $f^\Omega$ divide the window $\Omega$ into intervals $I_1,\dots,I_m$. For all $x_1,\,x_2\in\quasi{\Omega}$ holds that if $x_1',\,x_2'\in I_j$ then both $x_1$ and $x_2$ have the same distance to the consecutive points. 
 \end{itemize}
 \end{theorem}
 
@@ -345,7 +339,7 @@ d-c \in \left( \frac{\beta-1}{\beta}, 1 \right]:& \qquad
 \begin{remark}
 Notation from previous definition will be often used to divide a base window $\Omega =  [c,d)$ into three disjunct intervals. 
 $$\Omega = \left[c,a^\Omega\right)\cup\left[a^\Omega,b^\Omega\right)\cup\left[b^\Omega,d\right)$$
-For singular cases where $d-c\in \left\{ \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta}, 1 \right\}$, $a^\Omega = b^\Omega$ and the window is then divided only in to two intervals $\left[c,a^\Omega\right)\cup\left[a^\Omega,d\right)$.
+For singular cases where $d-c\in \left\{ \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta}, 1 \right\}$, $a^\Omega = b^\Omega$ and the window is then divided only into two intervals $\left[c,a^\Omega\right)\cup\left[a^\Omega,d\right)$.
 \end{remark}
 
 \begin{definition}
@@ -379,11 +373,11 @@ Word of the quasicrystal describes the distribution of the points of the quasicr
 \end{remark}
 
 \begin{definition}
-Function $\mathcal{C}_\ell: \mathbb{N} \to \mathbb{N}$, that assigns to $n\in\mathbb{N}$ number of different sub-words of the length $n$ in the word of the quasicrystal $\left(t_n^\Omega\right)_{n\in\mathbb{Z}}$ where $|\Omega| = \ell$ is called the \textbf{complexity} of the quasicrystal.
+Function $\mathcal{C}_\ell: \mathbb{N} \to \mathbb{N}$, that assigns to $n\in\mathbb{N}$ number of different sub-words of the length $n$ in the word of the quasicrystal $\left(t_m^\Omega\right)_{m\in\mathbb{Z}}$ where $|\Omega| = \ell$ is called the \textbf{complexity} of the quasicrystal.
 \end{definition}
 
 \begin{definition}
-Set $\mathcal{L}_\ell(n)$ containing all different sub-words of the length $n$ in the word of the quasicrystal $\left(t_n^\Omega\right)_{n\in\mathbb{Z}}$ where $|\Omega| = \ell$ is called the \textbf{language} of the quasicrystal.
+Set $\mathcal{L}_\ell(n)$ containing all different sub-words of the length $n$ in the word of the quasicrystal $\left(t_m^\Omega\right)_{m\in\mathbb{Z}}$ where $|\Omega| = \ell$ is called the \textbf{language} of the quasicrystal.
 \end{definition}
 
 \begin{remark}

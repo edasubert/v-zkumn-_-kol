@@ -1,8 +1,8 @@
 \documentclass[text.tex]{subfiles}
 
 \begin{document}
-\section{Cataloging voronoi polygons for a single general window}
-The step from cataloging voronoi polygons for a single rhombic window to cataloging voronoi polygons for a single general window is significantly larger than the step from generating finite sections for a rhombic window to a general window described in the previous section. 
+\section{Cataloging Voronoi polygons for single general window}
+The step from cataloging Voronoi polygons for a single rhombic window to cataloging Voronoi polygons for a single general window is significantly larger than the step from generating finite sections for a rhombic window to a general window described in the previous section. 
 
 The goal is again to generate all possible finite sections of the quasicrystal with a general window that cover a circle of the covering radius. 
 
@@ -20,8 +20,8 @@ One-dimensional hyper-window means a one-dimensional window of the same size as 
 \item generate finite sections of the hyper-quasicrystal from the language of the sufficient $n$
 \item mark the points of the hypo-quasicrystal in each finite section
 \item determine which of the unmarked points belong to the quasicrystal
-\item construct voronoi polygons
-\item select voronoi polygons that actually appear in the quasicrystal
+\item construct Voronoi polygons
+\item select Voronoi polygons that actually appear in the quasicrystal
 \end{enumerate}
 
 \subsection{Identifying the points of the hypo-quasicrystal}
@@ -129,18 +129,18 @@ The Figure \ref{fig:twoTiles} illustrates the issue nicely. Both finite sections
 \includegraphics[width=0.4\textwidth]{catalogGeneral/tile00017}%
 \qquad%
 \includegraphics[width=0.4\textwidth]{catalogGeneral/tile00018}
-\caption{Example of two voronoi polygons constructed over two finite sections from the algorithm from the previous section.}
+\caption{Example of two Voronoi polygons constructed over two finite sections from the algorithm from the previous section.}
 \label{fig:twoTiles}
 \end{figure}
 
 Solution was also partially covered while analyzing the quasicrystals with a rhombic window. 
 
-Once a voronoi polygon is created for each finite section only the domain of the polygon is kept and the rest is discarded. 
+Once a Voronoi polygon is created for each finite section only the domain of the polygon is kept and the rest is discarded. 
 
 The intersection is constructed as before:
-Let $V$ be one of the voronoi polygons in the quasicrystal, $c$ the center of $V$, $D = \{p_1,\dots,p_k\}$ the domain of $V$ and $q_i = p_i - c$, $i\in\hat{k}$.
+Let $V$ be one of the Voronoi polygons in the quasicrystal, $c$ the center of $V$, $D = \{p_1,\dots,p_k\}$ the domain of $V$ and $q_i = p_i - c$, $i\in\hat{k}$.
 $$Q = \bigcap\limits_{i\in\hat{k}}(\Omega-q_i^\ast)\cap\Omega$$
-Once $c^\ast\in Q$ then the domain of $V$ appears in the quasicrystal. For different voronoi polygons these intersections may overlap. However unlike with a rhombic window, with a general window some intersections may get entirely covered by intersections of other voronoi polygons and thus eliminating the corresponding voronoi polygon from the quasicrystal. 
+Once $c^\ast\in Q$ then the domain of $V$ appears in the quasicrystal. For different Voronoi polygons these intersections may overlap. However unlike with a rhombic window, with a general window some intersections may get entirely covered by intersections of other Voronoi polygons and thus eliminating the corresponding Voronoi polygon from the quasicrystal. 
 
-To determine which voronoi polygons actually appear in the quasicrystal the intersection of all candidate voronoi polygons need to be stacked up sorted from the smallest voronoi polygon on the top and the polygons whose intersections are entirely coved are eliminated. Thus a catalog of voronoi polygons for single quasicrystal with a general window is created. 
+To determine which Voronoi polygons actually appear in the quasicrystal the intersection of all candidate Voronoi polygons need to be stacked up sorted from the smallest Voronoi polygon on the top and the polygons whose intersections are entirely coved are eliminated. Thus a catalog of Voronoi polygons for single quasicrystal with a general window is created. 
 \end{document}
