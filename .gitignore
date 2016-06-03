@@ -9,4 +9,5 @@ bakalarka/*
 *.blg
 !img/*.pdf
 !img/*/*.pdf
+!img/*/*/*.pdf
 !toReview.pdf
