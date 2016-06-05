@@ -37,6 +37,45 @@ $$\ring = \{ a + b\beta \;|\;a,b\in \mathbb{Z} \}$$
 Similarly, ring $\mathbb{Z}[\beta']$ can be defined. According to Theorem \ref{the:betaProperties} the two rings are equivalent: $\ring = \mathbb{Z}\left[\beta'\right]$.
 \end{remark}
 
+\subsection{Delone set and Voronoi tessellation}
+
+This section provides the definitions of a Delone set a covering radius and a Voronoi tessellation.
+
+\begin{definition}
+\label{def:Delone}
+Let $P\subset \mathbb{R}^n$ and let there exist $R>0$ and $ r>0$ such that:
+$$\forall x,y\in P,\, x\neq y: r\leq \|x-y\|$$
+$$\forall z\in\mathbb{R}^n\; \exists x\in P: \|z-x\|\leq R$$
+Then $P$ is called \textbf{Delone} set.\\
+For each Delone set $P$ \textbf{covering radius} is defined as:
+$$R_c = \inf\{R>0\,|\, \forall z\in\mathbb{R}^n \exists x\in P: \|z-x\|\leq R\}$$
+\end{definition}
+
+\begin{definition}
+Let $P\subset \mathbb{R}^n$, $P$ is a discrete set and $x\in P$. Then
+$$V(x) = \left\{ y \in \mathbb{R}^n \,|\, \forall z \in P, z\neq x:\, \|y-x\|\leq\|y-z\| \right\}$$
+is called \textbf{Voronoi polygon} of $x$ on $P$.
+
+Voronoi polygon $V(x)$ is said to belong to the point $x$ and $x$ is called the center of the polygon $V(x)$. The subset of $P$ that directly shapes the polygon $V(x)$ is called the domain of the polygon.
+\end{definition}
+
+\begin{remark}
+Example of a Delone set with the Voronoi tessellation can be seen in Figure \ref{fig:finiteSectionQuasi}.
+\end{remark}
+
+\begin{theorem}
+\label{the:radiusLimit}
+Let $P\subset \mathbb{R}^n$ be a Delone set and $R_c$ its covering radius. For any $x\in P$ define:
+$$N_x = \{z\in P\,|\, z\neq x \wedge \|z-x\|\leq 2R_c\}$$
+Then Voronoi tile of $x$ on $P$ is
+$$V(x) = \bigcap_{z\in N_x} \left\{ y \in \mathbb{R}^n \,|\, \|y-x\|<\|y-z\| \right\}$$
+\end{theorem}
+
+\begin{remark}
+Theorem \ref{the:radiusLimit} gives an algorithm for Voronoi polygon construction. First it limits the amount of points of $P$ that need to be considered and also it shows that the polygon can be constructed by series of cuts between the center and each of the points form $N_x$. 
+\end{remark}
+%
+
 \section{One-dimensional quasicrystals}
 Theorems in this section are part of previous work. Hence they are only formulated here. Proofs can be found in \cite{assignment}.
 
@@ -108,7 +147,7 @@ From Remark \ref{rem:oneInterval} and Theorem \ref{the:scale} follows that only 
 
 Figure \ref{fig:onedimensional} suggests that the one-dimensional quasicrystal is a sequence of points. This section presents an analysis of spacing and distribution of these points.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \begin{tikzpicture}[scale=0.8]
 
@@ -211,7 +250,7 @@ Strictly increasing sequence $(y_n^\Omega)_{n\in \mathbb{Z}}$ defined as $\left\
 \begin{theorem}
 \label{the:spaces:sum}
 Let $\Omega = [c,d)$ be a base window, then all possible distances between two consecutive points of the sequence of  the quasicrystal $\left(y_{n+1}^\Omega-y_n^\Omega\right)$ are listed in Table \ref{table:spaces}.
-\begin{table}[h]
+\begin{table}[h!]
 \begin{center}
 \begin{tabular}{c|ccccccc}
 	\toprule
@@ -272,7 +311,7 @@ is called the \textbf{stepping function} of the quasicrystal $\quasi{\Omega}$.
 Stepping function takes $(\cdot)'$ image of a point of the quasicrystal and returns $(\cdot)'$ image of the consecutive point.\\
 \end{remark}
 
-\begin{figure}
+\begin{figure}[h!]
 \centering
 \begin{tikzpicture}
 \draw [<->] (0,5.3) -- (0,0) -- (5.3,0);
@@ -302,6 +341,7 @@ Stepping function takes $(\cdot)'$ image of a point of the quasicrystal and retu
 
 Stepping function is a valuable tool in theoretical quasicrystal analysis and has direct practical use in quasicrystal generation. The following theorem lists several key properties of this function.
 
+\begin{samepage}
 \begin{theorem}
 \label{def:stepingFunc}
 Let $\Omega \subset \RN$:
@@ -312,6 +352,7 @@ Let $\Omega \subset \RN$:
 \item Discontinuities  of $f^\Omega$ divide the window $\Omega$ into intervals $I_1,\dots,I_m$. For all $x_1,\,x_2\in\quasi{\Omega}$ holds that if $x_1',\,x_2'\in I_j$ then both $x_1$ and $x_2$ have the same distance to the consecutive points. 
 \end{itemize}
 \end{theorem}
+\end{samepage}
 
 \begin{definition}
 Discontinuities of the stepping function of the quasicrystal $\quasi{\Omega}$, where $\Omega = [c,d)$ in the base form, are denoted as $a^\Omega$ and $b^\Omega$. 
@@ -337,7 +378,7 @@ d-c \in \left( \frac{\beta-1}{\beta}, 1 \right]:& \qquad
 \end{definition}
 
 \begin{remark}
-Notation from previous definition will be often used to divide a base window $\Omega =  [c,d)$ into three disjunct intervals. 
+Notation from previous definition will be often used to divide a base window $\Omega =  [c,d)$ into three disjoint intervals. 
 $$\Omega = \left[c,a^\Omega\right)\cup\left[a^\Omega,b^\Omega\right)\cup\left[b^\Omega,d\right)$$
 For singular cases where $d-c\in \left\{ \frac{\beta-2}{\beta}, \frac{\beta-1}{\beta}, 1 \right\}$, $a^\Omega = b^\Omega$ and the window is then divided only into two intervals $\left[c,a^\Omega\right)\cup\left[a^\Omega,d\right)$.
 \end{remark}

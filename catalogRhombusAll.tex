@@ -6,6 +6,8 @@
 To catalog all different shapes of Voronoi polygons in all quasicrystals with a rhombic window, several simplifications are put in place.
 First only base rhombic windows are considered since polygons from other quasicrystals are not different in shape only in scale. Secondly the base windows are divided by the same language into finitely many groups. 
 
+The proofs of the following theorems can be found in \cite{combinatorial}.
+
 \begin{theorem}
 \label{the:complexity}
 Let $\Omega = [c,c+\ell)$.\\
@@ -34,7 +36,7 @@ Previous two theorems give a guide to which points divide the base windows into 
 
 Now is the time to introduce new view on the one-dimensional base windows as a whole. Figure \ref{fig:allBaseWindows} shows a plot of all base windows side by side.
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \begin{tikzpicture}[scale=6]
 \draw (0.26795,0) -- (1,0) -- (1,1) -- (0.26795,0.26795);
@@ -60,11 +62,11 @@ Now is the time to introduce new view on the one-dimensional base windows as a w
 \end{figure}
 
 It shows well how the window changes while increasing in size and how the singular windows come to existence. However more importantly it shows that $\mathcal{D}_1 = \left\{\frac{\beta-2}{\beta},\; \frac{\beta-1}{\beta},\; 1\right\}$.
-The algorithm for generating $\mathcal{D}_n$ is very similar to the algorithm for division of a single window or the algorithm for generating $D_n$. Only this time instead of getting a stepping function image of the endpoints of a interval, the function is used on the whole line segments representing $a^\Omega$ and $b^\Omega$. Every time images of these line segments intersect a new point is added to the set $\mathcal{D}_n$.
+The algorithm for generating $\mathcal{D}_n$ is very similar to the algorithm for division of a fixed window or the algorithm for generating $D_n$. Only this time instead of getting a stepping function image of the endpoints of a interval, the function is used on the whole line segments representing $a^\Omega$ and $b^\Omega$. Every time images of these line segments intersect a new point is added to the set $\mathcal{D}_n$.
 
 For a sufficient $n$, such $\mathcal{D}_n$ can be constructed that the same language on the subintervals implies the same set of different shapes of Voronoi polygons on corresponding quasicrystals. The endpoints of the subintervals are then examined independently. 
 
-Such $n$ is determined by the algorithm from the previous section. The first approach is used. For the base windows there are three combinations of the largest and smallest distance possible: $A,D$; $B,D$ and $C,E$. The $n$ is determined for each and the largest is selected. 
+Such $n$ is determined by the algorithm from the previous section. The first approach is used. For the base windows there are three combinations of the largest and smallest distance possible: $A,D$; $B,D$ and $C,E$. The $n$ is determined for each and the largest one is selected. 
 \begin{align*}
 n_1 &= \left\lceil\frac{8A\cdot\hat{R}_c}{D}\right\rceil = 16 & n_2 &= \left\lceil\frac{8B\cdot\hat{R}_c}{D}\right\rceil = 12 & n_3 &= \left\lceil\frac{8C\cdot\hat{R}_c}{E}\right\rceil = 10\\
 \end{align*}
@@ -95,213 +97,215 @@ The catalog is then concluded by a list of all Voronoi polygons for quasicrystal
 \newgeometry{inner=2cm,outer=0.6cm,top=1cm,bottom=1cm}
 \pagestyle{empty}
 \begin{landscape}
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_1_4_-1_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_1_4_-1_1}
-\caption*{$4-\beta$}
+\caption*{window size: $4-\beta$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_2_-33_9_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_2_-33_9_2}
-\caption*{$\frac{9\beta-33}{2}$}
+\caption*{window size: $\frac{9\beta-33}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_3_-37_10_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_3_-37_10_1}
-\caption*{$10\beta-37$}
+\caption*{window size: $10\beta-37$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_4_-18_5_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_4_-18_5_2}
-\caption*{$\frac{5\beta-18}{2}$}
+\caption*{window size: $\frac{5\beta-18}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_5_19_-5_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_5_19_-5_1}
-\caption*{$19-5\beta$}
+\caption*{window size: $19-5\beta$}
 \end{figure}
 
 \thispagestyle{empty}
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_6_-3_1_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_6_-3_1_2}
-\caption*{$\frac{\beta-3}{2}$}
+\caption*{window size: $\frac{\beta-3}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_7_-22_6_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_7_-22_6_1}
-\caption*{$6\beta-22$}
+\caption*{window size: $6\beta-22$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_8_-29_8_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_8_-29_8_2}
-\caption*{$\frac{8\beta-29}{2}$}
+\caption*{window size: $\frac{8\beta-29}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_9_-7_2_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_9_-7_2_1}
-\caption*{$2\beta-7$}
+\caption*{window size: $2\beta-7$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_10_1_0_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_10_1_0_2}
-\caption*{$\frac{1}{2}$}
+\caption*{window size: $\frac{1}{2}$}
 \end{figure}
 
 \thispagestyle{empty}
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_11_8_-2_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_11_8_-2_1}
-\caption*{$8-2\beta$}
+\caption*{window size: $8-2\beta$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_12_-10_3_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_12_-10_3_2}
-\caption*{$\frac{3\beta-10}{2}$}
+\caption*{window size: $\frac{3\beta-10}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_13_-18_5_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_13_-18_5_1}
-\caption*{$5\beta-18$}
+\caption*{window size: $5\beta-18$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_14_-21_6_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_14_-21_6_2}
-\caption*{$\frac{6\beta-21}{2}$}
+\caption*{window size: $\frac{6\beta-21}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_15_-3_1_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_15_-3_1_1}
-\caption*{$\beta-3$}
+\caption*{window size: $\beta-3$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_16_9_-2_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_16_9_-2_2}
-\caption*{$\frac{9-2\beta}{2}$}
+\caption*{window size: $\frac{9-2\beta}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_17_12_-3_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_17_12_-3_1}
-\caption*{$12-3\beta$}
+\caption*{window size: $12-3\beta$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_18_-2_1_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_18_-2_1_2}
-\caption*{$\frac{\beta-2}{2}$}
+\caption*{window size: $\frac{\beta-2}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_19_-14_4_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_19_-14_4_1}
-\caption*{$4\beta-14$}
+\caption*{window size: $4\beta-14$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_20_-13_4_2}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_20_-13_4_2}
-\caption*{$\frac{4\beta-13}{2}$}
+\caption*{window size: $\frac{4\beta-13}{2}$}
 \end{figure}
 
-\begin{figure}[h]
+\begin{figure}[h!]
 \centering
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/window/window_21_1_0_1}
 \includegraphics[width=0.96\textwidth]{catalogRhombusAll/quasi/rhombus_21_1_0_1}
-\caption*{$1$}
+\caption*{window size: $1$}
 \end{figure}
 \end{landscape}
 
 \thispagestyle{empty}
-\begin{figure}[h]
+\begin{figure}[h!]
 \begin{flushleft}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile001}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile002}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile003}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile004}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile005}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile006}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile007}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile008}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile009}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile010}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile011}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile012}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile013}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile014}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile015}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile016}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile017}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile018}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile019}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile020}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile021}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile022}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile023}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile024}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile025}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile026}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile027}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile028}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile029}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile030}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile031}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile032}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile033}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile034}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile035}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile036}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile037}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile038}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile039}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile040}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile041}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile042}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile043}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile044}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile045}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile046}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile047}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile048}
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile049}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile050}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile051}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile052}%
-\includegraphics[scale=0.11]{catalogRhombusAll/tiles/tile053}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile001}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile002}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile003}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile004}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile005}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile006}
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile007}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile008}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile009}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile010}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile011}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile012}
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile013}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile014}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile015}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile016}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile017}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile018}
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile019}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile020}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile021}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile022}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile023}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile024}
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile025}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile026}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile027}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile028}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile029}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile030}
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile031}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile032}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile033}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile034}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile035}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile036}
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile037}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile038}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile039}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile040}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile041}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile042}
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile043}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile044}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile045}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile046}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile047}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile048}
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile049}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile050}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile051}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile052}%
+\includegraphics[scale=0.1]{catalogRhombusAll/tiles/tile053}%
 \end{flushleft}
+\caption{Catalog of all Voronoi polygons in quasicrystals with rhombic windows in the base form.}
+\label{fig:catalogRhombicTiles}
 \end{figure}
 
 
@@ -367,7 +371,7 @@ The catalog is then concluded by a list of all Voronoi polygons for quasicrystal
 53  &           &           &           &           &           &           &           &           &           &           &           &           &           &           &           & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ & $\bullet$ \\
 \bottomrule
 \end{tabular}
-\caption{Assignment of Voronoi polygons to their quasicrystals. Horizontal axis enumerates members of $\mathcal{D}$ and the vertical axis corresponds to the numbers from the list of Voronoi polygons.}
+\caption{Assignment of Voronoi polygons to their quasicrystals. Horizontal axis enumerates members of $\mathcal{D}$ and the vertical axis corresponds to the numbers from the list of Voronoi polygons (Figure \ref{fig:catalogRhombicTiles}).}
 \label{table:tiles1}
 \end{table}
 

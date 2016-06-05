@@ -1,8 +1,8 @@
 \documentclass[text.tex]{subfiles}
 
 \begin{document}
-\section{Cataloging Voronoi polygons for single general window}
-The step from cataloging Voronoi polygons for a single rhombic window to cataloging Voronoi polygons for a single general window is significantly larger than the step from generating finite sections for a rhombic window to a general window described in the previous section. 
+\section{Cataloging Voronoi polygons for fixed general window}
+The step from cataloging Voronoi polygons for a fixed rhombic window to cataloging Voronoi polygons for a single general window is significantly larger than the step from generating finite sections for a rhombic window to a general window described in the previous section. 
 
 The goal is again to generate all possible finite sections of the quasicrystal with a general window that cover a circle of the covering radius. 
 
@@ -14,8 +14,9 @@ The hypo-quasicrystal creates a subset of the quasicrystal and the hyper-quasicr
 One-dimensional hyper-window means a one-dimensional window of the same size as is the size of the two-dimensional rhombic hyper-window. Equivalently for the hypo-window. 
 \end{remark}
 
+\paragraph{Algorithm}
 \begin{enumerate}
-\item estimate the covering radius from the hypo-quasicrystal (it is certainly larger there than for the quasicrystal)
+\item estimate the covering radius from the hypo-quasicrystal (it is certainly larger than the one for the quasicrystal)
 \item estimate the sufficient $n$ so that the finite section of the word of the hyper-quasicrystal covers the necessary distance
 \item generate finite sections of the hyper-quasicrystal from the language of the sufficient $n$
 \item mark the points of the hypo-quasicrystal in each finite section
@@ -25,13 +26,13 @@ One-dimensional hyper-window means a one-dimensional window of the same size as 
 \end{enumerate}
 
 \subsection{Identifying the points of the hypo-quasicrystal}
-To take advantage of the hypo-quasicrystal it's points need to be identified in the finite sections. The one-dimensional quasicrystal corresponding to the hypo-quasicrystal is a sparser subset of the one-dimensinal quasicrystal corresponding to the hyper-quasicrystal. 
+To take advantage of the hypo-quasicrystal its points need to be identified in the finite sections. The one-dimensional quasicrystal corresponding to the hypo-quasicrystal is a sparser subset of the one-dimensinal quasicrystal corresponding to the hyper-quasicrystal. 
 
-The identification is started already while generating the language $\mathcal{L}_\ell(n)$. The algorithm for dividing a one-dimensional window is augmented. Output of the new algorithm is no longer a section of the word of the quasicrystal, every second letter is $t_{2i}\in\{0,1\}$ and denotes whether the point after the distance represented by the previous letter is present in the one-dimensional quasicrystal corresponding to the hypo-quasicrystal. 
+The identification is started already while generating the language $\mathcal{L}_\ell(n)$. The algorithm for dividing a one-dimensional window is augmented. Output of the new algorithm is no longer a section of the word of the quasicrystal: every second letter is $t_{2i}\in\{0,1\}$ and it denotes whether the point after the distance represented by the previous letter is present in the one-dimensional quasicrystal corresponding to the hypo-quasicrystal. 
 
 At each step of the iteration the intervals are further divided by the one-dimensional hypo-window. As is presented in Figure \ref{pic:twoWindowsIteration}.
 
-\begin{figure}
+\begin{figure}[h!]
 \begin{center}
 \begin{tikzpicture}
 
@@ -89,9 +90,9 @@ At each step of the iteration the intervals are further divided by the one-dimen
 \label{pic:twoWindowsIteration}
 \end{figure}
 
-Once constructing the finite sections of the quasicrystal, points are marked once both letters are succeeded by \texttt{1}. Finite section in Figure \ref{fig:showPotential} was created from the following words.
+While constructing the finite sections of the quasicrystal, points are marked once both letters are succeeded by \texttt{1}. Finite section in Figure \ref{fig:showPotential} was created from the following words.
 \begin{center}\texttt{D0B0D0C0D0D1C0D0D1C0} and \texttt{C0D0B1D0B0D1C0D0D1C0}\end{center}
-The first letter is skipped and so the second letter determines the mark for the first points in the finite section. Therefore is the finite section smaller than with a rhombic window in previous section. 
+The first letter is skipped and so the second letter determines the mark for the first points in the finite section. Therefore the finite section is smaller than the one for a rhombic window in previous section. 
 
 The set of unmarked points $P = \quasi{\widehat{\Omega}}\setminus \quasi{\uwidehat{\Omega}}$ is called the potential of the finite section. 
 
@@ -105,9 +106,9 @@ The set of unmarked points $P = \quasi{\widehat{\Omega}}\setminus \quasi{\uwideh
 The next step is to determine which points of the potential belong to the quasicrystal $\quasi{\Omega}$. In other words creating finite sections of the quasicrystal with a general window.
 
 \subsection{Finite sections of a quasicrystal with a general window}
-To acquire finite sections of the quasicrystal with a general window form the finite sections of the hypo-quasicrystal and their potential, they are precessed one by one. 
+To acquire finite sections of the quasicrystal with a general window the finite sections of the hypo-quasicrystal and their potentials are processed individually. 
 
-Let $F$ be the finite section and $P\subset F$ is it's potential. Clearly $F\setminus P$ are the points of the hypo-quasicrystal and $(F\setminus P)^\ast \subset \uwidehat{\Omega}\subset\Omega$.
+Let $F$ be the finite section and $P\subset F$ is its potential. Clearly $F\setminus P$ are the points of the hypo-quasicrystal and $(F\setminus P)^\ast \subset \uwidehat{\Omega}\subset\Omega$.
 
 The points of the potential are considered one at a time. For each $x\in P$ it needs to be tested whether $((F\setminus P)\cup x)^\ast$ fits inside the window $\Omega$. Method for such test was already covered in previous section.
 $$(F\setminus P) = \{x_1,\dots,x_k\}$$
@@ -118,7 +119,7 @@ $$x^\ast\in\Omega \quad\wedge\quad x^\ast\in\Omega-q_i^\ast \quad\forall i\in\ha
 $$x^\ast\in\bigcap\limits_{i\in\hat{k}}(\Omega-q_i^\ast)\cap\Omega$$
 Therefore the test turns into whether is the intersection empty or not. If it is empty $x$ is removed from both $P$ and $F$ if it is not empty $x$ is only removed from $P$, thus becoming the point of the finite section $F\setminus P$. 
 
-However the algorithm needs to test the fit for each subset of the potential. The algorithm therefore branches into a tree structure, one branch for every remaining point of the potential. The computational complexity is huge. 
+In theory the finite section of the quasicrystal is a union of the finite section of the hypo-quasicrystal and any number of points of its potential. As long as the union passes the test. There may even be more finite sections of the quasicrystal arising from a single finite section of the hypo-quasicrystal and its potential. Therefore the algorithm needs to test the fit for each subset of the potential and it branches into a tree structure, one branch for every remaining point of the potential. The computational complexity is huge. 
 
 Such process produces a superset of all finite sections of the algorithm, such finite sections that could appear in the quasicrystal. The next section presents a method of determining which finite sections actually do appear. 
 
@@ -140,7 +141,7 @@ Once a Voronoi polygon is created for each finite section only the domain of the
 The intersection is constructed as before:
 Let $V$ be one of the Voronoi polygons in the quasicrystal, $c$ the center of $V$, $D = \{p_1,\dots,p_k\}$ the domain of $V$ and $q_i = p_i - c$, $i\in\hat{k}$.
 $$Q = \bigcap\limits_{i\in\hat{k}}(\Omega-q_i^\ast)\cap\Omega$$
-Once $c^\ast\in Q$ then the domain of $V$ appears in the quasicrystal. For different Voronoi polygons these intersections may overlap. However unlike with a rhombic window, with a general window some intersections may get entirely covered by intersections of other Voronoi polygons and thus eliminating the corresponding Voronoi polygon from the quasicrystal. 
+Once $c^\ast\in Q$ then the domain of $V$ appears in the quasicrystal. For different Voronoi polygons these intersections may overlap. However unlike for a rhombic window, for a general window some intersections may get entirely covered by intersections of other Voronoi polygons and thus eliminating the corresponding Voronoi polygon from the quasicrystal. 
 
-To determine which Voronoi polygons actually appear in the quasicrystal the intersection of all candidate Voronoi polygons need to be stacked up sorted from the smallest Voronoi polygon on the top and the polygons whose intersections are entirely coved are eliminated. Thus a catalog of Voronoi polygons for single quasicrystal with a general window is created. 
+To determine which Voronoi polygons actually appear in the quasicrystal the intersection of all candidate Voronoi polygons need to be stacked up sorted from the smallest Voronoi polygon on the top and the polygons whose intersections are entirely coved are eliminated. Thus a catalog of Voronoi polygons for a fixed quasicrystal with a general window is created. 
 \end{document}
