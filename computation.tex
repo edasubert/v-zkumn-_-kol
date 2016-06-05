@@ -9,60 +9,60 @@ Nearly every calculation in the algorithms is inside the number field $\field$. 
 $$\field = \left\{\left. \frac{a + b\beta}{c} \right|a,b\in \mathbb{Z},\; c\in\NN \right\}$$
 Therefore each number $x\in\field$ can be represented by three integers and integer arithmetic is precise. Several operations are listed here. Particularly useful is the \texttt{simplify} function which makes sure that $a,\;b,\;c$ do not overflow. (\texttt{gcd} returns the greatest common divisor)
 
-%\begin{algorithm}
-	%%\SetKwFunction{algo}{algo}\SetKwFunction{struct}{}
-	%\SetKwFunction{algo}{algo}\SetKwFunction{add}{operator $+$ }
-	%\SetKwFunction{algo}{algo}\SetKwFunction{mul}{operator $*$ }
-	%\SetKwFunction{algo}{algo}\SetKwFunction{div}{operator $/$ }
-	%\SetKwFunction{algo}{algo}\SetKwFunction{com}{operator $<$ }
-	%\SetKwFunction{algo}{algo}\SetKwFunction{sim}{simplify}
-	%\SetKwProg{myalg}{Algorithm}{}{}
+\begin{algorithm}
+	%\SetKwFunction{algo}{algo}\SetKwFunction{struct}{}
+	\SetKwFunction{algo}{algo}\SetKwFunction{add}{operator $+$ }
+	\SetKwFunction{algo}{algo}\SetKwFunction{mul}{operator $*$ }
+	\SetKwFunction{algo}{algo}\SetKwFunction{div}{operator $/$ }
+	\SetKwFunction{algo}{algo}\SetKwFunction{com}{operator $<$ }
+	\SetKwFunction{algo}{algo}\SetKwFunction{sim}{simplify}
+	\SetKwProg{myalg}{Algorithm}{}{}
 	
-	%\setcounter{AlgoLine}{0}
-	%\SetKwProg{myproc}{Function}{}{}
-	%\myproc{\add{\textnormal{p,q}}}{
-	%\nl p.a = p.a*q.c + q.a*p.c\;
-	%\nl p.b = p.b*q.c + q.b*p.c\;
-	%\nl p.c = p.c * q.c\;
-	%\nl \KwRet p\;}
+	\setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\add{\textnormal{p,q}}}{
+	\nl p.a = p.a*q.c + q.a*p.c\;
+	\nl p.b = p.b*q.c + q.b*p.c\;
+	\nl p.c = p.c * q.c\;
+	\nl \KwRet p\;}
 	
-	%\setcounter{AlgoLine}{0}
-	%\SetKwProg{myproc}{Function}{}{}
-	%\myproc{\mul{\textnormal{p,q}}}{
-	%\nl p.a = p.a*q.a - p.b*q.b\;
-	%\nl p.b = p.b*q.a + p.a*q.b + 4*p.b*q.b\;
-	%\nl p.c = p.c * q.c\;
-	%\nl \KwRet p\;}
+	\setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\mul{\textnormal{p,q}}}{
+	\nl p.a = p.a*q.a - p.b*q.b\;
+	\nl p.b = p.b*q.a + p.a*q.b + 4*p.b*q.b\;
+	\nl p.c = p.c * q.c\;
+	\nl \KwRet p\;}
 	
-	%\setcounter{AlgoLine}{0}
-	%\SetKwProg{myproc}{Function}{}{}
-	%\myproc{\div{\textnormal{p,q}}}{
-	%\nl p.a = (p.a*q.a + p.b*q.b + 4*p.a*q.b)*q.c\;
-	%\nl p.b = (p.b*q.a - p.a*q.b)*q.c\;
-	%\nl p.c = (q.a*q.a + 4*q.a*q.b + q.b*q.b)*p.c\;
-	%\nl \KwRet p\;}
+	\setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\div{\textnormal{p,q}}}{
+	\nl p.a = (p.a*q.a + p.b*q.b + 4*p.a*q.b)*q.c\;
+	\nl p.b = (p.b*q.a - p.a*q.b)*q.c\;
+	\nl p.c = (q.a*q.a + 4*q.a*q.b + q.b*q.b)*p.c\;
+	\nl \KwRet p\;}
   
-  %\setcounter{AlgoLine}{0}
-	%\SetKwProg{myproc}{Function}{}{}
-	%\myproc{\com{\textnormal{p,q}}}{
-  %\nl A = p.a*q.c+p.b*q.c*2 - q.a*p.c-q.b*p.c*2\;
-  %\nl B = q.b*p.c - p.b*q.c\;
-  %\nl \If{sign(A)*A*A $<$ 3*sign(B)*B*B}{
-  %\nl \KwRet true\;}
-	%\nl \KwRet false\;}
+  \setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\com{\textnormal{p,q}}}{
+  \nl A = p.a*q.c+p.b*q.c*2 - q.a*p.c-q.b*p.c*2\;
+  \nl B = q.b*p.c - p.b*q.c\;
+  \nl \If{sign(A)*A*A $<$ 3*sign(B)*B*B}{
+  \nl \KwRet true\;}
+	\nl \KwRet false\;}
   
-  %\setcounter{AlgoLine}{0}
-	%\SetKwProg{myproc}{Function}{}{}
-	%\myproc{\sim{\textnormal{p}}}{
-  %\nl cache = 0\;
-  %\nl \If{((cache = gcd(a,b)) != 0) $\&\&$ ((cache = gcd(cache,c)) != 0) $\&\&$ (cache $>$ 1 )}{
-  %\nl p.a = p.a/cache\;
-  %\nl p.b = p.b/cache\;
-  %\nl p.c = p.c/cache\;}
-	%\nl \KwRet p\;}
+  \setcounter{AlgoLine}{0}
+	\SetKwProg{myproc}{Function}{}{}
+	\myproc{\sim{\textnormal{p}}}{
+  \nl cache = 0\;
+  \nl \If{((cache = gcd(a,b)) != 0) $\&\&$ ((cache = gcd(cache,c)) != 0) $\&\&$ (cache $>$ 1 )}{
+  \nl p.a = p.a/cache\;
+  \nl p.b = p.b/cache\;
+  \nl p.c = p.c/cache\;}
+	\nl \KwRet p\;}
   
-	%\caption{Precise arithmetic inside $\field$.}
-%\end{algorithm}
+	\caption{Precise arithmetic inside $\field$.}
+\end{algorithm}
 
 \subsection{Object-oriented programming}
 Many objects were implemented to represent various structures used in the algorithms: \texttt{Cpoint}, \texttt{CpointSet}, \texttt{CDeloneSet}, \texttt{CVoronoiCell} and more. Such abstraction truly allows a literal transcription of the algorithms as they are explained in the text. 
